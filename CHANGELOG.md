@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2024-03-XX
+
+### Added
+- Comprehensive quiz results page with detailed analytics
+- Performance analysis with visual indicators
+- Topic-wise performance breakdown
+- Difficulty level analysis for each topic
+- Areas for improvement highlighting
+- Incorrect questions review section
+- Enhanced quiz loading with timeout handling
+- Detailed logging for quiz loading process
+
+### Changed
+- Improved type safety across components
+- Enhanced error handling in quiz loading
+- Updated quiz subject relationships
+- Refined difficulty level handling
+- Improved time calculation in results display
+
+### Fixed
+- Type safety issues with difficulty levels
+- Reduce operation in Results component
+- Quiz subject ID matching
+- Undefined property access in topic statistics
+- Time calculation in Results component
+
+### Technical
+- Added loadQuizzesWithTimeout function
+- Updated Question interface with difficulty types
+- Enhanced quizLoader.ts with detailed logging
+- Improved type definitions
+- Added safety checks for difficulty levels
+
 ## [0.1.1] - 2024-03-XX
 
 ### Added
