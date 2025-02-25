@@ -9,6 +9,7 @@ export interface Question {
   id: string;
   text: string;
   subjectId: string;
+  difficulty?: 'beginner' | 'intermediate' | 'advanced';
   important?: boolean;
   source?: string;
   sourceQuestion?: string;
@@ -54,14 +55,14 @@ export interface Subject {
   id: string;
   name: string;
   description: string;
-  chapters?: Chapter[];
+  chapters: Chapter[];
 }
 
 export interface Chapter {
   id: string;
   name: string;
   description: string;
-  quizzes: QuizSeries[];
+  quizzes?: Quiz[];
 }
 
 export interface QuizSeries {
@@ -99,4 +100,12 @@ export interface UserProgress {
   averageScore: number;
   totalQuizzesTaken: number;
   totalTimeSpent: number; // in seconds
+}
+
+export interface Quiz {
+  id: string;
+  name: string;
+  description?: string;
+  questions: Question[]; // Assuming a quiz contains questions
+  // Add any other properties relevant to a Quiz
 } 

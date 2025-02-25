@@ -1,7 +1,7 @@
 {
     "id": "asep-intro-quiz-1",
     "name": "ASEP Review - Systems Engineering Introduction Quiz 1",
-    "subjectId": "asep-review",
+    "subjectId": "se-fundamentals",
     "questions": [
       {
         "id": "q1",
@@ -252,7 +252,7 @@
             "id": "q6-a2",
             "text": "To focus solely on cost minimization regardless of system performance.",
             "isCorrect": false,
-            "explanation": "Cost minimization is important, but it should not compromise the system’s ability to meet its intended purpose."
+            "explanation": "Cost minimization is important, but it should not compromise the system's ability to meet its intended purpose."
           },
           {
             "id": "q6-a3",

@@ -59,14 +59,17 @@ export default function Results() {
     }
 
     const answer = answers.find(a => a.questionId === question.id);
-    const difficulty = question.difficulty || 'intermediate';
+    // Ensure difficulty is one of the valid options
+    const difficulty = (question.difficulty || 'intermediate') as 'beginner' | 'intermediate' | 'advanced';
     
     acc[topic].total++;
-    acc[topic].byDifficulty[difficulty].total++;
-    
-    if (answer?.isCorrect) {
-      acc[topic].correct++;
-      acc[topic].byDifficulty[difficulty].correct++;
+    if (acc[topic].byDifficulty[difficulty]) {
+      acc[topic].byDifficulty[difficulty].total++;
+      
+      if (answer?.isCorrect) {
+        acc[topic].correct++;
+        acc[topic].byDifficulty[difficulty].correct++;
+      }
     }
 
     return acc;
