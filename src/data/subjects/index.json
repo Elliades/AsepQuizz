@@ -1,6 +1,12 @@
 {
   "subjects": [
     {
+      "id": "asep-review",
+      "name": "ASEP Review",
+      "description": "Systems Engineering ASEP Review",
+      "chapters": []
+    },
+    {
       "id": "se-fundamentals",
       "name": "Systems Engineering Fundamentals",
       "description": "Core concepts and principles of Systems Engineering",

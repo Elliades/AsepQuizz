@@ -6,10 +6,13 @@ import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Results from './pages/Results';  
 import Subjects from './pages/Subjects';
+import debug from 'debug';
+const log = debug('app:main');
 
 const queryClient = new QueryClient();
 
 function App() {
+  log('Starting application...');
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
