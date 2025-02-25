@@ -1,0 +1,57 @@
+{
+  "id": "se-fundamentals-basic",
+  "name": "SE Fundamentals - Basic Concepts",
+  "subjectId": "se-fundamentals",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the primary goal of Systems Engineering?",
+      "answers": [
+        {
+          "id": "a1",
+          "text": "To create successful systems that meet stakeholder needs",
+          "isCorrect": true,
+          "explanation": "Systems Engineering focuses on delivering solutions that satisfy stakeholder requirements effectively."
+        },
+        {
+          "id": "a2",
+          "text": "To write software code",
+          "isCorrect": false,
+          "explanation": "While software may be part of a system, SE encompasses much more than just software development."
+        }
+      ],    
+      "tags": ["systems-engineering overall", "concepts"],
+      "source": "INCOSE Handbook 4.0, Section 2.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "ch1-q1",
+      "text": "What is a system in the context of Systems Engineering?",
+      "subjectId": "se-fundamentals",
+      "answers": [
+        {
+          "id": "ch1-q1-a1",
+          "text": "An integrated set of elements, subsystems, or assemblies that accomplish a defined objective",
+          "isCorrect": true,
+          "explanation": "This definition encompasses the key aspects of a system: integration, elements, and purpose."
+        },
+        {
+          "id": "ch1-q1-a2",
+          "text": "A collection of software components",
+          "isCorrect": false,
+          "explanation": "This is too narrow - systems can include hardware, software, people, and processes."
+        }
+    ],    
+    "tags": ["systems-engineering overall", "concepts", "concepts", "systems"],
+    "user-tags": [],
+    "source": "INCOSE Handbook 4.0, Section 2.1",
+    "sourceQuestion": "ChatGPT",
+    "comments": [],
+    "notations": []
+  }
+  ]
+}
+ 

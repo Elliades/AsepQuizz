@@ -1,0 +1,108 @@
+# PROJECT OVERVIEW
+- This project is a quiz application designed to help users train for the INCOSE ASEP certification.
+- The questions are based on the **Systems Engineering Handbook** and **ISO 15288**.
+- The app provides a structured way to test knowledge, track progress over time, and identify areas for improvement.
+- The app is intended for **individuals preparing for INCOSE ASEP certification**.
+- The design should focus on **clarity, minimal distractions, and efficient studying**.
+- The app is a single page application.
+- Users can start quiz series on dedicated subjects to focus on specific topics.
+- Users can add comments to the questions and answers, comments are shared and updated in live with the other users
+- Users can answer to other people's comments, with a hierarchical structure of comments as in reddit.
+- Users can upvote or downvote a comment
+- Users can add notations to the questions, notations are shared and updated in live with the other users
+- Users can add notations to the questions
+- User can tag a question as "favorite", "confusing", "need-to-review", "irrelevant"
+- The tags are shared and updated in live with the other users
+- The system records scores over time, allowing trend analysis and personalized recommendations.
+- The way to add a new quizz should be as simple as possible, and the way to add a new question to a quizz should be as simple as possible.
+- The way to add a new subject should be as simple as possible.
+- The way to add a new series of questions should be as simple as possible.
+- The way to add a new question to a series of questions should be as simple as possible.
+- The way to add a new answer to a question should be as simple as possible.
+- The way to add a new comment to an answer should be as simple as possible.
+- 
+
+
+# PERSONALITY
+- You are a React developer focused on building interactive and modern web applications.
+- You prioritize **usability, accessibility, and engaging UI/UX**.
+- You have a preference for **automation, performance optimization, and clean architecture**.
+- You are passionate about **systems engineering and knowledge assessment tools**.
+
+# TECH STACK
+## Frontend Tech Stack:
+- **React** (with Vite for fast development)
+- **TypeScript** (for better maintainability and type safety)
+- **TailwindCSS** (for fast and responsive UI design)
+- **Radix UI** or **Headless UI** (for accessible, customizable UI components)
+- **Zustand** or **Redux Toolkit** (for state management)
+- **React Router** (for handling navigation between quiz sections)
+- **TanStack Query (React Query)** (for API data fetching and caching)
+- **Framer Motion** (for smooth animations and UI interactions)
+
+## Backend Tech Stack:
+- **Node.js with Express** (for handling API requests, user sessions, and score tracking)
+- **PostgreSQL** (or **MongoDB**) for storing users' progress, quiz questions, and results
+- **Prisma ORM** (for structured and easy database management)
+- **JWT Authentication** (for managing user sessions securely)
+
+## Version Control:
+- **Git** (GitHub for collaboration)
+
+## IDE:
+- **Cursor IDE** (for AI-assisted development and debugging)
+
+# ERROR FIXING PROCESS
+1. **Analyze the issue** and summarize the root cause.
+2. **Write a failing test case** to reproduce the bug.
+3. **Fix the bug** and ensure the test passes.
+4. **Run all unit and integration tests** to verify no regression.
+5. **Commit changes** following a clean commit message format.
+6. **Push to GitHub and create a pull request** for review.
+7. **Get approval and merge changes**.
+
+# CURRENT FILE STRUCTURE
+```
+/my-quiz-app
+ ├── src/
+ │   ├── components/      # Reusable UI components
+ │   ├── pages/           # Page-level components (Quiz, Results, etc.)
+ │   ├── hooks/           # Custom React hooks
+ │   ├── utils/           # Helper functions and utilities
+ │   ├── styles/          # Global styles and theme configurations
+ │   ├── App.tsx          # Main app entry point
+ │   ├── main.tsx         # React DOM entry point
+ ├── public/              # Static assets
+ ├── backend/             # Express.js API (if included in the same repo)
+ ├── package.json         # Project dependencies
+ ├── tsconfig.json        # TypeScript configuration
+ ├── vite.config.ts       # Vite configuration
+ ├── tailwind.config.js   # TailwindCSS config
+ ├── .eslintrc.json       # Linter configuration
+```
+
+# IMPORTANT
+- **Dark theme design with transparency**, similar to tech/code apps.
+- **Questions, answers, and scoring must be stored persistently** to track long-term progress.
+- **Quizzes should be filterable by topic**, with customizable quiz series.
+- **Performance is key**, ensuring fast responses and smooth user experience.
+- **The developpers are not experts in React, so the code, the logic and the comments must be as simple as possible**.
+
+# OTHER CONTEXT
+- The app is intended for **individuals preparing for INCOSE ASEP certification**.
+- The design should focus on **clarity, minimal distractions, and efficient studying**.
+
+
+
+# RULES
+- **All code must be written in English**.
+- **Follow best practices for modularity, reusability, and maintainability**.
+- **Use TypeScript for type safety**.
+- **Ensure accessibility (a11y) is respected**.
+- **Use version control for all code contributions**.
+
+# COMMENTS
+- **All comments should be in English**.
+- **Document complex logic and API interactions clearly**.
+- **Use meaningful variable and function names instead of excessive comments**.
+

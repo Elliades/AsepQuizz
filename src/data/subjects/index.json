@@ -1,0 +1,33 @@
+{
+  "subjects": [
+    {
+      "id": "se-fundamentals",
+      "name": "Systems Engineering Fundamentals",
+      "description": "Core concepts and principles of Systems Engineering",
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Introduction to Systems Engineering",
+          "description": "Basic concepts and definitions"
+        },
+        {
+          "id": "ch2",
+          "name": "System Life Cycle",
+          "description": "Understanding the stages of system development"
+        }
+      ]
+    },
+    {
+      "id": "iso-15288",
+      "name": "ISO/IEC 15288",
+      "description": "System life cycle processes and standards",
+      "chapters": [
+        {
+          "id": "processes",
+          "name": "System Life Cycle Processes",
+          "description": "Understanding the key processes in ISO 15288"
+        }
+      ]
+    }
+  ]
+} 

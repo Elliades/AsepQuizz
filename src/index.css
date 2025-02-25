@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-gray-100;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg bg-primary hover:bg-primary-dark transition-colors;
+}
+
+.card {
+  @apply bg-background-light p-6 rounded-lg shadow-lg;
+} 
