@@ -5,18 +5,21 @@ import { Question } from '../types';
  * @returns Promise<Question[]> Array of all available questions
  */
 export const loadAllQuestions = async (): Promise<Question[]> => {
-  // Get all quiz files from the quizzes directory
-  const quizModules = import.meta.glob('../data/quizzes/**/*.json');
+  const quizzes = await loadQuizzesWithTimeout();
   
   const allQuestions: Question[] = [];
   
-  // Load and combine questions from all quiz files
-  for (const path in quizModules) {
-    const module = await quizModules[path]();
-    if (module.questions && Array.isArray(module.questions)) {
-      allQuestions.push(...module.questions);
-    }
-  }
+  Object.entries(quizzes).forEach(([subjectId, quizSeries]) => {
+    quizSeries.forEach((quiz) => {
+      // Add quiz identifier to each question ID
+      const questionsWithUniqueIds = quiz.questions.map(question => ({
+        ...question,
+        id: `${quiz.id}_${question.id}` // Make IDs unique across quizzes
+      }));
+      
+      allQuestions.push(...questionsWithUniqueIds);
+    });
+  });
   
   return allQuestions;
 };

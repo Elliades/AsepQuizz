@@ -22,6 +22,10 @@ const loadQuizzes = (): Record<string, QuizSeries[]> => {
     try {
       console.log('Processing module:', module);
       const quiz = module.default as QuizSeries;
+      if (!quiz?.subjectId || !subjects.subjects.find(s => s.id === quiz.subjectId)) {
+        console.warn(`Invalid subject ID in quiz: ${quiz?.id}. Valid subjects are: ${subjects.subjects.map(s => s.id).join(', ')}`);
+        return;
+      }
       if (quiz?.subjectId && quizzesBySubject[quiz.subjectId]) {
         quizzesBySubject[quiz.subjectId].push(quiz);
         console.log(`Added quiz to subject ${quiz.subjectId}`);

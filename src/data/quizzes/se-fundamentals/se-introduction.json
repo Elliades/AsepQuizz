@@ -1,12 +1,12 @@
 {
-    "id": "asep-intro-quiz-1",
-    "name": "ASEP Review - Systems Engineering Introduction Quiz 1",
+    "id": "se-intro-quiz-1",
+    "name": "Systems Engineering Introduction Quiz 1",
     "subjectId": "se-fundamentals",
     "questions": [
       {
         "id": "q1",
         "text": "What is the primary definition of Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -52,7 +52,7 @@
       {
         "id": "q2",
         "text": "Which of the following is a key characteristic of a system according to Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -98,7 +98,7 @@
       {
         "id": "q3",
         "text": "How does Systems Engineering address system complexity?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -144,7 +144,7 @@
       {
         "id": "q4",
         "text": "What does 'systems thinking' imply in the context of Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -190,7 +190,7 @@
       {
         "id": "q5",
         "text": "Why is defining system boundaries important in Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -236,7 +236,7 @@
       {
         "id": "q6",
         "text": "What is a core objective of Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -282,7 +282,7 @@
       {
         "id": "q7",
         "text": "How does Systems Engineering typically address uncertainty in projects?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -328,7 +328,7 @@
       {
         "id": "q8",
         "text": "What does the concept of 'emergence' in Systems Engineering refer to?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -374,7 +374,7 @@
       {
         "id": "q9",
         "text": "What is the significance of stakeholder needs in Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",
@@ -420,7 +420,7 @@
       {
         "id": "q10",
         "text": "Which statement best describes the holistic approach of Systems Engineering?",
-        "type": "multiple-choice",
+        "type": "simple-choice",
         "difficulty": "medium",
         "topic": "Systems Engineering Introduction",
         "chapter": "Systems Engineering Introduction",

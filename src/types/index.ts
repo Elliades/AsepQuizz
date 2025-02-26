@@ -9,6 +9,7 @@ export interface Question {
   id: string;
   text: string;
   subjectId: string;
+  topic: string;
   difficulty?: 'beginner' | 'intermediate' | 'advanced';
   important?: boolean;
   source?: string;
