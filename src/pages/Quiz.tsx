@@ -106,8 +106,8 @@ export default function Quiz() {
       <div className="mt-6">
         <QuizQuestion
           question={currentQuestion}
-          selectedAnswer={currentAnswer?.answerId}
-          onAnswerSelect={handleAnswerSelect}
+          selectedAnswer={currentAnswer?.answerId || null}
+          onAnswerSelect={handleAnswerSelect as (answerId: string | string[] | null) => void}
           showExplanation={!!currentAnswer}
         />
       </div>

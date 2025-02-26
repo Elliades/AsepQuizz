@@ -7,6 +7,8 @@ import Quiz from './pages/Quiz';
 import Results from './pages/Results';  
 import Subjects from './pages/Subjects';
 import debug from 'debug';
+import SimpleChoiceSample from './pages/dev/SimpleChoiceSample';
+import MultipleChoiceSample from './pages/dev/MultipleChoiceSample';
 const log = debug('app:main');
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ function App() {
             <Route path="/subjects" element={<Subjects />} />
             <Route path="/quiz/:seriesId" element={<Quiz />} />
             <Route path="/results" element={<Results />} />
+            <Route path="/dev/simple-choice-sample" element={<SimpleChoiceSample />} />
+            <Route path="/dev/multiple-choice-sample" element={<MultipleChoiceSample />} />
           </Routes>
         </Layout>
       </Router>

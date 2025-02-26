@@ -1,3 +1,5 @@
+export type QuestionType = 'multipleChoice' | 'simpleChoice' | 'trueFalse' | 'fillInBlank';
+
 export interface User {
   id: string;
   username: string;
@@ -5,22 +7,35 @@ export interface User {
   progress?: UserProgress;
 }
 
-export interface Question {
+export interface BaseQuestion {
   id: string;
   text: string;
   subjectId: string;
   topic: string;
-  difficulty?: 'beginner' | 'intermediate' | 'advanced';
+  type: QuestionType;
+  difficulty: "beginner" | "intermediate" | "advanced" | undefined;
   important?: boolean;
   source?: string;
   sourceQuestion?: string;
-  answers: Answer[];
   comments: Comment[];
   tags: QuestionTag[];
   notations: Notation[];
   explanation?: string;
   imageUrl?: string;
 }
+
+export interface MultipleChoiceQuestion extends BaseQuestion {
+  type: 'multipleChoice';
+  answers: Answer[];
+  numberToChoose?: number;
+}
+
+export interface SimpleChoiceQuestion extends BaseQuestion {
+  type: 'simpleChoice';
+  answers: Answer[];
+}
+
+export type Question = MultipleChoiceQuestion | SimpleChoiceQuestion;
 
 export interface Answer {
   id: string;
