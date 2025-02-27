@@ -14,15 +14,15 @@ const Results: React.FC<ResultsProps> = ({ attempt, onRetry }) => {
   // Use either passed attempt or location state
   const data = attempt || resultState;
 
-  if (!data || !data.answers || data.answers.length === 0) {
+if (!data?.answers?.length) {
     return <div>No results available</div>;
   }
 
   // Calculate statistics
   const totalQuestions = data.total || data.answers.length;
-  const correctAnswers = data.answers.filter(answer => answer.isCorrect).length;
+  const correctAnswers = data.answers.filter((answer: UserAnswer) => answer.isCorrect).length;
   const score = data.score || (correctAnswers / totalQuestions) * 100;
-  const totalTime = data.timeSpent || data.answers.reduce((total, answer) => {
+  const totalTime = data.timeSpent || data.answers.reduce((total: number, answer: UserAnswer) => {
     return total + (answer.timeSpent || 0);
   }, 0);
   const averageTime = totalTime / totalQuestions;

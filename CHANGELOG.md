@@ -26,10 +26,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Type safety issues with difficulty levels
-- Reduce operation in Results component
-- Quiz subject ID matching
+- Reduce operation in Results_Pages component
+- Quiz_Page subject ID matching
 - Undefined property access in topic statistics
-- Time calculation in Results component
+- Time calculation in Results_Pages component
 
 ### Technical
 - Added loadQuizzesWithTimeout function

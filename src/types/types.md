@@ -27,3 +27,15 @@ This folder contains the TypeScript type definitions used throughout the applica
 - None
 
 ## Usage Examples
+
+typescript
+// Example usage in a component:
+import { Question, UserAnswer } from '../types';
+interface MyComponentProps {
+    question: Question;
+    onAnswerSelect: (answer: UserAnswer) => void;
+}
+
+
+## References & Resources
+- **TypeScript Documentation:** [https://www.typescriptlang.org/](https://www.typescriptlang.org/)

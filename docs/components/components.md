@@ -1,6 +1,6 @@
 # Components Documentation
 
-This document provides a comprehensive overview of the React components within the `/components` directory of the ASEP Quiz application. It covers the architecture, logic, usage, and dependencies of each component.
+This document provides a comprehensive overview of the React components within the `/components` directory of the ASEP Quiz_Page application. It covers the architecture, logic, usage, and dependencies of each component.
 
 ## Table of Contents
 
@@ -13,10 +13,10 @@ This document provides a comprehensive overview of the React components within t
     -   [SimpleChoiceQuestionComponent.tsx](#simplechoicequestioncomponenttsx)
 4.  [quiz Folder](#quiz-folder)
     -   [QuickQuiz.tsx](#quickquiztsx)
-    -   [Quiz.tsx](#quiztsx)
-5.  [Results.tsx](#resultstsx)
+    -   [Quiz_Page.tsx](#quiztsx)
+5.  [Results_Pages.tsx](#resultstsx)
 6.  [ScoreTracker.tsx](#scoretrackertsx)
-7.  [Results.test.tsx](#resultstesttsx)
+7.  [Results_Pages.test.tsx](#resultstesttsx)
 
 ---
 
@@ -32,3 +32,36 @@ This document provides a comprehensive overview of the React components within t
 -   **Frameworks/Libraries:** React, React Router (for `Navigation` component).
 
 ### Code Structure 
+
+/ASEPQUIZZ
+ ├── src/
+ │   ├── components/      # Reusable UI components
+ │   │   ├── questions/
+ │   │   │   ├── MultipleChoiceQuestionComponent.tsx
+ │   │   │   ├── QuestionLayout.tsx
+ │   │   │   ├── QuizQuestion.tsx
+ │   │   │   └── SimpleChoiceQuestionComponent.tsx
+ │   │   ├── quiz/
+ │   │   │   ├── QuickQuiz.tsx
+ │   │   │   └── Quiz.tsx
+ │   │   ├── Layout.tsx
+ │   │   ├── Navigation.tsx
+ │   │   ├── Results.tsx
+ │   │   ├── Results.test.tsx
+ │   │   └── ScoreTracker.tsx
+ │   ├── pages/           # Page-level components (Quiz, Results, etc.)
+ │   ├── hooks/           # Custom React hooks
+ │   ├── utils/           # Helper functions and utilities
+ │   ├── styles/          # Global styles and theme configurations
+ │   ├── App.tsx          # Main app entry point
+ │   ├── main.tsx         # React DOM entry point
+ ├── public/              # Static assets
+ ├── backend/             # Express.js API (if included in the same repo)
+ ├── docs/                # NEW: Documentation directory
+ │   └── components/      # NEW: Component documentation
+ │       └── components.md # NEW: Comprehensive component documentation
+ ├── package.json         # Project dependencies
+ ├── tsconfig.json        # TypeScript configuration
+ ├── vite.config.ts       # Vite configuration
+ ├── tailwind.config.js   # TailwindCSS config
+ └── .eslintrc.json       # Linter configuration

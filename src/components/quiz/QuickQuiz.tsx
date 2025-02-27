@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Question, MultipleChoiceQuestion, UserAnswer } from '../../types';
+import { Question, UserAnswer } from '@/types';
 import QuizQuestion from '../questions/QuizQuestion';
 
 interface QuickQuizProps {
@@ -9,7 +9,7 @@ interface QuickQuizProps {
   renderResult?: (score: number, totalQuestions: number) => React.ReactNode;
 }
 
-const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResult }) => {
+const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -93,10 +93,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
       }
     }
 
-    // Data Integrity Check 3: Ensure isCorrect is a boolean
-    if (typeof isCorrect !== 'boolean') {
-      console.error("isCorrect is not a boolean!", isCorrect);
-    }
+
 
     // Track user answer
     setUserAnswers(prev => [...prev, {

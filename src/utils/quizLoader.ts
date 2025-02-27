@@ -1,4 +1,4 @@
-import { Subject, QuizSeries, Chapter, Question } from '../types';
+import { Subject, QuizSeries, Chapter, Question } from '@/types';
 import subjects from '../data/subjects/index.json';
 
 // Dynamic imports for quiz files
@@ -7,7 +7,7 @@ const quizModules = import.meta.glob('../data/quizzes/**/*.json', { eager: true 
 const loadQuizzes = (): Record<string, QuizSeries[]> => {
   console.log('Starting quiz loading...');
   console.log('Available quiz modules:', Object.keys(quizModules));
-  console.log('Subjects from index:', subjects.subjects);
+  console.log('Subjects_Pages from index:', subjects.subjects);
 
   const quizzesBySubject: Record<string, QuizSeries[]> = {};
   
@@ -63,7 +63,7 @@ const QUIZ_LOAD_TIMEOUT = 5000; // 5 seconds
 
 export const loadQuizzesWithTimeout = async (): Promise<Record<string, QuizSeries[]>> => {
   const timeoutPromise = new Promise((_, reject) => {
-    setTimeout(() => reject(new Error('Quiz loading timed out')), QUIZ_LOAD_TIMEOUT);
+    setTimeout(() => reject(new Error('Quiz_Page loading timed out')), QUIZ_LOAD_TIMEOUT);
   });
 
   try {
@@ -73,7 +73,7 @@ export const loadQuizzesWithTimeout = async (): Promise<Record<string, QuizSerie
     ]);
     return result as Record<string, QuizSeries[]>;
   } catch (error) {
-    console.error('Quiz loading failed:', error);
+    console.error('Quiz_Page loading failed:', error);
     return {}; // Return empty object on timeout/error
   }
 };

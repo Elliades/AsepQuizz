@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserAnswer } from '../types';
+import { UserAnswer } from '../../types';
 
 interface ScoreTrackerProps {
   userAnswers: UserAnswer[];

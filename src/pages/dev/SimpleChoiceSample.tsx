@@ -7,7 +7,7 @@ const SimpleChoiceSample = () => {
   // Transform the question to match required format
   const question: SimpleChoiceQuestion = {
     ...sampleQuizData.questions[0],
-    type: 'simpleChoice',
+    type: 'simple-Choice',
     subjectId: sampleQuizData.subjectId,
     comments: [],
     tags: [],

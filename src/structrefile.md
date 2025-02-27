@@ -1,4 +1,4 @@
-/my-quiz-app
+/ASEPQUIZZ
  ├── src/
  │   ├── components/
  │   │   ├── layout/           # Layout components

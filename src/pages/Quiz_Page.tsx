@@ -6,7 +6,7 @@ import QuickQuiz from '../components/quiz/QuickQuiz';
 
 const QUESTIONS_PER_QUIZ = 10;
 
-export default function Quiz() {
+export default function Quiz_Page() {
   const { seriesId } = useParams();
   const navigate = useNavigate();
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -36,7 +36,7 @@ export default function Quiz() {
             ...question,
             type: question.answers.filter(a => a.isCorrect).length > 1 
               ? 'multiple-Choice' as const 
-              : 'simpleChoice' as const,
+              : 'simple-Choice' as const,
             topic: topic, // Explicitly set the topic
           };
         });

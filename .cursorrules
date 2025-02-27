@@ -103,7 +103,7 @@
 /my-quiz-app
  ├── src/
  │   ├── components/      # Reusable UI components
- │   ├── pages/           # Page-level components (Quiz, Results, etc.)
+ │   ├── pages/           # Page-level components (Quiz_Page, Results_Pages, etc.)
  │   ├── hooks/           # Custom React hooks
  │   ├── utils/           # Helper functions and utilities
  │   ├── styles/          # Global styles and theme configurations

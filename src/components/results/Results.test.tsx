@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Results from './Results';
 import { QuizAttempt } from '../../types';
+import Results from './Results';
 
-describe('Results Component', () => {
+describe('Results_Pages Component', () => {
   const mockAttempt: QuizAttempt = {
     id: '1',
     userId: 'user1',
@@ -22,7 +22,7 @@ describe('Results Component', () => {
 
   it('renders results when attempt is provided', () => {
     render(<Results attempt={mockAttempt} />);
-    expect(screen.getByText(/Quiz Results/i)).toBeInTheDocument();
+    expect(screen.getByText(/Quiz_Page Results_Pages/i)).toBeInTheDocument();
     expect(screen.getByText(/Score:/i)).toBeInTheDocument();
   });
 

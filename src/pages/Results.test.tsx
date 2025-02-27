@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Results from './Results';
+import Results_Pages from './Results_Pages.tsx';
 import '@testing-library/jest-dom';
 
 // Mock react-router-dom hooks
@@ -54,7 +54,7 @@ const mockResultsState = {
   ],
 };
 
-describe('Results Component', () => {
+describe('Results_Pages Component', () => {
   const mockNavigate = jest.fn();
 
   beforeEach(() => {
@@ -66,9 +66,9 @@ describe('Results Component', () => {
   // Functional Tests
   describe('Functional Tests', () => {
     test('renders all main sections', () => {
-      render(<Results />);
+      render(<Results_Pages />);
       
-      expect(screen.getByText('Quiz Results')).toBeInTheDocument();
+      expect(screen.getByText('Quiz_Page Results_Pages')).toBeInTheDocument();
       expect(screen.getByText('Performance Analysis')).toBeInTheDocument();
       expect(screen.getByText('Topic Performance')).toBeInTheDocument();
       expect(screen.getByText('Areas for Improvement')).toBeInTheDocument();
@@ -76,7 +76,7 @@ describe('Results Component', () => {
     });
 
     test('renders score summary with correct values and colors', () => {
-      render(<Results />);
+      render(<Results_Pages />);
       
       const scoreElement = screen.getByText('70%');
       expect(scoreElement).toBeInTheDocument();
@@ -86,14 +86,14 @@ describe('Results Component', () => {
     });
 
     test('displays correct time formatting and calculations', () => {
-      render(<Results />);
+      render(<Results_Pages />);
       
       expect(screen.getByText('5:00')).toBeInTheDocument(); // Total time
       expect(screen.getByText('0:30')).toBeInTheDocument(); // Avg time per question
     });
 
     test('calculates and displays topic statistics with correct percentages', () => {
-      render(<Results />);
+      render(<Results_Pages />);
       
       // Systems Thinking stats (2 questions, 2 correct = 100%)
       const systemsThinkingSection = screen.getByText('Systems Thinking').closest('div');
@@ -107,7 +107,7 @@ describe('Results Component', () => {
     });
 
     test('displays correct difficulty breakdown for each topic', () => {
-      render(<Results />);
+      render(<Results_Pages />);
       
       // Check Systems Thinking difficulty breakdown
       const difficultyStats = screen.getAllByText(/beginner|intermediate|advanced/);
@@ -118,9 +118,9 @@ describe('Results Component', () => {
     });
 
     test('navigation buttons trigger correct routes', () => {
-      render(<Results />);
+      render(<Results_Pages />);
       
-      fireEvent.click(screen.getByText('Try Another Quiz'));
+      fireEvent.click(screen.getByText('Try Another Quiz_Page'));
       expect(mockNavigate).toHaveBeenCalledWith('/quiz/random');
       
       fireEvent.click(screen.getByText('Study by Subject'));
@@ -132,7 +132,7 @@ describe('Results Component', () => {
   describe('Disfunctional Tests', () => {
     test('handles missing location state by showing error message', () => {
       (useLocation as jest.Mock).mockReturnValue({ state: null });
-      render(<Results />);
+      render(<Results_Pages />);
       
       expect(screen.getByText(/No results available/i)).toBeInTheDocument();
     });
@@ -147,7 +147,7 @@ describe('Results Component', () => {
       };
       
       (useLocation as jest.Mock).mockReturnValue({ state: modifiedState });
-      render(<Results />);
+      render(<Results_Pages />);
       
       expect(screen.getByText('intermediate')).toBeInTheDocument();
     });
@@ -162,7 +162,7 @@ describe('Results Component', () => {
       };
       
       (useLocation as jest.Mock).mockReturnValue({ state: modifiedState });
-      render(<Results />);
+      render(<Results_Pages />);
       
       expect(screen.getByText('0%')).toBeInTheDocument();
       expect(screen.queryByText('NaN%')).not.toBeInTheDocument();
@@ -176,7 +176,7 @@ describe('Results Component', () => {
       };
       
       (useLocation as jest.Mock).mockReturnValue({ state: modifiedState });
-      expect(() => render(<Results />)).not.toThrow();
+      expect(() => render(<Results_Pages />)).not.toThrow();
     });
 
     test('handles missing answer explanations without crashing', () => {
@@ -189,7 +189,7 @@ describe('Results Component', () => {
       };
       
       (useLocation as jest.Mock).mockReturnValue({ state: modifiedState });
-      render(<Results />);
+      render(<Results_Pages />);
       
       // Should still render the answer without explanation
       expect(screen.getByText('Answer')).toBeInTheDocument();
@@ -205,7 +205,7 @@ describe('Results Component', () => {
       };
       
       (useLocation as jest.Mock).mockReturnValue({ state: modifiedState });
-      render(<Results />);
+      render(<Results_Pages />);
       
       // Should truncate or handle long text appropriately
       const questionElement = screen.getByText(/A+/);

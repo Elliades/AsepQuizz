@@ -23,7 +23,7 @@ interface TopicStats {
   };
 }
 
-export default function Results() {
+export default function Results_Pages() {
   const location = useLocation();
   const navigate = useNavigate();
   
@@ -43,7 +43,7 @@ export default function Results() {
 
   // Data Integrity Check 8: Ensure questions and answers have the same length
   if (answers.length !== questions.length) {
-    console.error("Results: Answer count doesn't match question count!", answers.length, questions.length);
+    console.error("Results_Pages: Answer count doesn't match question count!", answers.length, questions.length);
   }
 
   const formatTime = (seconds: number): string => {
@@ -227,7 +227,7 @@ export default function Results() {
 
                   {/* Difficulty markers */}
                   <div className="absolute inset-0 flex">
-                    {['beginner', 'intermediate', 'advanced'].map((diff, idx) => {
+                    {['beginner', 'intermediate', 'advanced'].map((diff) => {
                       const stats = topic.byDifficulty[diff as keyof typeof topic.byDifficulty];
                       const width = `${(stats.total/topic.total) * 100}%`;
                       return stats.total > 0 && (
@@ -256,7 +256,7 @@ export default function Results() {
                 </span>
               </div>
               <div className="flex justify-between text-xs text-gray-400 mt-1">
-                {['Beginner', 'Intermediate', 'Advanced'].map((diff, idx) => (
+                {['Beginner', 'Intermediate', 'Advanced'].map((diff) => (
                   <span key={diff} className="px-2" style={{ width: '33.33%', textAlign: 'center' }}>{diff}</span>
                 ))}
               </div>

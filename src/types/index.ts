@@ -1,4 +1,4 @@
-export type QuestionType = 'multiple-Choice' | 'simpleChoice' | 'trueFalse' | 'fillInBlank';
+export type QuestionType = 'multiple-Choice' | 'simple-Choice' | 'trueFalse' | 'fillInBlank';
 
 export interface User {
   id: string;
@@ -31,7 +31,7 @@ export interface MultipleChoiceQuestion extends BaseQuestion {
 }
 
 export interface SimpleChoiceQuestion extends BaseQuestion {
-  type: 'simpleChoice';
+  type: 'simple-Choice';
   answers: Answer[];
 }
 
@@ -104,7 +104,7 @@ export interface QuizAttempt {
 
 export interface UserAnswer {
   questionId: string;
-  answerId: string;
+  answerIds: string[];
   isCorrect: boolean;
   timeSpent: number; // in seconds
 }
@@ -123,5 +123,5 @@ export interface Quiz {
   name: string;
   description?: string;
   questions: Question[]; // Assuming a quiz contains questions
-  // Add any other properties relevant to a Quiz
+  // Add any other properties relevant to a Quiz_Page
 } 
