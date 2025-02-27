@@ -1,25 +1,21 @@
 {
   "subjects": [
     {
-      "id": "asep-review",
-      "name": "ASEP Review",
-      "description": "Systems Engineering ASEP Review",
-      "chapters": []
-    },
-    {
-      "id": "se-fundamentals",
-      "name": "Systems Engineering Fundamentals",
+      "id": "INCOSE_SEHB5",
+      "name": "Systems Engineering Handbook 5th Edition",
       "description": "Core concepts and principles of Systems Engineering",
       "chapters": [
         {
           "id": "ch1",
           "name": "Introduction to Systems Engineering",
-          "description": "Basic concepts and definitions"
+          "description": "Basic concepts and definitions",
+          "topics": ["system engineering definition", "system engineering principles", "system engineering interfaces"]
         },
         {
           "id": "ch2",
           "name": "System Life Cycle",
-          "description": "Understanding the stages of system development"
+          "description": "Understanding the stages of system development",
+          "topics": ["system life cycle", "system life cycle models", "system life cycle processes"]
         }
       ]
     },
@@ -31,7 +27,8 @@
         {
           "id": "processes",
           "name": "System Life Cycle Processes",
-          "description": "Understanding the key processes in ISO 15288"
+          "description": "Understanding the key processes in ISO 15288",
+          "topics": ["system life cycle processes", "system life cycle standards", "system life cycle models"]
         }
       ]
     }

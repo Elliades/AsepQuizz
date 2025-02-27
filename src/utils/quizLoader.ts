@@ -1,5 +1,7 @@
 import { Subject, QuizSeries, Chapter, Question } from '@/types';
 import subjects from '../data/subjects/index.json';
+import path from 'path';
+import fs from 'fs';
 
 // Dynamic imports for quiz files
 const quizModules = import.meta.glob('../data/quizzes/**/*.json', { eager: true });
@@ -135,4 +137,20 @@ export function getRandomQuestions(count: number = 10): Question[] {
     console.error('Error fetching random questions:', error);
     return [];
   }
-} 
+}
+
+/**
+ * Gets detailed information about a subject from sources.json
+ * @param subjectId Subject ID
+ * @returns Detailed subject information or null if not found
+ */
+export const getSubjectDetails = (subjectId: string) => {
+  try {
+    const sourcesPath = path.join(__dirname, '../data/subjects/sources.json');
+    const sourcesData = JSON.parse(fs.readFileSync(sourcesPath, 'utf8'));
+    return sourcesData.sources.find(source => source.id === subjectId) || null;
+  } catch (error) {
+    console.error('Error loading subject details:', error);
+    return null;
+  }
+}; 

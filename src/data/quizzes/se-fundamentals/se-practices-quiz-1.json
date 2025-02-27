@@ -1,0 +1,452 @@
+{
+    "id": "se-practice-quiz-1",
+    "name": "se Review - Systems Engineering in Practice Quiz 1",
+    "subjectId": "se-review",
+    "questions": [
+      {
+        "id": "q1-se-practice-quiz-1",
+        "text": "Which skill set combination best describes a well-rounded Systems Engineering practitioner?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q1-se-practice-quiz-1",
+            "text": "Technical, managerial, and interpersonal skills",
+            "isCorrect": true,
+            "explanation": "An effective SE practitioner balances technical expertise, leadership/management, and communication abilities."
+          },
+          {
+            "id": "a2-q1-se-practice-quiz-1",
+            "text": "Pure technical proficiency without soft skills",
+            "isCorrect": false,
+            "explanation": "Systems Engineering requires collaboration and communication, not just technical knowledge."
+          },
+          {
+            "id": "a3-q1-se-practice-quiz-1",
+            "text": "Exclusive focus on cost management",
+            "isCorrect": false,
+            "explanation": "While cost is important, a holistic approach encompasses far more than budgeting."
+          },
+          {
+            "id": "a4-q1-se-practice-quiz-1",
+            "text": "Strict managerial oversight without technical involvement",
+            "isCorrect": false,
+            "explanation": "Effective SE practitioners need technical insight as well as management ability."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "competencies"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.1",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q2-se-practice-quiz-1",
+        "text": "Select 3 out of the following 4 reasons why diversity, equity, and inclusion matter in Systems Engineering (Select 3):",
+        "type": "multiple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q2-se-practice-quiz-1",
+            "text": "They broaden perspectives for problem-solving",
+            "isCorrect": true,
+            "explanation": "A diverse team draws on varied experiences and viewpoints, leading to more creative solutions."
+          },
+          {
+            "id": "a2-q2-se-practice-quiz-1",
+            "text": "They reduce groupthink risks",
+            "isCorrect": true,
+            "explanation": "Diverse viewpoints help avoid homogeneous thinking that can overlook critical factors."
+          },
+          {
+            "id": "a3-q2-se-practice-quiz-1",
+            "text": "They eliminate all project risks",
+            "isCorrect": false,
+            "explanation": "Diversity and inclusion do not remove project risks but can improve risk identification and mitigation."
+          },
+          {
+            "id": "a4-q2-se-practice-quiz-1",
+            "text": "They foster a culture of innovation",
+            "isCorrect": true,
+            "explanation": "Inclusive teams are more likely to explore innovative ideas and approaches."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "diversity and inclusion"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.2",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q3-se-practice-quiz-1",
+        "text": "Which statement best describes the relationship between Systems Engineering and Software Engineering?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q3-se-practice-quiz-1",
+            "text": "Systems Engineering integrates multiple domains, including software, to deliver overall system solutions.",
+            "isCorrect": true,
+            "explanation": "Software Engineering is a core discipline within the broader Systems Engineering framework."
+          },
+          {
+            "id": "a2-q3-se-practice-quiz-1",
+            "text": "Systems Engineering is only concerned with mechanical hardware.",
+            "isCorrect": false,
+            "explanation": "SE addresses the entire system, which often includes hardware, software, and people."
+          },
+          {
+            "id": "a3-q3-se-practice-quiz-1",
+            "text": "Software Engineering completely replaces Systems Engineering in complex projects.",
+            "isCorrect": false,
+            "explanation": "Software Engineering is an important subset but does not replace SE in overall project management."
+          },
+          {
+            "id": "a4-q3-se-practice-quiz-1",
+            "text": "They operate independently without any overlap.",
+            "isCorrect": false,
+            "explanation": "Software is often integral to modern systems; collaboration and integration with SE is critical."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "relationships"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.3.1",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q4-se-practice-quiz-1",
+        "text": "Which of the following statements accurately reflects the role of digital engineering in SE?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q4-se-practice-quiz-1",
+            "text": "It uses integrated models and data to enhance collaboration and decision-making.",
+            "isCorrect": true,
+            "explanation": "Digital engineering leverages digital tools and shared data environments to streamline system development."
+          },
+          {
+            "id": "a2-q4-se-practice-quiz-1",
+            "text": "It relies solely on paper-based documents for technical reviews.",
+            "isCorrect": false,
+            "explanation": "Digital engineering replaces many paper-based processes with model-centric approaches."
+          },
+          {
+            "id": "a3-q4-se-practice-quiz-1",
+            "text": "It ignores lifecycle phases post-production.",
+            "isCorrect": false,
+            "explanation": "Digital engineering supports the entire system lifecycle, including operation and maintenance."
+          },
+          {
+            "id": "a4-q4-se-practice-quiz-1",
+            "text": "It is only useful for aerospace applications.",
+            "isCorrect": false,
+            "explanation": "While prominent in aerospace, digital engineering is applicable across many industries."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "digital engineering"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.4",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q5-se-practice-quiz-1",
+        "text": "Which dimension of diversity includes factors such as problem-solving style, communication preferences, or leadership approach?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q5-se-practice-quiz-1",
+            "text": "Cognitive diversity",
+            "isCorrect": true,
+            "explanation": "Cognitive diversity refers to the different ways people think, learn, and communicate."
+          },
+          {
+            "id": "a2-q5-se-practice-quiz-1",
+            "text": "Demographic diversity",
+            "isCorrect": false,
+            "explanation": "Demographic diversity covers factors like age, ethnicity, or gender."
+          },
+          {
+            "id": "a3-q5-se-practice-quiz-1",
+            "text": "Geographical diversity",
+            "isCorrect": false,
+            "explanation": "Geographical diversity pertains to location-based differences."
+          },
+          {
+            "id": "a4-q5-se-practice-quiz-1",
+            "text": "Cultural diversity",
+            "isCorrect": false,
+            "explanation": "Cultural diversity usually involves shared values and norms, distinct from individual cognitive styles."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "diversity"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.2",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q6-se-practice-quiz-1",
+        "text": "Select 2 out of the following 3 statements that characterize effective technical leadership in Systems Engineering (Select 2):",
+        "type": "multiple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q6-se-practice-quiz-1",
+            "text": "Balancing project objectives with stakeholder expectations",
+            "isCorrect": true,
+            "explanation": "A technical leader must ensure that both project goals and stakeholder needs are addressed."
+          },
+          {
+            "id": "a2-q6-se-practice-quiz-1",
+            "text": "Focusing exclusively on cost over system performance",
+            "isCorrect": false,
+            "explanation": "Leaders need to balance cost, schedule, and performance, not prioritize one at the expense of others."
+          },
+          {
+            "id": "a3-q6-se-practice-quiz-1",
+            "text": "Fostering collaboration among diverse team members",
+            "isCorrect": true,
+            "explanation": "Collaboration leverages team strengths and ensures cohesive progress."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "leadership"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.1",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q7-se-practice-quiz-1",
+        "text": "What is one of the primary roles of Industrial Engineering in relation to Systems Engineering?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q7-se-practice-quiz-1",
+            "text": "Optimizing operations, logistics, and production processes that SE integrates",
+            "isCorrect": true,
+            "explanation": "Industrial Engineering focuses on streamlining operations, a key component that SE must integrate."
+          },
+          {
+            "id": "a2-q7-se-practice-quiz-1",
+            "text": "Overseeing all contractual agreements between acquirers and suppliers",
+            "isCorrect": false,
+            "explanation": "Contractual agreements fall under Agreement Processes, not Industrial Engineering specifically."
+          },
+          {
+            "id": "a3-q7-se-practice-quiz-1",
+            "text": "Replacing systems thinking with purely financial analysis",
+            "isCorrect": false,
+            "explanation": "Industrial Engineering complements systems thinking rather than focusing solely on finances."
+          },
+          {
+            "id": "a4-q7-se-practice-quiz-1",
+            "text": "Eliminating the need for technical documentation",
+            "isCorrect": false,
+            "explanation": "Technical documentation remains vital; Industrial Engineering does not remove this requirement."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "relationships"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.3.4",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q8-se-practice-quiz-1",
+        "text": "Which statement best captures the role of Operations Research (OR) in Systems Engineering?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q8-se-practice-quiz-1",
+            "text": "OR uses mathematical and analytical methods to support decision-making within SE.",
+            "isCorrect": true,
+            "explanation": "Operations Research provides tools like optimization and simulation to help SE practitioners evaluate trade-offs."
+          },
+          {
+            "id": "a2-q8-se-practice-quiz-1",
+            "text": "OR replaces the need for stakeholder input and expert judgment.",
+            "isCorrect": false,
+            "explanation": "Stakeholder input and expert judgment remain essential regardless of analytical techniques."
+          },
+          {
+            "id": "a3-q8-se-practice-quiz-1",
+            "text": "OR only focuses on cost analysis without regard for performance.",
+            "isCorrect": false,
+            "explanation": "While cost can be a factor, OR methods address a broader range of performance metrics."
+          },
+          {
+            "id": "a4-q8-se-practice-quiz-1",
+            "text": "OR is concerned solely with logistics scheduling and unrelated to SE.",
+            "isCorrect": false,
+            "explanation": "Though scheduling is one application, OR is widely applicable to system-level decisions in SE."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "relationships"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.3.5",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q9-se-practice-quiz-1",
+        "text": "Select 3 out of the following 4 potential advantages of adopting digital engineering in SE. (Select 3)",
+        "type": "multiple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q9-se-practice-quiz-1",
+            "text": "Improved collaboration through shared digital models",
+            "isCorrect": true,
+            "explanation": "Shared models and data help teams stay aligned and enhance integration."
+          },
+          {
+            "id": "a2-q9-se-practice-quiz-1",
+            "text": "Real-time updates and version control for system artifacts",
+            "isCorrect": true,
+            "explanation": "Digital engineering environments often allow immediate synchronization and configuration management."
+          },
+          {
+            "id": "a3-q9-se-practice-quiz-1",
+            "text": "Complete elimination of physical testing",
+            "isCorrect": false,
+            "explanation": "While digital engineering reduces reliance on physical prototypes, testing is still necessary."
+          },
+          {
+            "id": "a4-q9-se-practice-quiz-1",
+            "text": "Enhanced traceability across life cycle stages",
+            "isCorrect": true,
+            "explanation": "Digital tools make it easier to link requirements, designs, and test results in one environment."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "digital engineering"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.4",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      },
+      {
+        "id": "q10-se-practice-quiz-1",
+        "text": "Which of the following is a likely future trend for Systems Engineering according to the handbook?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Systems Engineering in Practice",
+        "chapter": "Systems Engineering in Practice",
+        "important": false,
+        "answers": [
+          {
+            "id": "a1-q10-se-practice-quiz-1",
+            "text": "Greater emphasis on MBSE and digital transformation",
+            "isCorrect": true,
+            "explanation": "The handbook predicts more reliance on model-centric approaches and integrated digital solutions."
+          },
+          {
+            "id": "a2-q10-se-practice-quiz-1",
+            "text": "A return to manual, document-based processes",
+            "isCorrect": false,
+            "explanation": "Manual processes are increasingly replaced by digital and automated methods."
+          },
+          {
+            "id": "a3-q10-se-practice-quiz-1",
+            "text": "Complete separation of hardware and software disciplines",
+            "isCorrect": false,
+            "explanation": "Modern systems demand close integration of hardware, software, and user components."
+          },
+          {
+            "id": "a4-q10-se-practice-quiz-1",
+            "text": "Elimination of stakeholder inputs",
+            "isCorrect": false,
+            "explanation": "Stakeholder input remains essential for understanding requirements and ensuring system success."
+          }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "practice",
+          "future of SE"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 5.6",
+        "source-question": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+      }
+    ]
+  }
+  

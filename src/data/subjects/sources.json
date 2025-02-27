@@ -1,0 +1,554 @@
+{
+    "sources": [
+      {
+        "id": "INCOSE_SEHB5",
+        "name": "Systems Engineering Handbook 5th Edition",
+        "description": "Core concepts and principles of Systems Engineering.",
+        "chapters": [
+          {
+            "id": "ch1",
+            "name": "Systems Engineering Introduction",
+            "description": "Foundational concepts, definitions, and principles of Systems Engineering.",
+            "subjectId": "se-introduction",
+            "startPage": 1,
+            "topics": [
+              "What Is Systems Engineering?",
+              "Why Is Systems Engineering Important?",
+              "Systems Concepts",
+              "Systems Engineering Foundations",
+              "System Science and Systems Thinking"
+            ],
+            "sections": [
+              {
+                "id": "ch1.1",
+                "name": "What Is Systems Engineering?",
+                "subjectId": "se-introduction-what-is-se",
+                "topics": []
+              },
+              {
+                "id": "ch1.2",
+                "name": "Why Is Systems Engineering Important?",
+                "subjectId": "se-introduction-why-is-se-important",
+                "topics": []
+              },
+              {
+                "id": "ch1.3",
+                "name": "Systems Concepts",
+                "subjectId": "se-introduction-systems-concepts",
+                "topics": [
+                  "System Boundary and the System of Interest (SoI)",
+                  "Emergence",
+                  "Interfacing Systems, Interoperating Systems, and Enabling Systems",
+                  "System Innovation Ecosystem",
+                  "The Hierarchy within a System",
+                  "Systems States and Modes",
+                  "Complexity"
+                ]
+              },
+              {
+                "id": "ch1.4",
+                "name": "Systems Engineering Foundations",
+                "subjectId": "se-introduction-systems-foundations",
+                "topics": [
+                  "Uncertainty",
+                  "Cognitive Bias",
+                  "Systems Engineering Principles",
+                  "Systems Engineering Heuristics"
+                ]
+              },
+              {
+                "id": "ch1.5",
+                "name": "System Science and Systems Thinking",
+                "subjectId": "se-introduction-system-science-systems-thinking",
+                "topics": []
+              }
+            ]
+          },
+          {
+            "id": "ch2",
+            "name": "System Life Cycle Concepts, Models, and Processes",
+            "description": "Overview of life cycle terms, models, and processes used in SE.",
+            "subjectId": "se-lifecycle",
+            "startPage": 25,
+            "topics": [
+              "Life Cycle Terms and Concepts",
+              "Life Cycle Model Approaches",
+              "System Life Cycle Processes"
+            ],
+            "sections": [
+              {
+                "id": "ch2.1",
+                "name": "Life Cycle Terms and Concepts",
+                "subjectId": "se-lifecycle-terms-concepts",
+                "topics": [
+                  "Life Cycle Characteristics",
+                  "Typical Life Cycle Stages",
+                  "Decision Gates",
+                  "Technical Reviews and Audits"
+                ]
+              },
+              {
+                "id": "ch2.2",
+                "name": "Life Cycle Model Approaches",
+                "subjectId": "se-lifecycle-model-approaches",
+                "topics": [
+                  "Sequential Methods",
+                  "Incremental Methods",
+                  "Evolutionary Methods"
+                ]
+              },
+              {
+                "id": "ch2.3",
+                "name": "System Life Cycle Processes",
+                "subjectId": "se-lifecycle-processes",
+                "topics": [
+                  "Introduction to the System Life Cycle Processes",
+                  "Agreement Processes",
+                  "Organizational Project-Enabling Processes",
+                  "Technical Management Processes",
+                  "Technical Processes"
+                ],
+                "sections": [
+                  {
+                    "id": "ch2.3.1",
+                    "name": "Introduction to the System Life Cycle Processes",
+                    "subjectId": "se-lifecycle-processes-introduction",
+                    "topics": [
+                      "Format and Conventions",
+                      "Concurrency, Iteration, and Recursion"
+                    ]
+                  },
+                  {
+                    "id": "ch2.3.2",
+                    "name": "Agreement Processes",
+                    "subjectId": "se-lifecycle-processes-agreement",
+                    "topics": [
+                      "Acquisition Process",
+                      "Supply Process"
+                    ]
+                  },
+                  {
+                    "id": "ch2.3.3",
+                    "name": "Organizational Project-Enabling Processes",
+                    "subjectId": "se-lifecycle-processes-organizational",
+                    "topics": [
+                      "Life Cycle Model Management Process",
+                      "Infrastructure Management Process",
+                      "Portfolio Management Process",
+                      "Human Resource Management Process",
+                      "Quality Management Process",
+                      "Knowledge Management Process"
+                    ]
+                  },
+                  {
+                    "id": "ch2.3.4",
+                    "name": "Technical Management Processes",
+                    "subjectId": "se-lifecycle-processes-technical",
+                    "topics": [
+                      "Project Planning Process",
+                      "Project Assessment and Control Process",
+                      "Decision Management Process",
+                      "Risk Management Process",
+                      "Configuration Management Process",
+                      "Information Management Process",
+                      "Measurement Process",
+                      "Quality Assurance Process"
+                    ]
+                  },
+                  {
+                    "id": "ch2.3.5",
+                    "name": "Technical Processes",
+                    "subjectId": "se-lifecycle-processes-technical",
+                    "topics": [
+                      "Business or Mission Analysis Process",
+                      "Stakeholder Needs and Requirements Definition Process",
+                      "System Requirements Definition Process",
+                      "System Architecture Definition Process",
+                      "Design Definition Process",
+                      "System Analysis Process",
+                      "Implementation Process",
+                      "Integration Process",
+                      "Verification Process",
+                      "Transition Process",
+                      "Validation Process",
+                      "Operation Process",
+                      "Maintenance Process",
+                      "Disposal Process"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ch3",
+            "name": "Life Cycle Analyses and Methods",
+            "description": "Covers quality characteristics, analyses, and methods that apply throughout the system life cycle.",
+            "subjectId": "se-lifecycle-analyses",
+            "startPage": 159,
+            "topics": [
+              "Quality Characteristics and Approaches",
+              "Systems Engineering Analyses and Methods"
+            ],
+            "sections": [
+              {
+                "id": "ch3.1",
+                "name": "Quality Characteristics and Approaches",
+                "subjectId": "se-lifecycle-analyses-quality-characteristics",
+                "topics": [
+                  "Introduction to Quality Characteristics",
+                  "Affordability Analysis",
+                  "Agility Engineering",
+                  "Human Systems Integration",
+                  "Interoperability Analysis",
+                  "Logistics Engineering",
+                  "Manufacturability/Producibility Analysis",
+                  "Reliability, Availability, Maintainability Engineering",
+                  "Resilience Engineering",
+                  "Sustainability Engineering",
+                  "System Safety Engineering",
+                  "System Security Engineering",
+                  "Loss-Driven Systems Engineering"
+                ]
+              },
+              {
+                "id": "ch3.2",
+                "name": "Systems Engineering Analyses and Methods",
+                "subjectId": "se-lifecycle-analyses-methods",
+                "topics": [
+                  "Modeling, Analysis, and Simulation",
+                  "Prototyping",
+                  "Traceability",
+                  "Interface Management",
+                  "Architecture Frameworks",
+                  "Patterns",
+                  "Design Thinking",
+                  "Biomimicry"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ch4",
+            "name": "Tailoring and Application Considerations",
+            "description": "Guidance on tailoring SE processes and applying them across different domains and system types.",
+            "subjectId": "se-tailoring-application",
+            "startPage": 215,
+            "topics": [
+              "Tailoring Considerations",
+              "SE Methodology/Approach Considerations",
+              "System Types Considerations",
+              "Application of Systems Engineering for Specific Product Sectors"
+            ],
+            "sections": [
+              {
+                "id": "ch4.1",
+                "name": "Tailoring Considerations",
+                "subjectId": "se-tailoring-considerations",
+                "topics": []
+              },
+              {
+                "id": "ch4.2",
+                "name": "SE Methodology/Approach Considerations",
+                "subjectId": "se-tailoring-methodology-approach",
+                "topics": [
+                  "Model-Based SE",
+                  "Agile Systems Engineering",
+                  "Lean Systems Engineering",
+                  "Product Line Engineering (PLE)"
+                ]
+              },
+              {
+                "id": "ch4.3",
+                "name": "System Types Considerations",
+                "subjectId": "se-tailoring-system-types",
+                "topics": [
+                  "Greenfield/Clean Sheet Systems",
+                  "Brownfield/Legacy Systems",
+                  "Commercial-off-the-Shelf (COTS)-Based Systems",
+                  "Software-Intensive Systems",
+                  "Cyber-Physical Systems (CPS)",
+                  "Systems of Systems (SoS)",
+                  "Internet of Things (IoT)/Big Data-Driven Systems",
+                  "Service Systems",
+                  "Enterprise Systems"
+                ]
+              },
+              {
+                "id": "ch4.4",
+                "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+                "subjectId": "se-tailoring-application-specific-product-sector",
+                "topics": [
+                  "Automotive Systems",
+                  "Biomedical and Healthcare Systems",
+                  "Commercial Aerospace Systems",
+                  "Defense Systems",
+                  "Infrastructure Systems",
+                  "Oil and Gas Systems",
+                  "Power & Energy Systems",
+                  "Space Systems",
+                  "Telecommunication Systems",
+                  "Transportation Systems"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ch5",
+            "name": "Systems Engineering in Practice",
+            "description": "Explores practical aspects including competencies, inter-disciplinary relationships, and emerging trends.",
+            "subjectId": "se-in-practice",
+            "startPage": 261,
+            "topics": [
+              "Systems Engineering Competencies",
+              "Diversity, Equity, and Inclusion",
+              "Systems Engineering Relationships",
+              "Digital Engineering",
+              "Systems Engineering Transformation",
+              "Future of SE"
+            ],
+            "sections": [
+              {
+                "id": "ch5.1",
+                "name": "Systems Engineering Competencies",
+                "subjectId": "se-in-practice-competencies",
+                "topics": [
+                  "Difference between Hard and Soft Skills",
+                  "System Engineering Professional Competencies",
+                  "Technical Leadership",
+                  "Ethics"
+                ]
+              },
+              {
+                "id": "ch5.2",
+                "name": "Diversity, Equity, and Inclusion",
+                "subjectId": "se-in-practice-diversity-equity-inclusion",
+                "topics": []
+              },
+              {
+                "id": "ch5.3",
+                "name": "Systems Engineering Relationships to Other Disciplines",
+                "subjectId": "se-in-practice-relationships-to-other-disciplines",
+                "topics": [
+                  "SE and Software Engineering (SWE)",
+                  "SE and Hardware Engineering (HWE)",
+                  "SE and Project Management (PM)",
+                  "SE and Industrial Engineering (IE)",
+                  "SE and Operations Research (OR)"
+                ]
+              },
+              {
+                "id": "ch5.4",
+                "name": "Digital Engineering",
+                "subjectId": "se-in-practice-digital-engineering",
+                "topics": []
+              },
+              {
+                "id": "ch5.5",
+                "name": "Systems Engineering Transformation",
+                "subjectId": "se-in-practice-transformation",
+                "topics": []
+              },
+              {
+                "id": "ch5.6",
+                "name": "Future of SE",
+                "subjectId": "se-in-practice-future",
+                "topics": []
+              }
+            ]
+          },
+          {
+            "id": "ch6",
+            "name": "Case Studies",
+            "description": "Real-world case studies that illustrate the application of SE principles.",
+            "subjectId": "se-case-studies",
+            "startPage": 277,
+            "topics": [
+              "Case Studies Overview"
+            ],
+            "sections": [
+              {
+                "id": "ch6.1",
+                "name": "Case 1: Radiation Therapy—the Therac-25",
+                "subjectId": "se-case-studies-radiation-therapy-therac-25",
+                "topics": []
+              },
+              {
+                "id": "ch6.2",
+                "name": "Case 2: Joining Two Countries—the Øresund Bridge",
+                "subjectId": "se-case-studies-joining-two-countries-oresund-bridge",
+                "topics": []
+              },
+              {
+                "id": "ch6.3",
+                "name": "Case 3: Cybersecurity Considerations in Systems Engineering—the Stuxnet Attack on a Cyber-Physical System",
+                "subjectId": "se-case-studies-cybersecurity-considerations-stuxnet-attack",
+                "topics": []
+              },
+              {
+                "id": "ch6.4",
+                "name": "Case 4: Design for Maintainability—Incubators",
+                "subjectId": "se-case-studies-design-for-maintainability-incubators",
+                "topics": []
+              },
+              {
+                "id": "ch6.5",
+                "name": "Case 5: Artificial Intelligence in Systems Engineering—Autonomous Vehicles",
+                "subjectId": "se-case-studies-artificial-intelligence-autonomous-vehicles",
+                "topics": []
+              },
+              {
+                "id": "ch6.6",
+                "name": "Other Case Studies",
+                "subjectId": "se-case-studies-other",
+                "topics": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "iso-15288",
+        "name": "ISO/IEC/IEEE 15288",
+        "description": "Systems and software engineering – System life cycle processes and standards.",
+        "chapters": [
+            {
+            "id": "clause1",
+            "name": "Scope",
+            "description": "Defines the scope and applicability of the standard.",
+            "subjectId": "iso-15288-scope",
+            "startPage": 1,
+            "topics": [
+                "Applicability",
+                "System life cycle processes"
+            ]
+            },
+            {
+            "id": "clause2",
+            "name": "Normative References",
+            "description": "Lists the normative references that are indispensable for the application of the standard.",
+            "subjectId": "iso-15288-normative-references",
+            "startPage": 3,
+            "topics": []
+            },
+            {
+            "id": "clause3",
+            "name": "Terms and Definitions",
+            "description": "Provides definitions for key terms used throughout the standard.",
+            "subjectId": "iso-15288-terms-definitions",
+            "startPage": 5,
+            "topics": []
+            },
+            {
+            "id": "clause4",
+            "name": "General Principles",
+            "description": "Outlines the overarching principles and concepts that underpin the system life cycle processes.",
+            "subjectId": "iso-15288-general-principles",
+            "startPage": 7,
+            "topics": [
+                "Lifecycle perspective",
+                "Process interactions",
+                "Systems thinking"
+            ]
+            },
+            {
+            "id": "clause5",
+            "name": "Life Cycle Processes",
+            "description": "Describes the set of processes that cover the entire system life cycle, grouped into four process categories.",
+            "subjectId": "iso-15288-life-cycle-processes",
+            "startPage": 9,
+            "topics": [
+                "Agreement Processes",
+                "Organizational Project-Enabling Processes",
+                "Technical Processes",
+                "Technical Management Processes"
+            ],
+            "sections": [
+                {
+                "id": "clause5.1",
+                "name": "Agreement Processes",
+                "description": "Processes to establish agreements between acquirers and suppliers.",
+                "subjectId": "iso-15288-agreement-processes",
+                "topics": [
+                    "Acquisition",
+                    "Supply"
+                ]
+                },
+                {
+                "id": "clause5.2",
+                "name": "Organizational Project-Enabling Processes",
+                "description": "Processes that support the project organization and management infrastructure.",
+                "subjectId": "iso-15288-organizational-project-enabling-processes",
+                "topics": [
+                    "Life Cycle Model Management",
+                    "Infrastructure Management",
+                    "Portfolio Management",
+                    "Human Resource Management",
+                    "Quality Management",
+                    "Knowledge Management"
+                ]
+                },
+                {
+                "id": "clause5.3",
+                "name": "Technical Processes",
+                "description": "Processes directly involved in the development and realization of system solutions.",
+                "subjectId": "iso-15288-technical-processes",
+                "topics": [
+                    "Business or Mission Analysis",
+                    "Stakeholder Needs and Requirements Definition",
+                    "System Requirements Definition",
+                    "System Architecture Definition",
+                    "Design Definition",
+                    "System Analysis",
+                    "Implementation",
+                    "Integration",
+                    "Verification",
+                    "Transition",
+                    "Validation",
+                    "Operation",
+                    "Maintenance",
+                    "Disposal"
+                ]
+                },
+                {
+                "id": "clause5.4",
+                "name": "Technical Management Processes",
+                "description": "Processes that manage and support the technical aspects and performance of projects.",
+                "subjectId": "iso-15288-technical-management-processes",
+                "topics": [
+                    "Project Planning",
+                    "Project Assessment and Control",
+                    "Decision Management",
+                    "Risk Management",
+                    "Configuration Management",
+                    "Information Management",
+                    "Measurement",
+                    "Quality Assurance"
+                ]
+                }
+            ]
+            },
+            {
+            "id": "clause6",
+            "name": "Life Cycle Model Considerations",
+            "description": "Discusses various life cycle model approaches and their suitability for different system development scenarios.",
+            "subjectId": "iso-15288-life-cycle-model-considerations",
+            "startPage": 25,
+            "topics": [
+                "Sequential",
+                "Incremental",
+                "Evolutionary"
+            ]
+            },
+            {
+            "id": "clause7",
+            "name": "Annexes",
+            "description": "Supplementary material including examples, guidance, and additional information.",
+            "subjectId": "iso-15288-annexes",
+            "startPage": 35,
+            "topics": []
+            }
+        ]
+      }
+    ]
+}
