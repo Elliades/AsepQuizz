@@ -19,15 +19,34 @@ export default function Quiz() {
       
       const allQuestions = allQuizzes.flatMap(quiz => quiz.questions);
       
+      // Data Integrity Check 1: Ensure all questions have a topic
+      allQuestions.forEach((q, index) => {
+        if (!q.topic) {
+          console.error(`Question ${index} in allQuestions has no topic!`, q);
+        }
+      });
+      
       const shuffledQuestions = allQuestions
         .sort(() => Math.random() - 0.5)
         .slice(0, QUESTIONS_PER_QUIZ)
-        .map(question => ({
-          ...question,
-          type: question.answers.filter(a => a.isCorrect).length > 1 
-            ? 'multipleChoice' as const 
-            : 'simpleChoice' as const
-        }));
+        .map(question => {
+          // Ensure topic is always defined, even after shuffling
+          const topic = question.topic || "General";
+          return {
+            ...question,
+            type: question.answers.filter(a => a.isCorrect).length > 1 
+              ? 'multipleChoice' as const 
+              : 'simpleChoice' as const,
+            topic: topic, // Explicitly set the topic
+          };
+        });
+      
+      // Data Integrity Check 2: Ensure all shuffled questions have a topic
+      shuffledQuestions.forEach((q, index) => {
+        if (!q.topic) {
+          console.error(`Question ${index} in shuffledQuestions has no topic!`, q);
+        }
+      });
       
       setQuestions(shuffledQuestions);
     }

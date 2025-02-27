@@ -4,7 +4,7 @@
   "subjectId": "se-lifcycle",
   "questions": [
     {
-      "id": "q1",
+      "id": "q1-se-lifecycle-quiz-1",
       "text": "Which of the following are considered typical stages in a system life cycle? (Select all 6 correct answers from the options below)",
       "type": "multiple-choice",
       "difficulty": "medium",
@@ -13,43 +13,43 @@
       "important": false,
       "answers": [
         {
-          "id": "q1-a1",
+          "id": "q1-se-lifecycle-quiz-1-a1",
           "text": "Concept",
           "isCorrect": true,
           "explanation": "The Concept stage is the initial phase where needs and opportunities are identified."
         },
         {
-          "id": "q1-a2",
+          "id": "q1-se-lifecycle-quiz-1-a2",
           "text": "Development",
           "isCorrect": true,
           "explanation": "Development involves detailed design, integration, and testing of the system."
         },
         {
-          "id": "q1-a3",
+          "id": "q1-se-lifecycle-quiz-1-a3",
           "text": "Production",
           "isCorrect": true,
           "explanation": "Production covers the manufacturing or creation of the system components."
         },
         {
-          "id": "q1-a4",
+          "id": "q1-se-lifecycle-quiz-1-a4",
           "text": "Utilization",
           "isCorrect": true,
           "explanation": "Utilization is the operational phase where the system is deployed and used."
         },
         {
-          "id": "q1-a5",
+          "id": "q1-se-lifecycle-quiz-1-a5",
           "text": "Support",
           "isCorrect": true,
           "explanation": "Support involves maintenance and upgrades during the system's operational life."
         },
         {
-          "id": "q1-a6",
+          "id": "q1-se-lifecycle-quiz-1-a6",
           "text": "Retirement",
           "isCorrect": true,
           "explanation": "Retirement is the phase where the system is decommissioned or replaced."
         },
         {
-          "id": "q1-a7",
+          "id": "q1-se-lifecycle-quiz-1-a7",
           "text": "Marketing",
           "isCorrect": false,
           "explanation": "Marketing is not considered a typical stage in the system life cycle per ISO/IEC/IEEE 15288."
@@ -68,7 +68,7 @@
       "notations": []
     },
     {
-      "id": "q2",
+      "id": "q2-se-lifecycle-quiz-1",
       "text": "What is the primary purpose of decision gates in the system life cycle?",
       "type": "simple-choice",
       "difficulty": "medium",
@@ -77,25 +77,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q2-a1",
+          "id": "q2-se-lifecycle-quiz-1-a1",
           "text": "To evaluate readiness to move from one phase to the next",
           "isCorrect": true,
           "explanation": "Decision gates are used to assess whether a project is ready to proceed to the next phase."
         },
         {
-          "id": "q2-a2",
+          "id": "q2-se-lifecycle-quiz-1-a2",
           "text": "To allocate project funding exclusively",
           "isCorrect": false,
           "explanation": "While funding decisions may be part of the process, the primary role of decision gates is to evaluate overall readiness."
         },
         {
-          "id": "q2-a3",
+          "id": "q2-se-lifecycle-quiz-1-a3",
           "text": "To finalize system design without further review",
           "isCorrect": false,
           "explanation": "Decision gates involve multiple reviews and evaluations, not a finalization without further scrutiny."
         },
         {
-          "id": "q2-a4",
+          "id": "q2-se-lifecycle-quiz-1-a4",
           "text": "To serve as technical audits only",
           "isCorrect": false,
           "explanation": "Decision gates are broader than technical audits and cover overall project viability."
@@ -114,7 +114,7 @@
       "notations": []
     },
     {
-      "id": "q3",
+      "id": "q3-se-lifecycle-quiz-1",
       "text": "Which statement best describes the Sequential Life Cycle Model?",
       "type": "simple-choice",
       "difficulty": "medium",
@@ -123,25 +123,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q3-a1",
+          "id": "q3-se-lifecycle-quiz-1-a1",
           "text": "Each phase must be completed fully before the next phase begins",
           "isCorrect": true,
           "explanation": "The Sequential Model requires that one phase is entirely completed before the next starts."
         },
         {
-          "id": "q3-a2",
+          "id": "q3-se-lifecycle-quiz-1-a2",
           "text": "Phases overlap and evolve simultaneously",
           "isCorrect": false,
           "explanation": "Overlapping and iterative phases are characteristics of incremental or evolutionary models, not sequential."
         },
         {
-          "id": "q3-a3",
+          "id": "q3-se-lifecycle-quiz-1-a3",
           "text": "System requirements are defined at the end of the project",
           "isCorrect": false,
           "explanation": "In the Sequential Model, requirements are typically defined early in the project."
         },
         {
-          "id": "q3-a4",
+          "id": "q3-se-lifecycle-quiz-1-a4",
           "text": "It emphasizes rapid prototyping over formal design",
           "isCorrect": false,
           "explanation": "Rapid prototyping is not a hallmark of the traditional sequential approach."
@@ -160,7 +160,7 @@
       "notations": []
     },
     {
-      "id": "q4",
+      "id": "q4-se-lifecycle-quiz-1",
       "text": "Select 3 out of the following 4 characteristics that best describe the Incremental Life Cycle Model Approach.",
       "type": "multiple-choice",
       "difficulty": "medium",
@@ -169,25 +169,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q4-a1",
+          "id": "q4-se-lifecycle-quiz-1-a1",
           "text": "Early partial delivery of system functionality",
           "isCorrect": true,
           "explanation": "Incremental models deliver portions of the system early to provide value sooner."
         },
         {
-          "id": "q4-a2",
+          "id": "q4-se-lifecycle-quiz-1-a2",
           "text": "Iterative refinement of requirements and design",
           "isCorrect": true,
           "explanation": "The model allows for revisiting and refining requirements based on feedback."
         },
         {
-          "id": "q4-a3",
+          "id": "q4-se-lifecycle-quiz-1-a3",
           "text": "A complete system design must be finalized before implementation begins",
           "isCorrect": false,
           "explanation": "This describes a sequential approach, not the incremental approach."
         },
         {
-          "id": "q4-a4",
+          "id": "q4-se-lifecycle-quiz-1-a4",
           "text": "Integration of feedback from earlier increments to improve later stages",
           "isCorrect": true,
           "explanation": "Feedback is critical in the incremental approach to ensure continuous improvement."
@@ -206,7 +206,7 @@
       "notations": []
     },
     {
-      "id": "q5",
+      "id": "q5-se-lifecycle-quiz-1",
       "text": "Which life cycle model approach emphasizes the continuous evolution of system requirements and design?",
       "type": "simple-choice",
       "difficulty": "medium",
@@ -215,25 +215,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q5-a1",
+          "id": "q5-se-lifecycle-quiz-1-a1",
           "text": "Sequential Model",
           "isCorrect": false,
           "explanation": "The Sequential Model does not typically accommodate continuous evolution."
         },
         {
-          "id": "q5-a2",
+          "id": "q5-se-lifecycle-quiz-1-a2",
           "text": "Incremental Model",
           "isCorrect": false,
           "explanation": "Although the Incremental Model involves iterations, its focus is on partial delivery rather than continuous evolution."
         },
         {
-          "id": "q5-a3",
+          "id": "q5-se-lifecycle-quiz-1-a3",
           "text": "Evolutionary Model",
           "isCorrect": true,
           "explanation": "The Evolutionary Model is designed to continuously evolve system requirements and design based on emerging needs and feedback."
         },
         {
-          "id": "q5-a4",
+          "id": "q5-se-lifecycle-quiz-1-a4",
           "text": "Waterfall Model",
           "isCorrect": false,
           "explanation": "The Waterfall Model is a linear approach with little room for evolution once a phase is completed."
@@ -252,7 +252,7 @@
       "notations": []
     },
     {
-      "id": "q6",
+      "id": "q6-se-lifecycle-quiz-1",
       "text": "What is the primary purpose of technical reviews and audits in system life cycle processes?",
       "type": "simple-choice",
       "difficulty": "medium",
@@ -261,25 +261,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q6-a1",
+          "id": "q6-se-lifecycle-quiz-1-a1",
           "text": "To ensure compliance with requirements and identify issues early",
           "isCorrect": true,
           "explanation": "Technical reviews and audits help verify that the system meets defined requirements and standards."
         },
         {
-          "id": "q6-a2",
+          "id": "q6-se-lifecycle-quiz-1-a2",
           "text": "To primarily reduce project cost by eliminating redundant tasks",
           "isCorrect": false,
           "explanation": "While cost reduction can be a benefit, the main focus is on ensuring quality and compliance."
         },
         {
-          "id": "q6-a3",
+          "id": "q6-se-lifecycle-quiz-1-a3",
           "text": "To finalize system design without further iterations",
           "isCorrect": false,
           "explanation": "Reviews and audits are meant to provide feedback for improvement, not to halt iterations."
         },
         {
-          "id": "q6-a4",
+          "id": "q6-se-lifecycle-quiz-1-a4",
           "text": "To allocate additional resources to underperforming teams",
           "isCorrect": false,
           "explanation": "Resource allocation is not the primary function of technical reviews and audits."
@@ -298,7 +298,7 @@
       "notations": []
     },
     {
-      "id": "q7",
+      "id": "q7-se-lifecycle-quiz-1",
       "text": "Select 3 out of the following 4 statements that correctly describe 'life cycle characteristics'.",
       "type": "multiple-choice",
       "difficulty": "medium",
@@ -307,25 +307,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q7-a1",
+          "id": "q7-se-lifecycle-quiz-1-a1",
           "text": "They describe the inherent attributes of the system's development process",
           "isCorrect": true,
           "explanation": "Life cycle characteristics capture attributes such as duration, risk, and cost."
         },
         {
-          "id": "q7-a2",
+          "id": "q7-se-lifecycle-quiz-1-a2",
           "text": "They include factors like risk, cost, and schedule",
           "isCorrect": true,
           "explanation": "These factors are key considerations in managing the system life cycle."
         },
         {
-          "id": "q7-a3",
+          "id": "q7-se-lifecycle-quiz-1-a3",
           "text": "They are fixed and do not change over the course of a project",
           "isCorrect": false,
           "explanation": "Life cycle characteristics can evolve as the project progresses and conditions change."
         },
         {
-          "id": "q7-a4",
+          "id": "q7-se-lifecycle-quiz-1-a4",
           "text": "They influence the tailoring of Systems Engineering processes",
           "isCorrect": true,
           "explanation": "Understanding life cycle characteristics helps in adapting processes to fit the project needs."
@@ -344,7 +344,7 @@
       "notations": []
     },
     {
-      "id": "q8",
+      "id": "q8-se-lifecycle-quiz-1",
       "text": "Which of the following is NOT typically considered a component of system life cycle processes as defined by ISO/IEC/IEEE 15288?",
       "type": "simple-choice",
       "difficulty": "medium",
@@ -353,25 +353,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q8-a1",
+          "id": "q8-se-lifecycle-quiz-1-a1",
           "text": "Agreement Processes",
           "isCorrect": false,
           "explanation": "Agreement Processes are an integral part of the system life cycle, covering acquisition and supply."
         },
         {
-          "id": "q8-a2",
+          "id": "q8-se-lifecycle-quiz-1-a2",
           "text": "Organizational Project-Enabling Processes",
           "isCorrect": false,
           "explanation": "These processes support project management and resource allocation across the lifecycle."
         },
         {
-          "id": "q8-a3",
+          "id": "q8-se-lifecycle-quiz-1-a3",
           "text": "Technical Management Processes",
           "isCorrect": false,
           "explanation": "Technical Management Processes are essential for planning and controlling technical activities."
         },
         {
-          "id": "q8-a4",
+          "id": "q8-se-lifecycle-quiz-1-a4",
           "text": "Marketing Processes",
           "isCorrect": true,
           "explanation": "Marketing Processes are not defined as part of the system life cycle processes in ISO/IEC/IEEE 15288."
@@ -390,7 +390,7 @@
       "notations": []
     },
     {
-      "id": "q9",
+      "id": "q9-se-lifecycle-quiz-1",
       "text": "Select 4 out of the following 5 activities that are part of Technical Management Processes.",
       "type": "multiple-choice",
       "difficulty": "medium",
@@ -399,31 +399,31 @@
       "important": false,
       "answers": [
         {
-          "id": "q9-a1",
+          "id": "q9-se-lifecycle-quiz-1-a1",
           "text": "Project Planning Process",
           "isCorrect": true,
           "explanation": "Project Planning is a key activity under Technical Management Processes."
         },
         {
-          "id": "q9-a2",
+          "id": "q9-se-lifecycle-quiz-1-a2",
           "text": "Risk Management Process",
           "isCorrect": true,
           "explanation": "Risk Management is integral for overseeing uncertainties during system development."
         },
         {
-          "id": "q9-a3",
+          "id": "q9-se-lifecycle-quiz-1-a3",
           "text": "Configuration Management Process",
           "isCorrect": true,
           "explanation": "Configuration Management ensures consistency and control over system changes."
         },
         {
-          "id": "q9-a4",
+          "id": "q9-se-lifecycle-quiz-1-a4",
           "text": "Measurement Process",
           "isCorrect": true,
           "explanation": "Measurement Process is used to quantify system performance and progress."
         },
         {
-          "id": "q9-a5",
+          "id": "q9-se-lifecycle-quiz-1-a5",
           "text": "Human Resource Management Process",
           "isCorrect": false,
           "explanation": "Human Resource Management is categorized under Organizational Project-Enabling Processes rather than Technical Management Processes."
@@ -442,7 +442,7 @@
       "notations": []
     },
     {
-      "id": "q10",
+      "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1",
       "text": "What is the primary purpose of Agreement Processes in the system life cycle?",
       "type": "simple-choice",
       "difficulty": "medium",
@@ -451,25 +451,25 @@
       "important": false,
       "answers": [
         {
-          "id": "q10-a1",
+          "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1-a1",
           "text": "To facilitate formal agreements between acquirers and suppliers regarding system requirements and deliverables",
           "isCorrect": true,
           "explanation": "Agreement Processes are designed to establish mutual understanding and formalize expectations between parties."
         },
         {
-          "id": "q10-a2",
+          "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1-a2",
           "text": "To solely focus on internal team communication",
           "isCorrect": false,
           "explanation": "While internal communication is important, Agreement Processes are externally focused on contractual and mutual commitments."
         },
         {
-          "id": "q10-a3",
+          "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1-a3",
           "text": "To define technical standards without stakeholder input",
           "isCorrect": false,
           "explanation": "Stakeholder input is essential in Agreement Processes to ensure the system meets intended needs."
         },
         {
-          "id": "q10-a4",
+          "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1-a4",
           "text": "To manage system testing and validation only",
           "isCorrect": false,
           "explanation": "Testing and validation are part of technical processes, not the primary focus of Agreement Processes."

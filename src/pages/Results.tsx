@@ -41,6 +41,11 @@ export default function Results() {
     return <div>No questions answered</div>;
   }
 
+  // Data Integrity Check 8: Ensure questions and answers have the same length
+  if (answers.length !== questions.length) {
+    console.error("Results: Answer count doesn't match question count!", answers.length, questions.length);
+  }
+
   const formatTime = (seconds: number): string => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
@@ -57,8 +62,13 @@ export default function Results() {
   };
 
   // Calculate topic statistics
-  const topicStats = questions.reduce((acc: Record<string, TopicStats>, question) => {
-    const topic = question.topic;
+  const topicStats = questions.reduce((acc: Record<string, TopicStats>, question, index) => {
+    // Ensure topic is never undefined
+    const topic = question.topic || "General";
+    
+    // Log for debugging
+    console.log(`Processing question ${index}, topic: ${topic}, id: ${question.id}`);
+    
     if (!acc[topic]) {
       acc[topic] = {
         name: topic,
@@ -74,19 +84,35 @@ export default function Results() {
     }
 
     const answer = answers.find(a => a.questionId === question.id);
+    // Log the answer details
+    console.log(`Answer for question ${question.id}:`, answer);
+    // Data Integrity Check 9: Ensure answer.isCorrect is a boolean
+    if (answer && typeof answer.isCorrect !== 'boolean')
+    {
+      console.error(`Answer for question ${question.id} has non-boolean isCorrect!`, answer)
+    }
+    
     const difficulty = (question.difficulty || 'intermediate') as 'beginner' | 'intermediate' | 'advanced';
     
     acc[topic].total++;
-    if (answer?.isCorrect === false) {
-      acc[topic].errors++;
-    }
-    if (acc[topic].byDifficulty[difficulty]) {
-      acc[topic].byDifficulty[difficulty].total++;
-      
-      if (answer?.isCorrect) {
-        acc[topic].correct++;
-        acc[topic].byDifficulty[difficulty].correct++;
+    
+    // Make sure we check if answer exists at all
+    if (answer) {
+      if (answer.isCorrect === false) {
+        acc[topic].errors++;
       }
+      
+      if (acc[topic].byDifficulty[difficulty]) {
+        acc[topic].byDifficulty[difficulty].total++;
+        
+        if (answer.isCorrect === true) {
+          acc[topic].correct++;
+          acc[topic].byDifficulty[difficulty].correct++;
+          console.log(`Incremented correct count for ${topic}`);
+        }
+      }
+    } else {
+      console.warn(`No answer found for question ID: ${question.id}`);
     }
 
     return acc;

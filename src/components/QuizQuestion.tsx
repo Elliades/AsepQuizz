@@ -38,8 +38,8 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
       return (
         <SimpleChoiceQuestionComponent
           question={question}
-          selectedAnswer={typeof formattedSelectedAnswer === 'string' ? formattedSelectedAnswer : null}
-          onAnswerSelect={(answerId) => onAnswerSelect(answerId)}
+          selectedAnswer={typeof formattedSelectedAnswer === 'string' ? formattedSelectedAnswer : ''}
+          onAnswerSelect={(answerId: string | null) => onAnswerSelect(answerId || '')}
           showExplanation={showExplanation}
         />
       );

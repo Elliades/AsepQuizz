@@ -1,4 +1,4 @@
-import { Subject, QuizSeries, Chapter } from '../types';
+import { Subject, QuizSeries, Chapter, Question } from '../types';
 import subjects from '../data/subjects/index.json';
 
 // Dynamic imports for quiz files
@@ -17,6 +17,9 @@ const loadQuizzes = (): Record<string, QuizSeries[]> => {
     quizzesBySubject[subject.id] = [];
   });
 
+  // Use a Set to track used question IDs
+  const usedQuestionIds = new Set<string>();
+
   // Load quiz data
   Object.values(quizModules).forEach((module: any) => {
     try {
@@ -27,7 +30,20 @@ const loadQuizzes = (): Record<string, QuizSeries[]> => {
         return;
       }
       if (quiz?.subjectId && quizzesBySubject[quiz.subjectId]) {
-        quizzesBySubject[quiz.subjectId].push(quiz);
+        // Ensure question IDs are unique *across all quizzes*
+        const uniqueQuestions: Question[] = quiz.questions.map(question => {
+          let uniqueId = question.id;
+          let counter = 1;
+          // If ID already exists, generate a new unique ID
+          while (usedQuestionIds.has(uniqueId)) {
+            uniqueId = `${question.id}-${counter}`;
+            counter++;
+          }
+          usedQuestionIds.add(uniqueId);
+          return { ...question, id: uniqueId, topic: question.topic || "General" }; // Ensure topic is set
+        });
+
+        quizzesBySubject[quiz.subjectId].push({ ...quiz, questions: uniqueQuestions }); // Use unique questions
         console.log(`Added quiz to subject ${quiz.subjectId}`);
       } else {
         console.warn('Invalid quiz data:', quiz);

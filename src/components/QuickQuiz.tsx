@@ -65,7 +65,10 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
   };
 
   const handleSubmit = (answer: string | null) => {
-    if (!answer) return;
+    if (!answer) {
+      console.warn("handleSubmit called with null answer"); // Debugging
+      return;
+    }
 
     const timeSpent = Math.round((Date.now() - startTime) / 1000);
     let currentScore = 0;
@@ -92,11 +95,16 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
       }
     }
 
+    // Data Integrity Check 3: Ensure isCorrect is a boolean
+    if (typeof isCorrect !== 'boolean') {
+      console.error("isCorrect is not a boolean!", isCorrect);
+    }
+
     // Track user answer
     setUserAnswers(prev => [...prev, {
       questionId: currentQuestion.id,
       answerId: answer,
-      isCorrect,
+      isCorrect: isCorrect, // Ensure isCorrect is always set
       timeSpent
     }]);
 
@@ -108,45 +116,37 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     if (currentQuestionIndex === questions.length - 1) {
       // First collect all user answers
       const allUserAnswers = [...userAnswers];
-      
-      // Create a copy of questions with consistent IDs
-      const questionsWithConsistentIds = questions.map((q, index) => {
-        // Create a unique, deterministic ID
-        const uniqueId = `question_${index}`;
-        return { ...q, id: uniqueId, topic: q.topic || "General" };
-      });
-      
-      // Update answer questionIds to match the new question IDs
-      const updatedAnswers = allUserAnswers.map((answer, index) => {
-        if (index < questionsWithConsistentIds.length) {
-          return { ...answer, questionId: questionsWithConsistentIds[index].id };
-        }
-        return answer;
-      });
-      
-      // Debug data
-      console.log("Questions:", questionsWithConsistentIds);
+
+      // Use the ORIGINAL question IDs, and ensure topic is always defined
+      const questionsWithTopics = questions.map((q) => ({
+        ...q,
+        topic: q.topic || "General",
+      }));
+
+      // NO NEED to create new IDs.  Use the original question.id
+      const updatedAnswers = allUserAnswers.map((answer) => ({
+        ...answer,
+        isCorrect: !!answer.isCorrect, // Ensure isCorrect is boolean
+      }));
+
+      // Data Integrity Check: Ensure questions and answers have the same length
+      if (updatedAnswers.length !== questionsWithTopics.length) {
+        console.error("Answer count doesn't match question count!", updatedAnswers.length, questionsWithTopics.length);
+      }
+
+      // Debug data - now using original IDs
+      console.log("Questions:", questionsWithTopics);
       console.log("Answers:", updatedAnswers);
-      
-      // Make sure the arrays match in length
-      if (updatedAnswers.length !== questionsWithConsistentIds.length) {
-        console.error("Answer count doesn't match question count!");
-      }
-      
-      // Verify ID matching
-      for (let i = 0; i < updatedAnswers.length; i++) {
-        console.log(`Question ${i}: ${questionsWithConsistentIds[i].id} | Answer: ${updatedAnswers[i].questionId}`);
-      }
-      
+
       // Navigate with correctly aligned data
       navigate('/results', {
         state: {
           score: updatedAnswers.filter(answer => answer.isCorrect).length,
-          total: questionsWithConsistentIds.length,
-          answers: updatedAnswers, 
+          total: questionsWithTopics.length,
+          answers: updatedAnswers,
           timeSpent: updatedAnswers.reduce((total, answer) => total + (answer.timeSpent || 0), 0),
-          questions: questionsWithConsistentIds
-        }
+          questions: questionsWithTopics, // Pass questions with original IDs
+        },
       });
     } else {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -161,7 +161,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
         question={question}
         selectedAnswer={question.type === 'multipleChoice' 
           ? (answers[index] || '').split(',')
-          : answers[index]}
+          : answers[index] || ''}
         onAnswerSelect={(answer) => {
           if (Array.isArray(answer)) {
             handleMultipleChoiceAnswerSelect(index, answer);
