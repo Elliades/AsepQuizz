@@ -20,7 +20,8 @@
 - The way to add a new question to a series of questions should be as simple as possible.
 - The way to add a new answer to a question should be as simple as possible.
 - The way to add a new comment to an answer should be as simple as possible.
-- 
+- questions can be of different types: multiple choice, true/false
+- questions are automatically submitted when the user select the number of answers expected (computed from the number of correct answers). there is no "submit" button.
 
 
 # PERSONALITY

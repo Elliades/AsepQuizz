@@ -54,7 +54,7 @@
       "text": "Select all key attributes of a system as defined in Systems Engineering (select 3).",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "Systems Engineering Introduction",
+      "topic": "Systems Engineering attributes",
       "chapter": "Systems Engineering Introduction",
       "important": false,
       "answers": [
@@ -422,7 +422,7 @@
       "text": "Select all practices that are essential for effective Systems Engineering as introduced in the handbook.",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "Systems Engineering Introduction",
+      "topic": "Systems Engineering practicies",
       "chapter": "Systems Engineering Introduction",
       "important": false,
       "answers": [

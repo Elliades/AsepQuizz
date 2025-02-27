@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Question, MultipleChoiceQuestion } from '../types';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Question, MultipleChoiceQuestion, UserAnswer } from '../types';
 import MultipleChoiceQuestionComponent from './questions/MultipleChoiceQuestionComponent';
 import SimpleChoiceQuestionComponent from './questions/SimpleChoiceQuestionComponent';
 import QuizQuestion from './QuizQuestion';
@@ -7,15 +8,22 @@ import QuizQuestion from './QuizQuestion';
 interface QuickQuizProps {
   questions: Question[];
   onComplete?: (score: number) => void;
-  renderResult: (score: number, totalQuestions: number) => React.ReactNode;
+  renderResult?: (score: number, totalQuestions: number) => React.ReactNode;
 }
 
 const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResult }) => {
+  const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const [answers, setAnswers] = useState<(string|null)[]>([]);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [startTime, setStartTime] = useState(Date.now());
+  const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
+
+  useEffect(() => {
+    setStartTime(Date.now());
+  }, [currentQuestionIndex]);
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -23,32 +31,74 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     const newAnswers = [...answers];
     newAnswers[questionIndex] = answerId;
     setAnswers(newAnswers);
+    
+    // Auto submit for simple choice questions
+    if (currentQuestion.type !== 'multipleChoice') {
+      handleSubmit(newAnswers[questionIndex]);
+    }
   };
 
   const handleMultipleChoiceAnswerSelect = (questionIndex: number, answerIds: string[]) => {
+    // Make sure we're working with a clean array and filter out empty strings
+    const cleanAnswerIds = Array.isArray(answerIds) 
+      ? answerIds.filter(id => id.trim() !== '')
+      : [];
+    
+    // Store the answer IDs as a comma-separated string
     const newAnswers = [...answers];
-    newAnswers[questionIndex] = answerIds.join(',');
+    newAnswers[questionIndex] = cleanAnswerIds.join(',');
     setAnswers(newAnswers);
+    
+    // Auto submit when correct number of answers are selected
+    if (currentQuestion.type === 'multipleChoice') {
+      const correctAnswersCount = currentQuestion.answers.filter(answer => answer.isCorrect).length;
+      
+      console.log('Selected answers:', cleanAnswerIds.length);
+      console.log('Expected answers:', correctAnswersCount);
+      console.log('Selected answer IDs:', cleanAnswerIds);
+      
+      // Only submit when the exact number of correct answers are selected
+      if (cleanAnswerIds.length === correctAnswersCount) {
+        handleSubmit(newAnswers[questionIndex]);
+      }
+    }
   };
 
-  const handleSubmit = () => {
-    if (answers[currentQuestionIndex] === undefined || answers[currentQuestionIndex] === null) return;
+  const handleSubmit = (answer: string | null) => {
+    if (!answer) return;
 
+    const timeSpent = Math.round((Date.now() - startTime) / 1000);
     let currentScore = 0;
+    let isCorrect = false;
+
     if (currentQuestion.type === 'multipleChoice') {
-      const selectedAnswerIds = (answers[currentQuestionIndex] || '').split(',');
+      const selectedAnswerIds = answer.split(',').filter(id => id.trim() !== '');
       const correctAnswers = currentQuestion.answers
         .filter(answer => answer.isCorrect)
         .map(answer => answer.id);
 
-      const isCorrect =
+      isCorrect =
         selectedAnswerIds.length === correctAnswers.length &&
-        selectedAnswerIds.every(id => correctAnswers.includes(id));
+        selectedAnswerIds.every(id => correctAnswers.includes(id)) &&
+        correctAnswers.every(id => selectedAnswerIds.includes(id));
 
       if (isCorrect) {
         currentScore = 1;
       }
+    } else {
+      isCorrect = currentQuestion.answers.find(a => a.id === answer)?.isCorrect || false;
+      if (isCorrect) {
+        currentScore = 1;
+      }
     }
+
+    // Track user answer
+    setUserAnswers(prev => [...prev, {
+      questionId: currentQuestion.id,
+      answerId: answer,
+      isCorrect,
+      timeSpent
+    }]);
 
     setScore(prevScore => prevScore + currentScore);
     setShowExplanation(true);
@@ -56,8 +106,48 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
 
   const handleNext = () => {
     if (currentQuestionIndex === questions.length - 1) {
-      setIsComplete(true);
-      onComplete?.(score);
+      // First collect all user answers
+      const allUserAnswers = [...userAnswers];
+      
+      // Create a copy of questions with consistent IDs
+      const questionsWithConsistentIds = questions.map((q, index) => {
+        // Create a unique, deterministic ID
+        const uniqueId = `question_${index}`;
+        return { ...q, id: uniqueId, topic: q.topic || "General" };
+      });
+      
+      // Update answer questionIds to match the new question IDs
+      const updatedAnswers = allUserAnswers.map((answer, index) => {
+        if (index < questionsWithConsistentIds.length) {
+          return { ...answer, questionId: questionsWithConsistentIds[index].id };
+        }
+        return answer;
+      });
+      
+      // Debug data
+      console.log("Questions:", questionsWithConsistentIds);
+      console.log("Answers:", updatedAnswers);
+      
+      // Make sure the arrays match in length
+      if (updatedAnswers.length !== questionsWithConsistentIds.length) {
+        console.error("Answer count doesn't match question count!");
+      }
+      
+      // Verify ID matching
+      for (let i = 0; i < updatedAnswers.length; i++) {
+        console.log(`Question ${i}: ${questionsWithConsistentIds[i].id} | Answer: ${updatedAnswers[i].questionId}`);
+      }
+      
+      // Navigate with correctly aligned data
+      navigate('/results', {
+        state: {
+          score: updatedAnswers.filter(answer => answer.isCorrect).length,
+          total: questionsWithConsistentIds.length,
+          answers: updatedAnswers, 
+          timeSpent: updatedAnswers.reduce((total, answer) => total + (answer.timeSpent || 0), 0),
+          questions: questionsWithConsistentIds
+        }
+      });
     } else {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setShowExplanation(false);
@@ -87,7 +177,22 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
   if (isComplete) {
     return (
       <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
-        {renderResult(score, questions.length)}
+        {renderResult?.(score, questions.length)}
+        
+        <div className="mt-6">
+          <button
+            onClick={() => {
+              setCurrentQuestionIndex(0);
+              setScore(0);
+              setIsComplete(false);
+              setAnswers([]);
+              setShowExplanation(false);
+            }}
+            className="px-4 py-2 bg-primary rounded-lg hover:bg-primary/80"
+          >
+            Try Again
+          </button>
+        </div>
       </div>
     );
   }
@@ -115,15 +220,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
       )}
 
       <div className="flex justify-end">
-        {!showExplanation ? (
-          <button
-            onClick={handleSubmit}
-            disabled={answers[currentQuestionIndex] === undefined || answers[currentQuestionIndex] === null}
-            className="px-4 py-2 bg-blue-600 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            Submit
-          </button>
-        ) : (
+        {showExplanation && (
           <button
             onClick={handleNext}
             className="px-4 py-2 bg-green-600 rounded-lg"

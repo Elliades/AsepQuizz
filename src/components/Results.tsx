@@ -1,5 +1,6 @@
 import React from 'react';
 import { QuizAttempt, UserAnswer } from '../types';
+import { useLocation } from 'react-router-dom';
 
 interface ResultsProps {
   attempt?: QuizAttempt;
@@ -7,20 +8,23 @@ interface ResultsProps {
 }
 
 const Results: React.FC<ResultsProps> = ({ attempt, onRetry }) => {
-  if (!attempt || !attempt.answers || attempt.answers.length === 0) {
+  const location = useLocation();
+  const resultState = location.state;
+
+  // Use either passed attempt or location state
+  const data = attempt || resultState;
+
+  if (!data || !data.answers || data.answers.length === 0) {
     return <div>No results available</div>;
   }
 
   // Calculate statistics
-  const totalQuestions = attempt.answers.length;
-  const correctAnswers = attempt.answers.filter(answer => answer.isCorrect).length;
-  const score = (correctAnswers / totalQuestions) * 100;
-
-  // Fix the reduce operation
-  const totalTime = attempt.answers.reduce((total, answer) => {
+  const totalQuestions = data.total || data.answers.length;
+  const correctAnswers = data.answers.filter(answer => answer.isCorrect).length;
+  const score = data.score || (correctAnswers / totalQuestions) * 100;
+  const totalTime = data.timeSpent || data.answers.reduce((total, answer) => {
     return total + (answer.timeSpent || 0);
   }, 0);
-
   const averageTime = totalTime / totalQuestions;
 
   return (
