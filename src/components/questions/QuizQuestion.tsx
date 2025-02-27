@@ -1,7 +1,7 @@
 import React from 'react';
-import { Question } from '../types';
-import MultipleChoiceQuestionComponent from './questions/MultipleChoiceQuestionComponent';
-import SimpleChoiceQuestionComponent from './questions/SimpleChoiceQuestionComponent';
+import { Question } from '../../types';
+import MultipleChoiceQuestionComponent from './MultipleChoiceQuestionComponent';
+import SimpleChoiceQuestionComponent from './SimpleChoiceQuestionComponent';
 
 interface QuizQuestionProps {
   question: Question;
@@ -18,14 +18,14 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
 }) => {
   // Ensure selectedAnswer is properly formatted for multiple choice questions
   const formattedSelectedAnswer = 
-    question.type === 'multipleChoice' && typeof selectedAnswer === 'string' && selectedAnswer
+    question.type === 'multiple-Choice' && typeof selectedAnswer === 'string' && selectedAnswer
       ? selectedAnswer.split(',').filter(id => id.trim() !== '')
-      : question.type === 'multipleChoice' && !Array.isArray(selectedAnswer)
+      : question.type === 'multiple-Choice' && !Array.isArray(selectedAnswer)
       ? []
       : selectedAnswer;
 
   switch (question.type) {
-    case 'multipleChoice':
+    case 'multiple-Choice':
       return (
         <MultipleChoiceQuestionComponent
           question={question}

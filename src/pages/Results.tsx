@@ -309,7 +309,7 @@ export default function Results() {
                   {question.answers.map(answer => {
                     const isSelected = answers.find(
                       a => a.questionId === question.id
-                    )?.answerId === answer.id;
+                    )?.answerIds.includes(answer.id);
                     return (
                       <div 
                         key={answer.id}

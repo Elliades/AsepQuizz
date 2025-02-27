@@ -1,0 +1,53 @@
+{
+  "id": "quizz-example",
+  "name": "SE Fundamentals - Basic Concepts",
+  "subjectId": "se-fundamentals",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the primary definition of Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q1-a1",
+          "text": "A transdisciplinary and integrative approach to enable successful system realization through the coordination of technical and managerial processes.",
+          "isCorrect": true,
+          "explanation": "Systems Engineering combines various disciplines and processes to ensure that systems meet stakeholder needs effectively."
+        },
+        {
+          "id": "q1-a2",
+          "text": "A purely technical process that focuses only on hardware design.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering is not limited to hardware; it integrates both technical and managerial aspects across the lifecycle."
+        },
+        {
+          "id": "q1-a3",
+          "text": "A financial planning method for resource allocation.",
+          "isCorrect": false,
+          "explanation": "While cost considerations are important, Systems Engineering primarily focuses on the holistic integration of system components."
+        },
+        {
+          "id": "q1-a4",
+          "text": "A set of coding standards for software development.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering encompasses much more than just software coding practices."
+        }
+        ],
+        "tags": [
+          "systems-engineering overall",
+          "concepts",
+          "concepts",
+          "systems"
+        ],
+        "source": "INCOSE Handbook 4.0, Section 1.1",
+        "sourceQuestion": "ChatGPT",
+        "user-tags": [],
+        "comments": [],
+        "notations": []
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 - The app provides a structured way to test knowledge, track progress over time, and identify areas for improvement.
 - The app is intended for **individuals preparing for INCOSE ASEP certification**.
 - The design should focus on **clarity, minimal distractions, and efficient studying**.
+- The app **contains .md files** to help you understand the code and the logic.
+- When a change is done, **create or update the corresponding .md file** to explain the changes. ESPECIALLY when you are doing a big change or modifying the architecture.
 - The app is a single page application.
 - Users can start quiz series on dedicated subjects to focus on specific topics.
 - Users can add comments to the questions and answers, comments are shared and updated in live with the other users
@@ -22,6 +24,19 @@
 - The way to add a new comment to an answer should be as simple as possible.
 - questions can be of different types: multiple choice, true/false
 - questions are automatically submitted when the user select the number of answers expected (computed from the number of correct answers). there is no "submit" button.
+
+# CODE PROCESS
+- When new features is requested, **create a new branch from main** and name it feature/new-feature-name
+- Make an analysis of the code to understand the current state of the code and the best way to implement the new feature.
+- Alert the user about inconcistencies in the code, and suggest improvements.
+- Implement the new feature.
+- Comment the code as explained in the comments section.
+- ALWAYS assess the completeness and correctness of the feature.
+- **Always create or update the corresponding .md file** to explain the changes. ESPECIALLY when you are doing a big change or modifying the architecture.
+- **Always update the changelog.md file** to explain the changes.
+- When the feature is ready, **commit following the git rules** and push the branch to the remote repository.
+- When the feature is ready, push the branch to the remote repository and create a pull request.
+- When the pull request is approved, merge the branch into main.
 
 
 # PERSONALITY
@@ -104,6 +119,7 @@
 ```
 
 # IMPORTANT
+- **FOLLOW THE CODE PROCESS**
 - **Dark theme design with transparency**, similar to tech/code apps.
 - **Questions, answers, and scoring must be stored persistently** to track long-term progress.
 - **Quizzes should be filterable by topic**, with customizable quiz series.
@@ -122,9 +138,16 @@
 - **Use TypeScript for type safety**.
 - **Ensure accessibility (a11y) is respected**.
 - **Use version control for all code contributions**.
+- **FOLLOW THE CODE PROCESS**
 
 # COMMENTS
 - **All comments should be in English**.
 - **Document complex logic and API interactions clearly**.
 - **Use meaningful variable and function names instead of excessive comments**.
+- **When you are doing a big change, create or update the corresponding .md file** to explain the changes. ESPECIALLY when you are doing a big change or modifying the architecture.
+- **Add comments to the code to explain the logic and the purpose of the code:**.
+-- on top of each file, add a comment to explain the purpose of the file.
+-- on top of each function, add a comment to explain the purpose of the function, the parameters and the return value. BUT ALSO explain the logic of the function., and constraints.
+-- on top of the html react code, add a comment to explain the purpose of the code.
+-- on the end of critical lines of code, add a comment to explain the purpose of the line of code.
 

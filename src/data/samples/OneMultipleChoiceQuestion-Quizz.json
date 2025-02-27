@@ -1,0 +1,54 @@
+{
+  "id": "quizz-example",
+  "name": "SE Fundamentals - Basic Concepts",
+  "subjectId": "se-fundamentals",
+  "questions": [
+    {
+      "id": "q10",
+      "text": "Select all practices that are essential for effective Systems Engineering as introduced in the handbook.",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q10-a1",
+          "text": "Defining clear system boundaries",
+          "isCorrect": true,
+          "explanation": "Clear boundaries are crucial for understanding system scope and interactions."
+        },
+        {
+          "id": "q10-a2",
+          "text": "Engaging stakeholders throughout the lifecycle",
+          "isCorrect": true,
+          "explanation": "Continuous stakeholder engagement ensures the system meets real-world needs."
+        },
+        {
+          "id": "q10-a3",
+          "text": "Implementing iterative reviews and feedback loops",
+          "isCorrect": true,
+          "explanation": "Iterative processes help refine requirements and improve the system progressively."
+        },
+        {
+          "id": "q10-a4",
+          "text": "Relying solely on a one-time requirements definition",
+          "isCorrect": false,
+          "explanation": "A one-time requirements phase is inadequate for managing evolving system needs."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "source-question": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    }
+      
+  ]
+}

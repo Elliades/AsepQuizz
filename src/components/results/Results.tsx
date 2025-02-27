@@ -1,5 +1,5 @@
 import React from 'react';
-import { QuizAttempt, UserAnswer } from '../types';
+import { QuizAttempt, UserAnswer } from '../../types';
 import { useLocation } from 'react-router-dom';
 
 interface ResultsProps {

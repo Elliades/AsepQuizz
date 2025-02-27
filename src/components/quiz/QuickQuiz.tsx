@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Question, MultipleChoiceQuestion, UserAnswer } from '../types';
-import MultipleChoiceQuestionComponent from './questions/MultipleChoiceQuestionComponent';
-import SimpleChoiceQuestionComponent from './questions/SimpleChoiceQuestionComponent';
-import QuizQuestion from './QuizQuestion';
+import { Question, MultipleChoiceQuestion, UserAnswer } from '../../types';
+import QuizQuestion from '../questions/QuizQuestion';
 
 interface QuickQuizProps {
   questions: Question[];
@@ -33,7 +31,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     setAnswers(newAnswers);
     
     // Auto submit for simple choice questions
-    if (currentQuestion.type !== 'multipleChoice') {
+    if (currentQuestion.type !== 'multiple-Choice') {
       handleSubmit(newAnswers[questionIndex]);
     }
   };
@@ -50,7 +48,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     setAnswers(newAnswers);
     
     // Auto submit when correct number of answers are selected
-    if (currentQuestion.type === 'multipleChoice') {
+    if (currentQuestion.type === 'multiple-Choice') {
       const correctAnswersCount = currentQuestion.answers.filter(answer => answer.isCorrect).length;
       
       console.log('Selected answers:', cleanAnswerIds.length);
@@ -74,7 +72,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     let currentScore = 0;
     let isCorrect = false;
 
-    if (currentQuestion.type === 'multipleChoice') {
+    if (currentQuestion.type === 'multiple-Choice') {
       const selectedAnswerIds = answer.split(',').filter(id => id.trim() !== '');
       const correctAnswers = currentQuestion.answers
         .filter(answer => answer.isCorrect)
@@ -103,8 +101,8 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     // Track user answer
     setUserAnswers(prev => [...prev, {
       questionId: currentQuestion.id,
-      answerId: answer,
-      isCorrect: isCorrect, // Ensure isCorrect is always set
+      answerIds: answer.split(',').filter(id => id.trim() !== ''),
+      isCorrect: isCorrect,
       timeSpent
     }]);
 
@@ -159,7 +157,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
       <QuizQuestion
         key={question.id}
         question={question}
-        selectedAnswer={question.type === 'multipleChoice' 
+        selectedAnswer={question.type === 'multiple-Choice' 
           ? (answers[index] || '').split(',')
           : answers[index] || ''}
         onAnswerSelect={(answer) => {

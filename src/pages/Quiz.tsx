@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Question } from '../types';
 import { getQuizzesBySubject } from '../utils/quizLoader';
-import QuickQuiz from '../components/QuickQuiz';
+import QuickQuiz from '../components/quiz/QuickQuiz';
 
 const QUESTIONS_PER_QUIZ = 10;
 
@@ -35,7 +35,7 @@ export default function Quiz() {
           return {
             ...question,
             type: question.answers.filter(a => a.isCorrect).length > 1 
-              ? 'multipleChoice' as const 
+              ? 'multiple-Choice' as const 
               : 'simpleChoice' as const,
             topic: topic, // Explicitly set the topic
           };

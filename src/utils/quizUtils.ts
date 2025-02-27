@@ -54,7 +54,7 @@ export const loadQuizzesWithTimeout = async (): Promise<QuizData> => {
             {
               id: '1',
               text: 'Sample Question',
-              type: 'multipleChoice',
+              type: 'multiple-Choice',
               subjectId: 'sample',
               topic: 'sample',
               difficulty: 'beginner',

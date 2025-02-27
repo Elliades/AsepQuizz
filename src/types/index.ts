@@ -1,4 +1,4 @@
-export type QuestionType = 'multipleChoice' | 'simpleChoice' | 'trueFalse' | 'fillInBlank';
+export type QuestionType = 'multiple-Choice' | 'simpleChoice' | 'trueFalse' | 'fillInBlank';
 
 export interface User {
   id: string;
@@ -25,7 +25,7 @@ export interface BaseQuestion {
 }
 
 export interface MultipleChoiceQuestion extends BaseQuestion {
-  type: 'multipleChoice';
+  type: 'multiple-Choice';
   answers: Answer[];
   numberToChoose?: number;
 }

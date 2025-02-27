@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Results from './Results';
-import { QuizAttempt } from '../types';
+import { QuizAttempt } from '../../types';
 
 describe('Results Component', () => {
   const mockAttempt: QuizAttempt = {
@@ -12,7 +12,7 @@ describe('Results Component', () => {
     answers: [
       {
         questionId: 'q1',
-        answerId: 'a1',
+        answerIds: ['a1'],
         isCorrect: true,
         timeSpent: 30
       }
