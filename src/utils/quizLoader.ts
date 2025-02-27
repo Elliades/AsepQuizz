@@ -106,4 +106,33 @@ export const getQuizById = (quizId: string): QuizSeries | null => {
     if (quiz) return quiz;
   }
   return null;
-}; 
+};
+
+/**
+ * Gets random questions from all quizzes
+ * 
+ * @param count Number of questions to fetch (default: 10)
+ * @returns Array of random questions
+ */
+export function getRandomQuestions(count: number = 10): Question[] {
+  try {
+    // Get all quizzes from all subjects
+    const allQuizzes = Object.values(quizzesBySubject).flat();
+    
+    // Extract all questions from all quizzes
+    const allQuestions = allQuizzes.flatMap(quiz => quiz.questions);
+    
+    // Shuffle the questions (Fisher-Yates algorithm)
+    const shuffledQuestions = [...allQuestions];
+    for (let i = shuffledQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledQuestions[i], shuffledQuestions[j]] = [shuffledQuestions[j], shuffledQuestions[i]];
+    }
+    
+    // Take the requested number of questions
+    return shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
+  } catch (error) {
+    console.error('Error fetching random questions:', error);
+    return [];
+  }
+} 

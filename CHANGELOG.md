@@ -82,3 +82,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented TailwindCSS for styling
 - Created base component structure
 - Established type definitions 
+
+## [Unreleased]
+
+### Added
+- Random Quiz feature that selects questions from multiple quizzes
+- Enhanced question selection algorithm with Fisher-Yates shuffle
+- Support for filtering random questions by topic and difficulty
+
+### Changed
+- Updated Quiz_Page component to handle random question selection
+- Improved quiz loading with better error handling 
