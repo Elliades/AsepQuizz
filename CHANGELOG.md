@@ -94,6 +94,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shine effect for correct answers
 - Smooth transitions between animation states
 - Improved visual feedback for quiz interactions
+- Answer locking feature to prevent changing answers after submission
+- Visual indicators for locked answers (reduced opacity, disabled hover effects)
+- Tracking of submitted questions using a Set of question IDs
 
 ### Changed
 - Updated Quiz_Page component to handle random question selection
@@ -101,6 +104,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactored AnswerFeedback component to handle both correct and incorrect answers
 - Updated CSS animations to be more subtle and professional
 - Improved timing of animations for better user experience
+- Updated SimpleChoiceQuestionComponent and MultipleChoiceQuestionComponent to support answer locking
+- Enhanced Quiz and QuickQuiz components to track submitted questions
+- Improved visual feedback for submitted questions
 
 ### Fixed
 - Type safety issues with difficulty levels
@@ -115,6 +121,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced quizLoader.ts with detailed logging
 - Improved type definitions
 - Added safety checks for difficulty levels
+- Fixed `setStartTime` error in QuickQuiz component
+- Added proper state management for quiz timing
+- Improved error handling and null checks in quiz components
 
 ## [0.1.0] - 2024-03-XX
 

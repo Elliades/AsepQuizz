@@ -1,13 +1,13 @@
 import React from 'react';
 import QuickQuiz from '../../components/quiz/QuickQuiz';
 import sampleQuizData from '../../data/samples/OneSimpleChoiceQuestion-Quizz.json';
-import { SimpleChoiceQuestion } from '../../types';
+import { SimpleChoiceQuestion, QuizResult } from '../../types';
 
 const SimpleChoiceSample = () => {
   // Transform the question to match required format
   const question: SimpleChoiceQuestion = {
     ...sampleQuizData.questions[0],
-    type: 'simple-Choice',
+    type: 'simple-choice',
     subjectId: sampleQuizData.subjectId,
     comments: [],
     tags: [],
@@ -15,8 +15,8 @@ const SimpleChoiceSample = () => {
     difficulty: sampleQuizData.questions[0].difficulty as "beginner" | "intermediate" | "advanced"
   };
 
-  const handleQuizComplete = (score: number) => {
-    console.log(`Quiz completed with score: ${score}`);
+  const handleQuizComplete = (result: QuizResult) => {
+    console.log(`Quiz completed with score: ${result.score}`);
   };
 
   const renderResult = (score: number, totalQuestions: number) => (

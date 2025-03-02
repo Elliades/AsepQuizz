@@ -121,8 +121,12 @@ const SwipeableNavigation: React.FC<SwipeableNavigationProps> = ({
           {/* Spacer when no back arrow */}
           {isFirstQuestion && <div></div>}
 
-          {/* Next (Right) Arrow - Only visible when needed */}
-          {showNext ? (
+          {/* Next (Right) Arrow - Only visible when needed 
+          - showNext is true when the current question has been answered
+          - isNextEnabled is true when the current question has been answered and the next question is not the last question
+          - isLastQuestion is true when the current question is the last question
+          */}
+          {showNext  ? (
             <motion.div
               className={`
                 pointer-events-auto

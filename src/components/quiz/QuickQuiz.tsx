@@ -1,204 +1,155 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Question, UserAnswer } from '@/types';
-import QuizQuestion from '../questions/QuizQuestion';
+import { Question, UserAnswer, MultipleChoiceQuestion, QuizResult } from '@/types';
 import SwipeableNavigation from '../navigation/SwipeableNavigation';
 import AnswerFeedback from '../feedback/AnswerFeedback';
+import SimpleChoiceQuestionComponent from '../questions/SimpleChoiceQuestionComponent';
+import MultipleChoiceQuestionComponent from '../questions/MultipleChoiceQuestionComponent';
+import { useQuizNavigation } from '../../hooks/useQuizNavigation';
 
 interface QuickQuizProps {
   questions: Question[];
-  onComplete?: (score: number) => void;
+  onComplete: (result: QuizResult) => void;
   renderResult?: (score: number, totalQuestions: number) => React.ReactNode;
 }
 
-const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
+/**
+ * QuickQuiz component for a simplified quiz experience.
+ * It tracks submitted questions and prevents changing answers after submission.
+ * 
+ * @param questions - Array of questions for the quiz
+ * @param onComplete - Callback function when the quiz is completed
+ * @param renderResult - Optional function to render custom result UI
+ */
+const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResult }) => {
   const navigate = useNavigate();
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
-  const [answers, setAnswers] = useState<(string|null)[]>([]);
+  const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
   const [showExplanation, setShowExplanation] = useState(false);
-  const [startTime, setStartTime] = useState(Date.now());
+  const [startTime, setStartTime] = useState<number>(Date.now());
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const quizContainerRef = useRef<HTMLDivElement>(null);
-  const [showFeedback, setShowFeedback] = useState(false);
-  const [isLastAnswerCorrect, setIsLastAnswerCorrect] = useState(false);
+  
+  // Use the centralized navigation hook
+  const navigation = useQuizNavigation(questions, (data) => {
+    // This will be called when the quiz is completed
+    completeQuiz();
+  });
 
+  // Reset the start time when the component mounts
   useEffect(() => {
-    setStartTime(Date.now());
-  }, [currentQuestionIndex]);
+    const now = Date.now();
+    setStartTime(now);
+  }, []);
 
-  const currentQuestion = questions[currentQuestionIndex];
+  // Safety check for quiz data
+  if (!questions || questions.length === 0) {
+    return <div>No questions available</div>;
+  }
 
-  const handleAnswerSelect = (questionIndex: number, answerId: string | null) => {
-    const newAnswers = [...answers];
-    newAnswers[questionIndex] = answerId;
-    setAnswers(newAnswers);
-    
-    // Auto submit for simple choice questions
-    if (currentQuestion.type !== 'multiple-Choice') {
-      handleSubmit(newAnswers[questionIndex]);
+  const currentQuestion = questions[navigation.currentIndex];
+  
+  // First, let's implement a checkIfCorrect function since it's missing
+  const checkIfCorrect = (question: Question, selectedAnswers: string[]): boolean => {
+    if (question.type === 'multiple-choice') {
+      const correctAnswerIds = question.answers
+        .filter(a => a.isCorrect)
+        .map(a => a.id);
+      
+      return selectedAnswers.length === correctAnswerIds.length &&
+        selectedAnswers.every(id => correctAnswerIds.includes(id));
+    } else {
+      // For simple-choice
+      return question.answers.find(a => a.id === selectedAnswers[0])?.isCorrect || false;
     }
   };
 
-  const handleMultipleChoiceAnswerSelect = (questionIndex: number, answerIds: string[]) => {
-    // Make sure we're working with a clean array and filter out empty strings
-    const cleanAnswerIds = Array.isArray(answerIds) 
-      ? answerIds.filter(id => id.trim() !== '')
-      : [];
-    
-    // Store the answer IDs as a comma-separated string
-    const newAnswers = [...answers];
-    newAnswers[questionIndex] = cleanAnswerIds.join(',');
-    setAnswers(newAnswers);
-    
-    // Auto submit when correct number of answers are selected
-    if (currentQuestion.type === 'multiple-Choice') {
-      const correctAnswersCount = currentQuestion.answers.filter(answer => answer.isCorrect).length;
-      
-      console.log('Selected answers:', cleanAnswerIds.length);
-      console.log('Expected answers:', correctAnswersCount);
-      console.log('Selected answer IDs:', cleanAnswerIds);
-      
-      // Only submit when the exact number of correct answers are selected
-      if (cleanAnswerIds.length === correctAnswersCount) {
-        handleSubmit(newAnswers[questionIndex]);
-      }
-    }
-  };
-
-  const handleSubmit = (answer: string | null) => {
-    if (!answer) {
-      console.warn("handleSubmit called with null answer"); // Debugging
+  // Update handleSimpleChoiceAnswer to use our new navigation hook
+  const handleSimpleChoiceAnswer = (questionId: string, answerId: string | null) => {
+    if (navigation.isCurrentQuestionSubmitted) {
+      // Don't allow changing answers for submitted questions
       return;
     }
+    
+    setAnswers(prev => ({
+      ...prev,
+      [questionId]: answerId || '' // Convert null to empty string
+    }));
+    
+    // Mark the question as submitted when an answer is selected
+    if (answerId !== null) {
+      // Call handleSubmit with the selected answer
+      handleSubmit([answerId]);
+    }
+  };
 
-    const timeSpent = Math.round((Date.now() - startTime) / 1000);
-    let currentScore = 0;
-    let isCorrect = false;
+  // Update handleMultipleChoiceAnswer to use our new navigation hook
+  const handleMultipleChoiceAnswer = (questionId: string, answerIds: string[]) => {
+    if (navigation.isCurrentQuestionSubmitted) {
+      // Don't allow changing answers for submitted questions
+      return;
+    }
+    
+    setAnswers(prev => ({
+      ...prev,
+      [questionId]: answerIds
+    }));
+    
+    // For multiple choice, we need to check if the correct number of answers is selected
+    const question = questions.find(q => q.id === questionId) as MultipleChoiceQuestion;
+    if (!question) return;
+    
+    const correctAnswersCount = question.answers.filter(a => a.isCorrect).length;
+    
+    // Mark as submitted only if the correct number of answers is selected
+    if (answerIds.length === correctAnswersCount) {
+      // Call handleSubmit with the selected answers
+      handleSubmit(answerIds);
+    }
+  };
 
-    if (currentQuestion.type === 'multiple-Choice') {
-      const selectedAnswerIds = answer.split(',').filter(id => id.trim() !== '');
-      const correctAnswers = currentQuestion.answers
-        .filter(answer => answer.isCorrect)
-        .map(answer => answer.id);
-
-      isCorrect =
-        selectedAnswerIds.length === correctAnswers.length &&
-        selectedAnswerIds.every(id => correctAnswers.includes(id)) &&
-        correctAnswers.every(id => selectedAnswerIds.includes(id));
-
-      if (isCorrect) {
-        currentScore = 1;
-      }
-    } else {
-      isCorrect = currentQuestion.answers.find(a => a.id === answer)?.isCorrect || false;
-      if (isCorrect) {
-        currentScore = 1;
-      }
+  const handleSubmit = (selectedAnswers: string[]) => {
+    const isCorrect = checkIfCorrect(currentQuestion, selectedAnswers);
+    
+    // Update score immediately when answer is correct
+    if (isCorrect) {
+      setScore(prevScore => prevScore + 1);
     }
 
-    // Show feedback animation
-    setIsLastAnswerCorrect(isCorrect);
-    setShowFeedback(true);
-    
-    // Hide feedback after a delay
-    setTimeout(() => {
-      setShowFeedback(false);
-    }, 1500);
-
-    // Track user answer
-    setUserAnswers(prev => [...prev, {
+    // Create new user answer
+    const newAnswer: UserAnswer = {
       questionId: currentQuestion.id,
-      answerIds: answer.split(',').filter(id => id.trim() !== ''),
-      isCorrect: isCorrect,
-      timeSpent
-    }]);
+      answerIds: selectedAnswers,
+      isCorrect,
+      timeSpent: (Date.now() - startTime) / 1000,
+    };
 
-    setScore(prevScore => prevScore + currentScore);
+    // Add to user answers
+    setUserAnswers(prev => [...prev, newAnswer]);
+
+    // Mark question as submitted using our navigation hook
+    navigation.markQuestionSubmitted(currentQuestion.id, true);
+    
+    // Show explanation
     setShowExplanation(true);
   };
-
-  const handleNext = () => {
-    if (currentQuestionIndex === questions.length - 1) {
-      // First collect all user answers
-      const allUserAnswers = [...userAnswers];
-
-      // Use the ORIGINAL question IDs, and ensure topic is always defined
-      const questionsWithTopics = questions.map((q) => ({
-        ...q,
-        topic: q.topic || "General",
-      }));
-
-      // NO NEED to create new IDs.  Use the original question.id
-      const updatedAnswers = allUserAnswers.map((answer) => ({
-        ...answer,
-        isCorrect: !!answer.isCorrect, // Ensure isCorrect is boolean
-      }));
-
-      // Data Integrity Check: Ensure questions and answers have the same length
-      if (updatedAnswers.length !== questionsWithTopics.length) {
-        console.error("Answer count doesn't match question count!", updatedAnswers.length, questionsWithTopics.length);
-      }
-
-      // Debug data - now using original IDs
-      console.log("Questions:", questionsWithTopics);
-      console.log("Answers:", updatedAnswers);
-
-      // Navigate with correctly aligned data
-      navigate('/results', {
-        state: {
-          score: updatedAnswers.filter(answer => answer.isCorrect).length,
-          total: questionsWithTopics.length,
-          answers: updatedAnswers,
-          timeSpent: updatedAnswers.reduce((total, answer) => total + (answer.timeSpent || 0), 0),
-          questions: questionsWithTopics, // Pass questions with original IDs
-        },
-      });
-    } else {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setShowExplanation(false);
-    }
-  };
-
-  const handlePrevious = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(currentQuestionIndex - 1);
-      setShowExplanation(!!answers[currentQuestionIndex - 1]); // Show explanation if the question was answered
-    }
-  };
-
-  const shouldShowNextArrow = () => {
-    // Always show next arrow for answered questions
-    if (showExplanation) return true;
+  
+  const completeQuiz = () => {
+    const endTime = Date.now();
+    const timeSpent = (endTime - startTime) / 1000;
     
-    // Show next arrow if we're viewing a previously answered question
-    return !!answers[currentQuestionIndex];
-  };
-
-  const isNextArrowEnabled = () => {
-    // Enable (green) only after submitting the current question
-    return showExplanation && !answers[currentQuestionIndex + 1];
-  };
-
-  const renderQuestion = (question: Question, index: number) => {
-    return (
-      <QuizQuestion
-        key={question.id}
-        question={question}
-        selectedAnswer={question.type === 'multiple-Choice' 
-          ? (answers[index] || '').split(',')
-          : answers[index] || ''}
-        onAnswerSelect={(answer) => {
-          if (Array.isArray(answer)) {
-            handleMultipleChoiceAnswerSelect(index, answer);
-          } else {
-            handleAnswerSelect(index, answer);
-          }
-        }}
-        showExplanation={showExplanation}
-      />
-    );
+    const result: QuizResult = {
+      score,
+      totalQuestions: questions.length,
+      userAnswers,
+      startTime: new Date(startTime),
+      endTime: new Date(endTime),
+      timeSpent
+    };
+    
+    setIsComplete(true);
+    onComplete(result);
   };
 
   if (isComplete) {
@@ -209,11 +160,17 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
         <div className="mt-6">
           <button
             onClick={() => {
-              setCurrentQuestionIndex(0);
+              navigation.setState({
+                currentIndex: 0,
+                furthestViewedIndex: 0,
+                submittedQuestionIds: new Set(),
+                isAutoAdvancing: false
+              });
               setScore(0);
               setIsComplete(false);
-              setAnswers([]);
+              setAnswers({});
               setShowExplanation(false);
+              setUserAnswers([]);
             }}
             className="px-4 py-2 bg-primary rounded-lg hover:bg-primary/80"
           >
@@ -227,15 +184,31 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
   return (
     <div ref={quizContainerRef} className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
       <div className="mb-4 flex justify-between items-center">
-        <h2 className="text-xl font-bold">Question {currentQuestionIndex + 1}/{questions.length}</h2>
+        <h2 className="text-xl font-bold">Question {navigation.currentIndex + 1}/{questions.length}</h2>
         <span className="text-gray-400">Score: {score}</span>
       </div>
 
       <div className="mb-6">
-        {renderQuestion(currentQuestion, currentQuestionIndex)}
+        {currentQuestion.type === 'simple-choice' ? (
+          <SimpleChoiceQuestionComponent
+            question={currentQuestion}
+            selectedAnswer={answers[currentQuestion.id] as string | null}
+            onAnswerSelect={(answerId) => handleSimpleChoiceAnswer(currentQuestion.id, answerId)}
+            showExplanation={showExplanation || navigation.isCurrentQuestionSubmitted}
+            isSubmitted={navigation.isCurrentQuestionSubmitted}
+          />
+        ) : (
+          <MultipleChoiceQuestionComponent
+            question={currentQuestion as MultipleChoiceQuestion}
+            selectedAnswers={(answers[currentQuestion.id] as string[]) || []}
+            onAnswerSelect={(answerIds) => handleMultipleChoiceAnswer(currentQuestion.id, answerIds)}
+            showExplanation={showExplanation || navigation.isCurrentQuestionSubmitted}
+            isSubmitted={navigation.isCurrentQuestionSubmitted}
+          />
+        )}
       </div>
 
-      {showExplanation && (
+      {showExplanation && currentQuestion && (
         <div className="mb-4 p-4 bg-gray-700 rounded-lg">
           <h3 className="font-bold mb-2">Explanation:</h3>
           {currentQuestion.answers
@@ -246,18 +219,13 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
         </div>
       )}
 
-      <AnswerFeedback 
-        isCorrect={isLastAnswerCorrect} 
-        isVisible={showFeedback} 
-      />
-
       <SwipeableNavigation
-        onNext={handleNext}
-        onPrevious={handlePrevious}
-        showNext={shouldShowNextArrow()}
-        isNextEnabled={isNextArrowEnabled()}
-        isLastQuestion={currentQuestionIndex === questions.length - 1}
-        isFirstQuestion={currentQuestionIndex === 0}
+        onNext={navigation.goToNext}
+        onPrevious={navigation.goToPrevious}
+        showNext={navigation.shouldShowNextButton()}
+        isNextEnabled={true}
+        isLastQuestion={navigation.isLastQuestion}
+        isFirstQuestion={navigation.isFirstQuestion}
         containerRef={quizContainerRef}
       />
     </div>

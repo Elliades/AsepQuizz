@@ -22,11 +22,11 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
   // Type guards to check question type
   const isMultipleChoiceQuestion = (question: Question): question is MultipleChoiceQuestion => {
-    return question.type === 'multiple-Choice';
+    return question.type === 'multiple-choice';
   };
 
   const isSimpleChoiceQuestion = (question: Question): question is SimpleChoiceQuestion => {
-    return question.type === 'simple-Choice';
+    return question.type === 'simple-choice';
   };
 
   // Handle multiple-choice question

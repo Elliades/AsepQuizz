@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Question } from '../types';
+import { Question, QuizResult } from '../types';
 import { getQuizzesBySubject, getRandomQuestions } from '../utils/quizLoader';
 import QuickQuiz from '../components/quiz/QuickQuiz';
 
@@ -21,8 +21,8 @@ export default function Quiz_Page() {
       const processedQuestions = randomQuestions.map(question => ({
         ...question,
         type: question.answers.filter(a => a.isCorrect).length > 1 
-          ? 'multiple-Choice' as const 
-          : 'simple-Choice' as const,
+          ? 'multiple-choice' as const 
+          : 'simple-choice' as const,
         topic: question.topic || "General", // Ensure topic is set
       }));
       
@@ -30,22 +30,30 @@ export default function Quiz_Page() {
     }
   }, [seriesId]);
 
-  const handleQuizComplete = (score: number) => {
+  const handleQuizComplete = (result: QuizResult) => {
     navigate('/results', { 
       state: { 
-        score,
+        score: result.score,
         total: questions.length,
-        timeSpent: Math.floor((new Date().getTime() - quizStartTime.getTime()) / 1000),
-        questions
+        timeSpent: result.timeSpent,
+        questions,
+        userAnswers: result.userAnswers
       }
     });
   };
 
   const renderResult = (score: number, totalQuestions: number) => (
-    <>
+    <div className="text-center p-6 bg-gray-800 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Quiz Complete!</h2>
-      <p className="text-xl">Your score: {score}/{totalQuestions}</p>
-    </>
+      <p className="text-xl mb-4">Your score: {score}/{totalQuestions}</p>
+      <p className="text-lg">
+        {score === totalQuestions 
+          ? 'Perfect score! Great job!' 
+          : score > totalQuestions / 2 
+            ? 'Good work! Keep practicing to improve.' 
+            : 'Keep studying and try again!'}
+      </p>
+    </div>
   );
 
   if (!questions.length) {
