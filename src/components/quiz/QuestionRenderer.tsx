@@ -30,8 +30,8 @@ const QuestionRenderer: React.FC<QuestionRendererProps> = ({
     return (
       <SimpleChoiceQuestionComponent
         question={question as SimpleChoiceQuestion}
-        selectedAnswer={selectedAnswers.length > 0 ? selectedAnswers[0] : ''}
-        onAnswerSelect={(answerId) => onAnswerSelect(answerId || '')}
+        selectedAnswer={selectedAnswers[0] || ''}
+        onAnswerSelect={(answerId) => onAnswerSelect(answerId)}
         showExplanation={showExplanation}
         isSubmitted={isSubmitted}
       />

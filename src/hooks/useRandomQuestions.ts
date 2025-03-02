@@ -38,25 +38,43 @@ export function useRandomQuestions({
       // Get random questions directly
       let randomQuestions = getRandomQuestions(count);
       
+      // Ensure questions are unique by ID
+      const uniqueQuestions: Question[] = [];
+      const seenIds = new Set<string>();
+      
+      for (const question of randomQuestions) {
+        if (!seenIds.has(question.id)) {
+          seenIds.add(question.id);
+          uniqueQuestions.push(question);
+          
+          // Break if we have enough unique questions
+          if (uniqueQuestions.length >= count) {
+            break;
+          }
+        }
+      }
+      
       // Apply filters if provided
+      let filteredQuestions = [...uniqueQuestions];
+      
       if (topics.length > 0) {
-        randomQuestions = randomQuestions.filter(q => 
+        filteredQuestions = filteredQuestions.filter(q => 
           q.topic && topics.includes(q.topic)
         );
       }
       
       if (difficulty.length > 0) {
-        randomQuestions = randomQuestions.filter(q => 
+        filteredQuestions = filteredQuestions.filter(q => 
           q.difficulty && difficulty.includes(q.difficulty)
         );
       }
       
       // Exclude specific question IDs
       if (excludeIds.length > 0) {
-        randomQuestions = randomQuestions.filter(q => !excludeIds.includes(q.id));
+        filteredQuestions = filteredQuestions.filter(q => !excludeIds.includes(q.id));
       }
       
-      setQuestions(randomQuestions);
+      setQuestions(filteredQuestions);
       hasLoaded.current = true;
     } catch (err) {
       setError(err instanceof Error ? err : new Error('Failed to fetch random questions'));

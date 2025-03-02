@@ -296,44 +296,61 @@ export default function Results_Pages() {
       {/* Questions to Review */}
       <div className="card mb-8">
         <h2 className="text-xl font-semibold mb-6">Questions to Review</h2>
-        <div className="overflow-x-auto">
-          <div className="flex space-x-4 pb-4">
-            {incorrectQuestions.map((question, index) => (
-              <div 
-                key={question.id} 
-                className="flex-none w-80 bg-gray-800 p-4 rounded-lg"
-              >
-                <div className="text-sm text-gray-400 mb-2">Question {index + 1}</div>
-                <p className="font-medium mb-4">{question.text}</p>
-                <div className="space-y-2">
-                  {question.answers.map(answer => {
-                    const isSelected = answers.find(
-                      a => a.questionId === question.id
-                    )?.answerIds.includes(answer.id);
-                    return (
-                      <div 
-                        key={answer.id}
-                        className={`p-2 rounded ${
-                          answer.isCorrect 
-                            ? 'bg-green-500/20 border-green-500' 
-                            : isSelected 
-                              ? 'bg-red-500/20 border-red-500'
-                              : 'bg-gray-700'
-                        } border`}
-                      >
-                        {answer.text}
-                        {(answer.isCorrect || isSelected) && (
-                          <p className="text-sm text-gray-400 mt-1">
-                            {answer.explanation}
-                          </p>
-                        )}
-                      </div>
-                    );
-                  })}
+        <div className="relative">
+          <div 
+            className="
+              overflow-x-auto
+              pb-4
+              scrollbar-thin
+              scrollbar-thumb-primary
+              scrollbar-track-gray-800
+              scrollbar-thumb-rounded-full
+              scrollbar-track-rounded-full
+              hover:scrollbar-thumb-primary/80
+              transition-colors
+            "
+          >
+            <div className="flex space-x-4">
+              {incorrectQuestions.map((question, index) => (
+                <div 
+                  key={question.id} 
+                  className="flex-none w-80 bg-gray-800 p-4 rounded-lg"
+                >
+                  <div className="text-sm text-gray-400 mb-2">Question {index + 1}</div>
+                  <p className="font-medium mb-4">{question.text}</p>
+                  <div className="space-y-2">
+                    {question.answers.map(answer => {
+                      const isSelected = answers.find(
+                        a => a.questionId === question.id
+                      )?.answerIds.includes(answer.id);
+                      return (
+                        <div 
+                          key={answer.id}
+                          className={`p-2 rounded ${
+                            answer.isCorrect 
+                              ? 'bg-green-500/20 border-green-500' 
+                              : isSelected 
+                                ? 'bg-red-500/20 border-red-500'
+                                : 'bg-gray-700'
+                          } border`}
+                        >
+                          {answer.text}
+                          {(answer.isCorrect || isSelected) && (
+                            <p className="text-sm text-gray-400 mt-1">
+                              {answer.explanation}
+                            </p>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+          
+          <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-gray-900 to-transparent pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-gray-900 to-transparent pointer-events-none" />
         </div>
       </div>
 

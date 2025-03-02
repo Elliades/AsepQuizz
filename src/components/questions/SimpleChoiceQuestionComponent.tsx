@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useMemo } from 'react';
 import { Question } from '../../types';
 import QuestionLayout from './QuestionLayout';
 import { motion } from 'framer-motion';
@@ -44,6 +44,11 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({
         }
     }, []);
 
+    // Randomize answers order on initial render only
+    const randomizedAnswers = useMemo(() => {
+        return [...question.answers].sort(() => Math.random() - 0.5);
+    }, [question.id]);
+
     const handleAnswerClick = (answerId: string) => {
         // If the question is already submitted, don't allow changing the answer
         if (isSubmitted) {
@@ -75,19 +80,21 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({
 
     return (
         <QuestionLayout question={question}>
-            {question.answers.map((answer, index) => (
+            {randomizedAnswers.map((answer, index) => (
                 <motion.div
                     key={answer.id}
                     ref={(el) => setAnswerRef(el, answer.id)}
                     className={`
                         p-4 mb-2 rounded-lg border
                         ${selectedAnswer === answer.id
-                            ? answer.isCorrect && showExplanation
+                            ? answer.isCorrect && isSubmitted
                                 ? 'bg-green-500/20 border-green-500'
-                                : !answer.isCorrect && showExplanation
+                                : !answer.isCorrect && isSubmitted
                                     ? 'bg-red-500/20 border-red-500'
                                     : 'bg-primary/20 border-primary'
-                            : 'bg-gray-800 hover:bg-gray-700 border-gray-700'
+                            : isSubmitted && answer.isCorrect
+                                ? 'bg-green-500/20 border-green-500 opacity-80'
+                                : 'bg-gray-800 hover:bg-gray-700 border-gray-700'
                         }
                         ${isSubmitted ? 'opacity-80' : 'cursor-pointer'}
                     `}
@@ -99,7 +106,7 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({
                     transition={{ duration: 0.2, delay: index * 0.05 }}
                 >
                     {answer.text}
-                    {showExplanation && selectedAnswer === answer.id && (
+                    {isSubmitted && (answer.isCorrect || selectedAnswer === answer.id) && (
                         <p className="mt-2 text-sm text-gray-400">{answer.explanation}</p>
                     )}
                 </motion.div>

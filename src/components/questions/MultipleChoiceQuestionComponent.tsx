@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { MultipleChoiceQuestion } from '@/types';
 import { motion } from 'framer-motion';
 import AnswerFeedback from '../feedback/AnswerFeedback';
@@ -97,13 +97,18 @@ const MultipleChoiceQuestionComponent: React.FC<MultipleChoiceQuestionProps> = (
     }
   }, [isSubmitted]);
   
+  // Randomize answers order on initial render only
+  const randomizedAnswers = useMemo(() => {
+    return [...question.answers].sort(() => Math.random() - 0.5);
+  }, [question.id]); // Only re-randomize when question changes
+  
   return (
     <QuestionLayout question={question}>
       <div className="mb-2 text-sm text-gray-400">
         Select {correctAnswersCount} correct answer{correctAnswersCount > 1 ? 's' : ''}
       </div>
       <div className="space-y-3">
-        {question.answers.map((answer, index) => (
+        {randomizedAnswers.map((answer, index) => (
           <motion.div
             key={answer.id}
             ref={(el) => setAnswerRef(el, answer.id)}
