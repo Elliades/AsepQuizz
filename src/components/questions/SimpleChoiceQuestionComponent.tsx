@@ -33,24 +33,21 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ qu
         const isAnswerCorrect = question.answers.find(a => a.id === answerId)?.isCorrect || false;
         setIsCorrect(isAnswerCorrect);
         
-        // Only show feedback if the answer is correct
-        if (isAnswerCorrect) {
-            // Reset first to ensure re-render
-            setShowFeedback(false);
+        // Reset first to ensure re-render
+        setShowFeedback(false);
+        
+        // Wait for the next render cycle with a longer delay
+        setTimeout(() => {
+            console.log('Setting showFeedback to true');
+            console.log('Answer elements:', answerElements.current);
+            console.log('Selected answer element:', answerElements.current[answerId]);
+            setShowFeedback(true);
             
-            // Wait for the next render cycle with a longer delay
+            // Hide feedback after a delay
             setTimeout(() => {
-                console.log('Setting showFeedback to true');
-                console.log('Answer elements:', answerElements.current);
-                console.log('Selected answer element:', answerElements.current[answerId]);
-                setShowFeedback(true);
-                
-                // Hide feedback after a delay
-                setTimeout(() => {
-                    setShowFeedback(false);
-                }, 2000);
-            }, 200); // Longer delay to ensure DOM is updated
-        }
+                setShowFeedback(false);
+            }, 2000);
+        }, 200); // Longer delay to ensure DOM is updated
         
         onAnswerSelect(answerId);
     };
@@ -85,9 +82,9 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ qu
                     )}
                 </motion.div>
             ))}
-            {showFeedback && isCorrect && selectedAnswerId && answerElements.current[selectedAnswerId] && (
+            {showFeedback && selectedAnswerId && answerElements.current[selectedAnswerId] && (
                 <AnswerFeedback 
-                    isCorrect={true}
+                    isCorrect={isCorrect}
                     isVisible={showFeedback}
                     element={answerElements.current[selectedAnswerId]}
                 />

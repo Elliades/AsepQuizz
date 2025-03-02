@@ -89,6 +89,70 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Random Quiz feature that selects questions from multiple quizzes
 - Enhanced question selection algorithm with Fisher-Yates shuffle
 - Support for filtering random questions by topic and difficulty
+- Enhanced answer feedback animations for both correct and incorrect answers
+- Shake effect for incorrect answers
+- Shine effect for correct answers
+- Smooth transitions between animation states
+- Improved visual feedback for quiz interactions
+
+### Changed
+- Updated Quiz_Page component to handle random question selection
+- Improved quiz loading with better error handling
+- Refactored AnswerFeedback component to handle both correct and incorrect answers
+- Updated CSS animations to be more subtle and professional
+- Improved timing of animations for better user experience
+
+### Fixed
+- Type safety issues with difficulty levels
+- Reduce operation in Results_Pages component
+- Quiz_Page subject ID matching
+- Undefined property access in topic statistics
+- Time calculation in Results_Pages component
+
+### Technical
+- Added loadQuizzesWithTimeout function
+- Updated Question interface with difficulty types
+- Enhanced quizLoader.ts with detailed logging
+- Improved type definitions
+- Added safety checks for difficulty levels
+
+## [0.1.0] - 2024-03-XX
+
+### Added
+- Initial project setup
+- Basic file structure
+- Project configuration files
+- Development environment setup
+
+### Features
+- Project structure for React/Vite application
+- TypeScript configuration
+- TailwindCSS integration
+- Basic component architecture
+
+### Tasks Remaining
+- Set up backend infrastructure
+- Implement authentication system
+- Create database schema
+- Develop initial UI components
+
+### Changed
+- Updated question display format
+- Enhanced results visualization
+- Improved navigation flow
+
+### Technical
+- Set up React with TypeScript
+- Implemented TailwindCSS for styling
+- Created base component structure
+- Established type definitions 
+
+## [Unreleased]
+
+### Added
+- Random Quiz feature that selects questions from multiple quizzes
+- Enhanced question selection algorithm with Fisher-Yates shuffle
+- Support for filtering random questions by topic and difficulty
 
 ### Changed
 - Updated Quiz_Page component to handle random question selection

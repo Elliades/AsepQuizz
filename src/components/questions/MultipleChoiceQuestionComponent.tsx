@@ -132,15 +132,15 @@ const MultipleChoiceQuestionComponent: React.FC<MultipleChoiceQuestionProps> = (
           </motion.div>
         ))}
       </div>
-      {showFeedback && isCorrect && (
+      {showFeedback && (
         <>
           {question.answers
-            .filter(answer => answer.isCorrect)
+            .filter(answer => selectedAnswers.includes(answer.id))
             .map(answer => (
               answerElements.current[answer.id] ? (
                 <AnswerFeedback 
                   key={answer.id}
-                  isCorrect={true}
+                  isCorrect={answer.isCorrect}
                   isVisible={showFeedback}
                   element={answerElements.current[answer.id]}
                 />
