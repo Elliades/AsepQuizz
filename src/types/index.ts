@@ -1,4 +1,3 @@
-
 /**
  * Question type
  * Question type is the type of question that is used to store question data.
@@ -7,7 +6,7 @@
  * Only the types defined in the enum are allowed.
  * Currently, only multiple choice and simple choice are supported.
  */
-export type QuestionType = 'multiple-Choice' | 'simple-Choice' | 'trueFalse' | 'fillInBlank';
+export type QuestionType = 'multiple-choice' | 'simple-choice' | 'trueFalse' | 'fillInBlank';
 
 /**
  * User interface
@@ -58,7 +57,7 @@ export interface BaseQuestion {
  * Multiple choice question interface is used to create a multiple choice question object that is used to store question data.
  */
 export interface MultipleChoiceQuestion extends BaseQuestion {
-  type: 'multiple-Choice';
+  type: 'multiple-choice';
   answers: Answer[];
   numberToChoose?: number;
 }
@@ -71,7 +70,7 @@ export interface MultipleChoiceQuestion extends BaseQuestion {
  * Simple choice question interface is used to create a simple choice question object that is used to store question data.
  */
 export interface SimpleChoiceQuestion extends BaseQuestion {
-  type: 'simple-Choice';
+  type: 'simple-choice';
   answers: Answer[];
 }
 
@@ -236,4 +235,14 @@ export interface Quiz {
   description?: string;
   questions: Question[]; // Assuming a quiz contains questions
   // Add any other properties relevant to a Quiz_Page
-} 
+}
+
+// Define the QuizResult type
+export interface QuizResult {
+  score: number;
+  totalQuestions: number;
+  userAnswers: UserAnswer[];
+  startTime: Date;
+  endTime: Date;
+  timeSpent: number; // in seconds
+}

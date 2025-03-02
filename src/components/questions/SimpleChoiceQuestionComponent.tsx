@@ -9,9 +9,26 @@ interface SimpleChoiceQuestionProps {
     selectedAnswer: string | null;
     onAnswerSelect: (answerId: string | null) => void;
     showExplanation: boolean;
+    isSubmitted?: boolean; // New prop to indicate if the question has been submitted
 }
 
-const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ question, selectedAnswer, onAnswerSelect, showExplanation }) => {
+/**
+ * SimpleChoiceQuestionComponent renders a single-choice question where users can select only one answer.
+ * It provides visual feedback for correct/incorrect answers and prevents changing answers after submission.
+ * 
+ * @param question - The question object containing text, answers, and other properties
+ * @param selectedAnswer - The currently selected answer ID
+ * @param onAnswerSelect - Callback function when an answer is selected
+ * @param showExplanation - Whether to show the explanation for answers
+ * @param isSubmitted - Whether the question has been submitted and answers should be locked
+ */
+const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ 
+    question, 
+    selectedAnswer, 
+    onAnswerSelect, 
+    showExplanation,
+    isSubmitted = false // Default to false for backward compatibility
+}) => {
     const [selectedAnswerId, setSelectedAnswerId] = useState<string | null>(null);
     const [showFeedback, setShowFeedback] = useState(false);
     const [isCorrect, setIsCorrect] = useState(false);
@@ -28,6 +45,11 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ qu
     }, []);
 
     const handleAnswerClick = (answerId: string) => {
+        // If the question is already submitted, don't allow changing the answer
+        if (isSubmitted) {
+            return;
+        }
+        
         setSelectedAnswerId(answerId);
         
         const isAnswerCorrect = question.answers.find(a => a.id === answerId)?.isCorrect || false;
@@ -38,7 +60,6 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ qu
         
         // Wait for the next render cycle with a longer delay
         setTimeout(() => {
-            console.log('Setting showFeedback to true');
             console.log('Answer elements:', answerElements.current);
             console.log('Selected answer element:', answerElements.current[answerId]);
             setShowFeedback(true);
@@ -59,7 +80,7 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ qu
                     key={answer.id}
                     ref={(el) => setAnswerRef(el, answer.id)}
                     className={`
-                        p-4 mb-2 rounded-lg cursor-pointer border
+                        p-4 mb-2 rounded-lg border
                         ${selectedAnswer === answer.id
                             ? answer.isCorrect && showExplanation
                                 ? 'bg-green-500/20 border-green-500'
@@ -68,10 +89,11 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({ qu
                                     : 'bg-primary/20 border-primary'
                             : 'bg-gray-800 hover:bg-gray-700 border-gray-700'
                         }
+                        ${isSubmitted ? 'opacity-80' : 'cursor-pointer'}
                     `}
                     onClick={() => handleAnswerClick(answer.id)}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                    whileHover={isSubmitted ? {} : { scale: 1.02 }}
+                    whileTap={isSubmitted ? {} : { scale: 0.98 }}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.05 }}

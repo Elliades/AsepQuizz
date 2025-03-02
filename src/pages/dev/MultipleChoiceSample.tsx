@@ -1,13 +1,13 @@
 import React from 'react';
 import QuickQuiz from '../../components/quiz/QuickQuiz';
 import sampleQuizData from '../../data/samples/OneMultipleChoiceQuestion-Quizz.json';
-import { MultipleChoiceQuestion } from '../../types';
+import { MultipleChoiceQuestion, QuizResult } from '../../types';
 
 const MultipleChoiceSample = () => {
   // Transform the question to match required format
   const questions = sampleQuizData.questions.map(q => ({
     ...q,
-    type: 'multiple-Choice',
+    type: 'multiple-choice',
     subjectId: sampleQuizData.subjectId,
     comments: [],
     tags: [],
@@ -15,8 +15,8 @@ const MultipleChoiceSample = () => {
     difficulty: q.difficulty as "beginner" | "intermediate" | "advanced"
   })) as MultipleChoiceQuestion[];
 
-  const handleQuizComplete = (score: number) => {
-    console.log(`Quiz completed with score: ${score}`);
+  const handleQuizComplete = (result: QuizResult) => {
+    console.log(`Quiz completed with score: ${result.score}`);
   };
 
   const renderResult = (score: number, totalQuestions: number) => (

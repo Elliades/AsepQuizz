@@ -6,9 +6,9 @@ import { getQuizById } from '../utils/quizLoader';
 interface ResultsState {
   score: number;
   total: number;
-  answers: UserAnswer[];
   timeSpent: number;
   questions: Question[];
+  userAnswers: UserAnswer[];
 }
 
 interface TopicStats {
@@ -31,7 +31,7 @@ export default function Results_Pages() {
     return <div>No results available</div>;
   }
   
-  const { score, total, answers, timeSpent, questions } = location.state as ResultsState;
+  const { score, total, timeSpent, questions, userAnswers: answers } = location.state as ResultsState;
 
   if (!questions || !answers) {
     return <div>No results available</div>;
