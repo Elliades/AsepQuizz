@@ -9,37 +9,36 @@
       "type": "simple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q1-se-intro-quiz-2-a1",
           "text": "Integrating diverse disciplines to produce effective systems that meet stakeholder needs",
           "isCorrect": true,
-          "explanation": "Systems Engineering is focused on the integration of technical, managerial, and human factors to deliver a system that works as a whole."
+          "explanation": "Systems Engineering focuses on integrating technical, managerial, and human factors to deliver a cohesive system."
         },
         {
           "id": "q1-se-intro-quiz-2-a2",
           "text": "Developing software applications exclusively",
           "isCorrect": false,
-          "explanation": "While software development can be part of it, Systems Engineering encompasses far more than just software."
+          "explanation": "While software is one aspect, Systems Engineering addresses a broader scope beyond software development."
         },
         {
           "id": "q1-se-intro-quiz-2-a3",
           "text": "Isolating system components for independent analysis",
           "isCorrect": false,
-          "explanation": "Systems Engineering emphasizes the interactions and integration of components rather than isolated analysis."
+          "explanation": "Systems Engineering emphasizes the interaction and integration of components rather than their isolation."
         },
         {
           "id": "q1-se-intro-quiz-2-a4",
           "text": "Focusing solely on cost management",
           "isCorrect": false,
-          "explanation": "Cost management is only one aspect; the core focus is on holistic integration and meeting stakeholder needs."
+          "explanation": "Cost management is only one aspect; the core purpose is holistic integration and meeting stakeholder needs."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -55,37 +54,36 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q2-se-intro-quiz-2-a1",
           "text": "Emergence, where new properties arise from component interactions",
           "isCorrect": true,
-          "explanation": "Emergence is a fundamental attribute, describing properties that are not present in individual components."
+          "explanation": "Emergence is fundamental, indicating properties that are not present in individual components."
         },
         {
           "id": "q2-se-intro-quiz-2-a2",
           "text": "Interdependency among system elements",
           "isCorrect": true,
-          "explanation": "Systems are characterized by the interdependence of their components, which interact to create the overall behavior."
+          "explanation": "Systems are characterized by interactions and dependencies among their components."
         },
         {
           "id": "q2-se-intro-quiz-2-a3",
           "text": "Complete isolation of components",
           "isCorrect": false,
-          "explanation": "Isolation contradicts the concept of a system, which relies on integration and interaction."
+          "explanation": "Isolation contradicts the core idea of a system, which relies on integration and interaction."
         },
         {
           "id": "q2-se-intro-quiz-2-a4",
           "text": "Holistic integration of parts to achieve overall functionality",
           "isCorrect": true,
-          "explanation": "A holistic integration is essential, ensuring that the whole system meets its intended objectives."
+          "explanation": "A holistic approach ensures that the entire system works together to meet its objectives."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -101,37 +99,36 @@
       "type": "simple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q3-se-intro-quiz-2-a1",
           "text": "Analyzing components independently without considering interactions",
           "isCorrect": false,
-          "explanation": "Systems thinking requires a focus on the interactions among components rather than isolated analysis."
+          "explanation": "Systems thinking requires understanding the interactions among components."
         },
         {
           "id": "q3-se-intro-quiz-2-a2",
           "text": "Understanding interrelationships among system elements to optimize overall performance",
           "isCorrect": true,
-          "explanation": "This approach ensures that all parts of the system work together cohesively."
+          "explanation": "This approach ensures cohesive operation of the entire system."
         },
         {
           "id": "q3-se-intro-quiz-2-a3",
           "text": "Focusing solely on technical specifications over stakeholder requirements",
           "isCorrect": false,
-          "explanation": "Systems thinking balances technical details with the needs and expectations of stakeholders."
+          "explanation": "A balanced view is necessary, incorporating both technical details and stakeholder needs."
         },
         {
           "id": "q3-se-intro-quiz-2-a4",
           "text": "Emphasizing rapid prototyping without a comprehensive view",
           "isCorrect": false,
-          "explanation": "While prototyping can be useful, systems thinking is about integrating all aspects of the system."
+          "explanation": "Rapid prototyping is useful but does not capture the essence of systems thinking."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -147,26 +144,26 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q4-se-intro-quiz-2-a1",
           "text": "Clarifies the scope and identifies external interfaces",
           "isCorrect": true,
-          "explanation": "Defining boundaries helps in understanding what is within and outside the system."
+          "explanation": "Defining boundaries helps determine what is inside and outside the system."
         },
         {
           "id": "q4-se-intro-quiz-2-a2",
           "text": "Facilitates risk management by highlighting potential interaction points",
           "isCorrect": true,
-          "explanation": "Knowing system boundaries aids in anticipating and mitigating risks related to interfaces."
+          "explanation": "Knowing the boundaries aids in identifying and mitigating interface-related risks."
         },
         {
           "id": "q4-se-intro-quiz-2-a3",
           "text": "Limits communication among stakeholders",
           "isCorrect": false,
-          "explanation": "Clear boundaries should enhance, not limit, effective communication by clarifying roles and responsibilities."
+          "explanation": "Clear boundaries enhance communication by clarifying roles and interactions."
         },
         {
           "id": "q4-se-intro-quiz-2-a4",
@@ -177,7 +174,6 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -193,26 +189,26 @@
       "type": "simple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q5-se-intro-quiz-2-a1",
           "text": "Concept",
           "isCorrect": false,
-          "explanation": "Concept is a recognized phase in the Systems Engineering lifecycle."
+          "explanation": "Concept is a recognized phase of the lifecycle."
         },
         {
           "id": "q5-se-intro-quiz-2-a2",
           "text": "Development",
           "isCorrect": false,
-          "explanation": "Development is a core phase in the lifecycle."
+          "explanation": "Development is a core phase."
         },
         {
           "id": "q5-se-intro-quiz-2-a3",
           "text": "Operation",
           "isCorrect": false,
-          "explanation": "Operation is typically included as a phase in the lifecycle."
+          "explanation": "Operation is typically included in the lifecycle."
         },
         {
           "id": "q5-se-intro-quiz-2-a4",
@@ -223,7 +219,6 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -239,14 +234,14 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q6-se-intro-quiz-2-a1",
           "text": "Stakeholders provide requirements and expectations for the system",
           "isCorrect": true,
-          "explanation": "Their input is crucial for defining what the system must achieve."
+          "explanation": "Their input is crucial for defining system objectives."
         },
         {
           "id": "q6-se-intro-quiz-2-a2",
@@ -256,20 +251,19 @@
         },
         {
           "id": "q6-se-intro-quiz-2-a3",
-          "text": "Their engagement helps in aligning the system design with user needs",
+          "text": "Their engagement helps align system design with user needs",
           "isCorrect": true,
-          "explanation": "Continuous engagement ensures that the system meets real-world requirements."
+          "explanation": "Ongoing engagement ensures that the system meets real-world requirements."
         },
         {
           "id": "q6-se-intro-quiz-2-a4",
           "text": "Neglecting stakeholder input has no impact on system success",
           "isCorrect": false,
-          "explanation": "Ignoring stakeholder input can lead to a system that fails to meet its intended purpose."
+          "explanation": "Ignoring stakeholder input can lead to a system that does not satisfy its intended purpose."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -285,20 +279,20 @@
       "type": "simple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q7-se-intro-quiz-2-a1",
           "text": "The phenomenon where system properties arise from the interactions among components",
           "isCorrect": true,
-          "explanation": "Emergence describes how the overall system behavior is not simply the sum of its parts."
+          "explanation": "Emergence explains how the overall system behavior is not merely the sum of its parts."
         },
         {
           "id": "q7-se-intro-quiz-2-a2",
           "text": "A process for isolating individual system components",
           "isCorrect": false,
-          "explanation": "Emergence focuses on interactions, not on isolating components."
+          "explanation": "It is about interactions, not isolation."
         },
         {
           "id": "q7-se-intro-quiz-2-a3",
@@ -310,12 +304,11 @@
           "id": "q7-se-intro-quiz-2-a4",
           "text": "A design technique that minimizes component interaction",
           "isCorrect": false,
-          "explanation": "Minimizing interaction is contrary to the idea of emergence in systems."
+          "explanation": "Minimizing interactions contradicts the principle of emergence."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -331,7 +324,7 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
@@ -344,7 +337,7 @@
           "id": "q8-se-intro-quiz-2-a2",
           "text": "Continuous risk management and iterative reviews",
           "isCorrect": true,
-          "explanation": "Iterative reviews and risk management help adapt to and mitigate complexity."
+          "explanation": "Iterative processes and risk management help adapt to evolving complexity."
         },
         {
           "id": "q8-se-intro-quiz-2-a3",
@@ -356,12 +349,11 @@
           "id": "q8-se-intro-quiz-2-a4",
           "text": "Clear definition of system boundaries",
           "isCorrect": true,
-          "explanation": "Well-defined boundaries help in understanding and managing the scope of complexity."
+          "explanation": "Well-defined boundaries help in understanding and managing system scope."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],
@@ -377,26 +369,26 @@
       "type": "simple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
           "id": "q9-se-intro-quiz-2-a1",
           "text": "It ensures all system parts work together to achieve overall success",
           "isCorrect": true,
-          "explanation": "A holistic approach integrates all disciplines to ensure that the complete system performs as intended."
+          "explanation": "A holistic approach integrates all disciplines to ensure the system meets its overall objectives."
         },
         {
           "id": "q9-se-intro-quiz-2-a2",
           "text": "It focuses exclusively on individual component performance",
           "isCorrect": false,
-          "explanation": "Focusing only on components neglects the critical interactions that drive system behavior."
+          "explanation": "Focusing solely on individual components neglects the essential interactions between them."
         },
         {
           "id": "q9-se-intro-quiz-2-a3",
           "text": "It disregards stakeholder requirements in favor of technical details",
           "isCorrect": false,
-          "explanation": "Stakeholder needs are central to a holistic approach, not ignored."
+          "explanation": "Stakeholder needs are integral to a holistic approach, ensuring balanced system development."
         },
         {
           "id": "q9-se-intro-quiz-2-a4",
@@ -408,7 +400,6 @@
       "tags": [
         "systems-engineering overall",
         "concepts",
-        "concepts",
         "systems"
       ],
       "source": "INCOSE Handbook 4.0, Section 1.1",
@@ -418,42 +409,41 @@
       "notations": []
     },
     {
-      "id": "q1-se-intro-quiz-20",
+      "id": "q1-se-intro-quiz-10",
       "text": "Select all practices that are essential for effective Systems Engineering as introduced in the handbook.",
       "type": "multiple-choice",
       "difficulty": "medium",
       "topic": "Systems Engineering Introduction",
-      "chapter": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
       "important": false,
       "answers": [
         {
-          "id": "q1-se-intro-quiz-20-a1",
+          "id": "q1-se-intro-quiz-10-a1",
           "text": "Defining clear system boundaries",
           "isCorrect": true,
           "explanation": "Clear boundaries are crucial for understanding system scope and interactions."
         },
         {
-          "id": "q1-se-intro-quiz-20-a2",
+          "id": "q1-se-intro-quiz-10-a2",
           "text": "Engaging stakeholders throughout the lifecycle",
           "isCorrect": true,
-          "explanation": "Continuous stakeholder engagement ensures the system meets real-world needs."
+          "explanation": "Continuous stakeholder engagement ensures that the system meets real-world needs."
         },
         {
-          "id": "q1-se-intro-quiz-20-a3",
+          "id": "q1-se-intro-quiz-10-a3",
           "text": "Implementing iterative reviews and feedback loops",
           "isCorrect": true,
-          "explanation": "Iterative processes help refine requirements and improve the system progressively."
+          "explanation": "Iterative processes help refine system requirements and improve overall design."
         },
         {
-          "id": "q1-se-intro-quiz-20-a4",
+          "id": "q1-se-intro-quiz-10-a4",
           "text": "Relying solely on a one-time requirements definition",
           "isCorrect": false,
-          "explanation": "A one-time requirements phase is inadequate for managing evolving system needs."
+          "explanation": "A one-time approach is inadequate to capture evolving system needs."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
         "concepts",
         "systems"
       ],

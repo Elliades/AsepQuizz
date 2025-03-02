@@ -1,6 +1,11 @@
 /**
  * Script to generate index.json from sources.json
  * 
+ * Behavior:
+ * - Reads sources.json
+ * - Generates index.json by calling generateIndex.js
+ * - Writes index.json to data/subjects/index.json
+ * 
  * Run this script with: npm run generate-index
  */
 import { execSync } from 'child_process';

@@ -1,36 +1,6814 @@
 {
+  "topics": {
+    "What Is Systems Engineering?": {
+      "name": "What Is Systems Engineering?",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Why Is Systems Engineering Important?": {
+      "name": "Why Is Systems Engineering Important?",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Systems Concepts": {
+      "name": "Systems Concepts",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Systems Engineering Foundations": {
+      "name": "Systems Engineering Foundations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "System Science and Systems Thinking": {
+      "name": "System Science and Systems Thinking",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "System Boundary and the System of Interest (SoI)": {
+      "name": "System Boundary and the System of Interest (SoI)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Emergence": {
+      "name": "Emergence",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Interfacing Systems, Interoperating Systems, and Enabling Systems": {
+      "name": "Interfacing Systems, Interoperating Systems, and Enabling Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Innovation Ecosystem": {
+      "name": "System Innovation Ecosystem",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "The Hierarchy within a System": {
+      "name": "The Hierarchy within a System",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Systems States and Modes": {
+      "name": "Systems States and Modes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Complexity": {
+      "name": "Complexity",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Uncertainty": {
+      "name": "Uncertainty",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Cognitive Bias": {
+      "name": "Cognitive Bias",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Systems Engineering Principles": {
+      "name": "Systems Engineering Principles",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Systems Engineering Heuristics": {
+      "name": "Systems Engineering Heuristics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Life Cycle Terms and Concepts": {
+      "name": "Life Cycle Terms and Concepts",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch2",
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Life Cycle Model Approaches": {
+      "name": "Life Cycle Model Approaches",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch2",
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "System Life Cycle Processes": {
+      "name": "System Life Cycle Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch2",
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Life Cycle Characteristics": {
+      "name": "Life Cycle Characteristics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Typical Life Cycle Stages": {
+      "name": "Typical Life Cycle Stages",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Decision Gates": {
+      "name": "Decision Gates",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Technical Reviews and Audits": {
+      "name": "Technical Reviews and Audits",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Sequential Methods": {
+      "name": "Sequential Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.2",
+          "name": "Life Cycle Model Approaches",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Incremental Methods": {
+      "name": "Incremental Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.2",
+          "name": "Life Cycle Model Approaches",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Evolutionary Methods": {
+      "name": "Evolutionary Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.2",
+          "name": "Life Cycle Model Approaches",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Introduction to the System Life Cycle Processes": {
+      "name": "Introduction to the System Life Cycle Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Agreement Processes": {
+      "name": "Agreement Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Organizational Project-Enabling Processes": {
+      "name": "Organizational Project-Enabling Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Technical Management Processes": {
+      "name": "Technical Management Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Technical Processes": {
+      "name": "Technical Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Format and Conventions": {
+      "name": "Format and Conventions",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.1",
+          "name": "Introduction to the System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Concurrency, Iteration, and Recursion": {
+      "name": "Concurrency, Iteration, and Recursion",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.1",
+          "name": "Introduction to the System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Acquisition Process": {
+      "name": "Acquisition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.2",
+          "name": "Agreement Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Supply Process": {
+      "name": "Supply Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.2",
+          "name": "Agreement Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Life Cycle Model Management Process": {
+      "name": "Life Cycle Model Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Infrastructure Management Process": {
+      "name": "Infrastructure Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Portfolio Management Process": {
+      "name": "Portfolio Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Human Resource Management Process": {
+      "name": "Human Resource Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Quality Management Process": {
+      "name": "Quality Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Knowledge Management Process": {
+      "name": "Knowledge Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Project Planning Process": {
+      "name": "Project Planning Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Project Assessment and Control Process": {
+      "name": "Project Assessment and Control Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Decision Management Process": {
+      "name": "Decision Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Risk Management Process": {
+      "name": "Risk Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Configuration Management Process": {
+      "name": "Configuration Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Information Management Process": {
+      "name": "Information Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Measurement Process": {
+      "name": "Measurement Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Quality Assurance Process": {
+      "name": "Quality Assurance Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Business or Mission Analysis Process": {
+      "name": "Business or Mission Analysis Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Stakeholder Needs and Requirements Definition Process": {
+      "name": "Stakeholder Needs and Requirements Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Requirements Definition Process": {
+      "name": "System Requirements Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Architecture Definition Process": {
+      "name": "System Architecture Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Design Definition Process": {
+      "name": "Design Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Analysis Process": {
+      "name": "System Analysis Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Implementation Process": {
+      "name": "Implementation Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Integration Process": {
+      "name": "Integration Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Verification Process": {
+      "name": "Verification Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Transition Process": {
+      "name": "Transition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Validation Process": {
+      "name": "Validation Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Operation Process": {
+      "name": "Operation Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Maintenance Process": {
+      "name": "Maintenance Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Disposal Process": {
+      "name": "Disposal Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Quality Characteristics and Approaches": {
+      "name": "Quality Characteristics and Approaches",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch3",
+          "name": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Systems Engineering Analyses and Methods": {
+      "name": "Systems Engineering Analyses and Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch3",
+          "name": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Introduction to Quality Characteristics": {
+      "name": "Introduction to Quality Characteristics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Affordability Analysis": {
+      "name": "Affordability Analysis",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Agility Engineering": {
+      "name": "Agility Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Human Systems Integration": {
+      "name": "Human Systems Integration",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Interoperability Analysis": {
+      "name": "Interoperability Analysis",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Logistics Engineering": {
+      "name": "Logistics Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Manufacturability/Producibility Analysis": {
+      "name": "Manufacturability/Producibility Analysis",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Reliability, Availability, Maintainability Engineering": {
+      "name": "Reliability, Availability, Maintainability Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Resilience Engineering": {
+      "name": "Resilience Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Sustainability Engineering": {
+      "name": "Sustainability Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Safety Engineering": {
+      "name": "System Safety Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Security Engineering": {
+      "name": "System Security Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Loss-Driven Systems Engineering": {
+      "name": "Loss-Driven Systems Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Modeling, Analysis, and Simulation": {
+      "name": "Modeling, Analysis, and Simulation",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Prototyping": {
+      "name": "Prototyping",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Traceability": {
+      "name": "Traceability",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Interface Management": {
+      "name": "Interface Management",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Architecture Frameworks": {
+      "name": "Architecture Frameworks",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Patterns": {
+      "name": "Patterns",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Design Thinking": {
+      "name": "Design Thinking",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Biomimicry": {
+      "name": "Biomimicry",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Tailoring Considerations": {
+      "name": "Tailoring Considerations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "SE Methodology/Approach Considerations": {
+      "name": "SE Methodology/Approach Considerations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "System Types Considerations": {
+      "name": "System Types Considerations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Application of Systems Engineering for Specific Product Sectors": {
+      "name": "Application of Systems Engineering for Specific Product Sectors",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Model-Based SE": {
+      "name": "Model-Based SE",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Agile Systems Engineering": {
+      "name": "Agile Systems Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Lean Systems Engineering": {
+      "name": "Lean Systems Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Product Line Engineering (PLE)": {
+      "name": "Product Line Engineering (PLE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Greenfield/Clean Sheet Systems": {
+      "name": "Greenfield/Clean Sheet Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Brownfield/Legacy Systems": {
+      "name": "Brownfield/Legacy Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Commercial-off-the-Shelf (COTS)-Based Systems": {
+      "name": "Commercial-off-the-Shelf (COTS)-Based Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Software-Intensive Systems": {
+      "name": "Software-Intensive Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Cyber-Physical Systems (CPS)": {
+      "name": "Cyber-Physical Systems (CPS)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Systems of Systems (SoS)": {
+      "name": "Systems of Systems (SoS)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Internet of Things (IoT)/Big Data-Driven Systems": {
+      "name": "Internet of Things (IoT)/Big Data-Driven Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Service Systems": {
+      "name": "Service Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Enterprise Systems": {
+      "name": "Enterprise Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Automotive Systems": {
+      "name": "Automotive Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Biomedical and Healthcare Systems": {
+      "name": "Biomedical and Healthcare Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Commercial Aerospace Systems": {
+      "name": "Commercial Aerospace Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Defense Systems": {
+      "name": "Defense Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Infrastructure Systems": {
+      "name": "Infrastructure Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Oil and Gas Systems": {
+      "name": "Oil and Gas Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Power & Energy Systems": {
+      "name": "Power & Energy Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Space Systems": {
+      "name": "Space Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Telecommunication Systems": {
+      "name": "Telecommunication Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Transportation Systems": {
+      "name": "Transportation Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Systems Engineering Competencies": {
+      "name": "Systems Engineering Competencies",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Diversity, Equity, and Inclusion": {
+      "name": "Diversity, Equity, and Inclusion",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Systems Engineering Relationships": {
+      "name": "Systems Engineering Relationships",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Digital Engineering": {
+      "name": "Digital Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Systems Engineering Transformation": {
+      "name": "Systems Engineering Transformation",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Future of SE": {
+      "name": "Future of SE",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Difference between Hard and Soft Skills": {
+      "name": "Difference between Hard and Soft Skills",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "System Engineering Professional Competencies": {
+      "name": "System Engineering Professional Competencies",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Technical Leadership": {
+      "name": "Technical Leadership",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Ethics": {
+      "name": "Ethics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "SE and Software Engineering (SWE)": {
+      "name": "SE and Software Engineering (SWE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "SE and Hardware Engineering (HWE)": {
+      "name": "SE and Hardware Engineering (HWE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "SE and Project Management (PM)": {
+      "name": "SE and Project Management (PM)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "SE and Industrial Engineering (IE)": {
+      "name": "SE and Industrial Engineering (IE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "SE and Operations Research (OR)": {
+      "name": "SE and Operations Research (OR)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    "Case Studies Overview": {
+      "name": "Case Studies Overview",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch6",
+          "name": "Case Studies",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    "Applicability": {
+      "name": "Applicability",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause1",
+          "name": "Scope",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "System life cycle processes": {
+      "name": "System life cycle processes",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause1",
+          "name": "Scope",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "Lifecycle perspective": {
+      "name": "Lifecycle perspective",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "Process interactions": {
+      "name": "Process interactions",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "Systems thinking": {
+      "name": "Systems thinking",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "Acquisition": {
+      "name": "Acquisition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.1",
+          "name": "Agreement Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Supply": {
+      "name": "Supply",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.1",
+          "name": "Agreement Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Life Cycle Model Management": {
+      "name": "Life Cycle Model Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Infrastructure Management": {
+      "name": "Infrastructure Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Portfolio Management": {
+      "name": "Portfolio Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Human Resource Management": {
+      "name": "Human Resource Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Quality Management": {
+      "name": "Quality Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Knowledge Management": {
+      "name": "Knowledge Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Business or Mission Analysis": {
+      "name": "Business or Mission Analysis",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Stakeholder Needs and Requirements Definition": {
+      "name": "Stakeholder Needs and Requirements Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "System Requirements Definition": {
+      "name": "System Requirements Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "System Architecture Definition": {
+      "name": "System Architecture Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Design Definition": {
+      "name": "Design Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "System Analysis": {
+      "name": "System Analysis",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Implementation": {
+      "name": "Implementation",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Integration": {
+      "name": "Integration",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Verification": {
+      "name": "Verification",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Transition": {
+      "name": "Transition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Validation": {
+      "name": "Validation",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Operation": {
+      "name": "Operation",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Maintenance": {
+      "name": "Maintenance",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Disposal": {
+      "name": "Disposal",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Project Planning": {
+      "name": "Project Planning",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Project Assessment and Control": {
+      "name": "Project Assessment and Control",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Decision Management": {
+      "name": "Decision Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Risk Management": {
+      "name": "Risk Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Configuration Management": {
+      "name": "Configuration Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Information Management": {
+      "name": "Information Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Measurement": {
+      "name": "Measurement",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Quality Assurance": {
+      "name": "Quality Assurance",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    "Sequential": {
+      "name": "Sequential",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "Incremental": {
+      "name": "Incremental",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    "Evolutionary": {
+      "name": "Evolutionary",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    }
+  },
+  "topicsArray": [
+    {
+      "name": "What Is Systems Engineering?",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Why Is Systems Engineering Important?",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Systems Concepts",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Systems Engineering Foundations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "System Science and Systems Thinking",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "System Boundary and the System of Interest (SoI)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Emergence",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Interfacing Systems, Interoperating Systems, and Enabling Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Innovation Ecosystem",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "The Hierarchy within a System",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Systems States and Modes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Complexity",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.3",
+          "name": "Systems Concepts",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Uncertainty",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Cognitive Bias",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Systems Engineering Principles",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Systems Engineering Heuristics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch1.4",
+          "name": "Systems Engineering Foundations",
+          "chapterId": "ch1",
+          "chapterName": "Systems Engineering Introduction",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Life Cycle Terms and Concepts",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch2",
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Life Cycle Model Approaches",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch2",
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "System Life Cycle Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch2",
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Life Cycle Characteristics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Typical Life Cycle Stages",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Decision Gates",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Technical Reviews and Audits",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.1",
+          "name": "Life Cycle Terms and Concepts",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Sequential Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.2",
+          "name": "Life Cycle Model Approaches",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Incremental Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.2",
+          "name": "Life Cycle Model Approaches",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Evolutionary Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.2",
+          "name": "Life Cycle Model Approaches",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Introduction to the System Life Cycle Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Agreement Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Organizational Project-Enabling Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Technical Management Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Technical Processes",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        },
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": [
+        {
+          "id": "ch2.3",
+          "name": "System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Format and Conventions",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.1",
+          "name": "Introduction to the System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Concurrency, Iteration, and Recursion",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.1",
+          "name": "Introduction to the System Life Cycle Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Acquisition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.2",
+          "name": "Agreement Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Supply Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.2",
+          "name": "Agreement Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Life Cycle Model Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Human Resource Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Quality Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.3",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Project Planning Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Project Assessment and Control Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Decision Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Risk Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Configuration Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Information Management Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Measurement Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Quality Assurance Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.4",
+          "name": "Technical Management Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Business or Mission Analysis Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Stakeholder Needs and Requirements Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Requirements Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Architecture Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Design Definition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Analysis Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Implementation Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Integration Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Verification Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Transition Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Validation Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Operation Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Maintenance Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Disposal Process",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch2.3.5",
+          "name": "Technical Processes",
+          "chapterId": "ch2",
+          "chapterName": "System Life Cycle Concepts, Models, and Processes",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Quality Characteristics and Approaches",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch3",
+          "name": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Systems Engineering Analyses and Methods",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch3",
+          "name": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Introduction to Quality Characteristics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Affordability Analysis",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Agility Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Human Systems Integration",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Interoperability Analysis",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Logistics Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Manufacturability/Producibility Analysis",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Reliability, Availability, Maintainability Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Resilience Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Sustainability Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Safety Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Security Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Loss-Driven Systems Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.1",
+          "name": "Quality Characteristics and Approaches",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Modeling, Analysis, and Simulation",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Prototyping",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Traceability",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Interface Management",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Architecture Frameworks",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Patterns",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Design Thinking",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Biomimicry",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch3.2",
+          "name": "Systems Engineering Analyses and Methods",
+          "chapterId": "ch3",
+          "chapterName": "Life Cycle Analyses and Methods",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Tailoring Considerations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "SE Methodology/Approach Considerations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "System Types Considerations",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Application of Systems Engineering for Specific Product Sectors",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Model-Based SE",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Agile Systems Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Lean Systems Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Product Line Engineering (PLE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.2",
+          "name": "SE Methodology/Approach Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Greenfield/Clean Sheet Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Brownfield/Legacy Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Commercial-off-the-Shelf (COTS)-Based Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Software-Intensive Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Cyber-Physical Systems (CPS)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Systems of Systems (SoS)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Internet of Things (IoT)/Big Data-Driven Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Service Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.3",
+          "name": "System Types Considerations",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Automotive Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Biomedical and Healthcare Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Commercial Aerospace Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Defense Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Oil and Gas Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Power & Energy Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Space Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Telecommunication Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Transportation Systems",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch4.4",
+          "name": "Application of Systems Engineering for Specific Product Sector or Domain Application",
+          "chapterId": "ch4",
+          "chapterName": "Tailoring and Application Considerations",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Systems Engineering Competencies",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Diversity, Equity, and Inclusion",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Systems Engineering Relationships",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Digital Engineering",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Systems Engineering Transformation",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Future of SE",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Difference between Hard and Soft Skills",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "System Engineering Professional Competencies",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Technical Leadership",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Ethics",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.1",
+          "name": "Systems Engineering Competencies",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "SE and Software Engineering (SWE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "SE and Hardware Engineering (HWE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "SE and Project Management (PM)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "SE and Industrial Engineering (IE)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "SE and Operations Research (OR)",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "ch5.3",
+          "name": "Systems Engineering Relationships to Other Disciplines",
+          "chapterId": "ch5",
+          "chapterName": "Systems Engineering in Practice",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ]
+    },
+    {
+      "name": "Case Studies Overview",
+      "sources": [
+        {
+          "id": "INCOSE_SEHB5",
+          "name": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "ch6",
+          "name": "Case Studies",
+          "sourceId": "INCOSE_SEHB5",
+          "sourceName": "Systems Engineering Handbook 5th Edition"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Applicability",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause1",
+          "name": "Scope",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "System life cycle processes",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause1",
+          "name": "Scope",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Lifecycle perspective",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Process interactions",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Systems thinking",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Acquisition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.1",
+          "name": "Agreement Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Supply",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.1",
+          "name": "Agreement Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Life Cycle Model Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Human Resource Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Quality Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.2",
+          "name": "Organizational Project-Enabling Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Business or Mission Analysis",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Stakeholder Needs and Requirements Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "System Requirements Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "System Architecture Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Design Definition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "System Analysis",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Implementation",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Integration",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Verification",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Transition",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Validation",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Operation",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Maintenance",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Disposal",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.3",
+          "name": "Technical Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Project Planning",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Project Assessment and Control",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Decision Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Risk Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Configuration Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Information Management",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Measurement",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Quality Assurance",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [],
+      "sections": [
+        {
+          "id": "clause5.4",
+          "name": "Technical Management Processes",
+          "chapterId": "clause5",
+          "chapterName": "Life Cycle Processes",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ]
+    },
+    {
+      "name": "Sequential",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Incremental",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "Evolutionary",
+      "sources": [
+        {
+          "id": "iso-15288",
+          "name": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "sourceId": "iso-15288",
+          "sourceName": "ISO/IEC/IEEE 15288"
+        }
+      ],
+      "sections": []
+    }
+  ],
   "subjects": [
     {
       "id": "INCOSE_SEHB5",
       "name": "Systems Engineering Handbook 5th Edition",
-      "description": "Core concepts and principles of Systems Engineering",
+      "description": "Core concepts and principles of Systems Engineering.",
       "chapters": [
         {
           "id": "ch1",
-          "name": "Introduction to Systems Engineering",
-          "description": "Basic concepts and definitions",
-          "topics": ["system engineering definition", "system engineering principles", "system engineering interfaces"]
+          "name": "Systems Engineering Introduction",
+          "description": "Foundational concepts, definitions, and principles of Systems Engineering.",
+          "topics": [
+            "What Is Systems Engineering?",
+            "Why Is Systems Engineering Important?",
+            "Systems Concepts",
+            "Systems Engineering Foundations",
+            "System Science and Systems Thinking"
+          ],
+          "subjectId": "se-introduction"
         },
         {
           "id": "ch2",
-          "name": "System Life Cycle",
-          "description": "Understanding the stages of system development",
-          "topics": ["system life cycle", "system life cycle models", "system life cycle processes"]
+          "name": "System Life Cycle Concepts, Models, and Processes",
+          "description": "Overview of life cycle terms, models, and processes used in SE.",
+          "topics": [
+            "Life Cycle Terms and Concepts",
+            "Life Cycle Model Approaches",
+            "System Life Cycle Processes"
+          ],
+          "subjectId": "se-lifecycle"
+        },
+        {
+          "id": "ch3",
+          "name": "Life Cycle Analyses and Methods",
+          "description": "Covers quality characteristics, analyses, and methods that apply throughout the system life cycle.",
+          "topics": [
+            "Quality Characteristics and Approaches",
+            "Systems Engineering Analyses and Methods"
+          ],
+          "subjectId": "se-lifecycle-analyses"
+        },
+        {
+          "id": "ch4",
+          "name": "Tailoring and Application Considerations",
+          "description": "Guidance on tailoring SE processes and applying them across different domains and system types.",
+          "topics": [
+            "Tailoring Considerations",
+            "SE Methodology/Approach Considerations",
+            "System Types Considerations",
+            "Application of Systems Engineering for Specific Product Sectors"
+          ],
+          "subjectId": "se-tailoring-application"
+        },
+        {
+          "id": "ch5",
+          "name": "Systems Engineering in Practice",
+          "description": "Explores practical aspects including competencies, inter-disciplinary relationships, and emerging trends.",
+          "topics": [
+            "Systems Engineering Competencies",
+            "Diversity, Equity, and Inclusion",
+            "Systems Engineering Relationships",
+            "Digital Engineering",
+            "Systems Engineering Transformation",
+            "Future of SE"
+          ],
+          "subjectId": "se-in-practice"
+        },
+        {
+          "id": "ch6",
+          "name": "Case Studies",
+          "description": "Real-world case studies that illustrate the application of SE principles.",
+          "topics": [
+            "Case Studies Overview"
+          ],
+          "subjectId": "se-case-studies"
         }
       ]
     },
     {
       "id": "iso-15288",
-      "name": "ISO/IEC 15288",
-      "description": "System life cycle processes and standards",
+      "name": "ISO/IEC/IEEE 15288",
+      "description": "Systems and software engineering – System life cycle processes and standards.",
       "chapters": [
         {
-          "id": "processes",
-          "name": "System Life Cycle Processes",
-          "description": "Understanding the key processes in ISO 15288",
-          "topics": ["system life cycle processes", "system life cycle standards", "system life cycle models"]
+          "id": "clause1",
+          "name": "Scope",
+          "description": "Defines the scope and applicability of the standard.",
+          "topics": [
+            "Applicability",
+            "System life cycle processes"
+          ],
+          "subjectId": "iso-15288-scope"
+        },
+        {
+          "id": "clause2",
+          "name": "Normative References",
+          "description": "Lists the normative references that are indispensable for the application of the standard.",
+          "topics": [],
+          "subjectId": "iso-15288-normative-references"
+        },
+        {
+          "id": "clause3",
+          "name": "Terms and Definitions",
+          "description": "Provides definitions for key terms used throughout the standard.",
+          "topics": [],
+          "subjectId": "iso-15288-terms-definitions"
+        },
+        {
+          "id": "clause4",
+          "name": "General Principles",
+          "description": "Outlines the overarching principles and concepts that underpin the system life cycle processes.",
+          "topics": [
+            "Lifecycle perspective",
+            "Process interactions",
+            "Systems thinking"
+          ],
+          "subjectId": "iso-15288-general-principles"
+        },
+        {
+          "id": "clause5",
+          "name": "Life Cycle Processes",
+          "description": "Describes the set of processes that cover the entire system life cycle, grouped into four process categories.",
+          "topics": [
+            "Agreement Processes",
+            "Organizational Project-Enabling Processes",
+            "Technical Processes",
+            "Technical Management Processes"
+          ],
+          "subjectId": "iso-15288-life-cycle-processes"
+        },
+        {
+          "id": "clause6",
+          "name": "Life Cycle Model Considerations",
+          "description": "Discusses various life cycle model approaches and their suitability for different system development scenarios.",
+          "topics": [
+            "Sequential",
+            "Incremental",
+            "Evolutionary"
+          ],
+          "subjectId": "iso-15288-life-cycle-model-considerations"
+        },
+        {
+          "id": "clause7",
+          "name": "Annexes",
+          "description": "Supplementary material including examples, guidance, and additional information.",
+          "topics": [],
+          "subjectId": "iso-15288-annexes"
         }
       ]
     }
-  ]
-} 
+  ],
+  "metadata": {
+    "version": "2.0.0",
+    "generated": "2025-03-01T19:21:22.408Z",
+    "topicCount": 167,
+    "subjectCount": 2
+  }
+}

@@ -8,7 +8,7 @@
       "text": "What is the primary benefit of adopting a defined system life cycle model in Systems Engineering?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "System Life Cycle",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -39,9 +39,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "system life cycle",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.1",
       "source-question": "ChatGPT",
@@ -50,11 +49,11 @@
       "notations": []
     },
     {
-     "id": "q1-se-lifecycle-quiz-2",
+      "id": "q1-se-lifecycle-quiz-2",
       "text": "Which of the following are considered typical stages in a system life cycle? (Select all 6 correct answers from the options below)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "System Life Cycle",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -103,9 +102,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "system life cycle",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.1",
       "source-question": "ChatGPT",
@@ -118,7 +116,7 @@
       "text": "Which of the following processes are included in the Organizational Project-Enabling Processes? (Select 3)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Project Enabling Processes",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -138,7 +136,7 @@
           "id": "q3-se-lifecycle-quiz-2-a3",
           "text": "Quality Assurance Process",
           "isCorrect": false,
-          "explanation": "Quality Assurance is generally part of Technical Management Processes, not Organizational Project-Enabling Processes."
+          "explanation": "Quality Assurance is generally part of Technical Management Processes."
         },
         {
           "id": "q3-se-lifecycle-quiz-2-a4",
@@ -149,9 +147,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "project enabling",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3",
       "source-question": "ChatGPT",
@@ -164,7 +161,7 @@
       "text": "What is a key advantage of tailoring Systems Engineering processes to a specific project context?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Tailoring in Lifecycle",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -195,9 +192,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "tailoring",
+        "system life cycle"
       ],
       "source": "INCOSE Handbook 4.0, Section 4.1",
       "source-question": "ChatGPT",
@@ -210,7 +206,7 @@
       "text": "What is the primary focus of the Technical Processes group in the system life cycle?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Technical Processes",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -224,7 +220,7 @@
           "id": "q5-se-lifecycle-quiz-2-a2",
           "text": "Managing the financial and administrative aspects of the project.",
           "isCorrect": false,
-          "explanation": "Financial and administrative management are handled by other process groups, not Technical Processes."
+          "explanation": "Financial and administrative management are handled by other process groups."
         },
         {
           "id": "q5-se-lifecycle-quiz-2-a3",
@@ -241,9 +237,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "technical processes",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3.5",
       "source-question": "ChatGPT",
@@ -256,7 +251,7 @@
       "text": "Select 2 out of the following 3 statements that correctly describe the role of Organizational Project-Enabling Processes in supporting system development (select 2):",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Project Enabling Processes",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -281,9 +276,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "project enabling",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3",
       "source-question": "ChatGPT",
@@ -296,7 +290,7 @@
       "text": "What is the importance of Configuration Management within Technical Management Processes?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Configuration Management",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -322,14 +316,13 @@
           "id": "q7-se-lifecycle-quiz-2-a4",
           "text": "It documents stakeholder feedback without affecting technical design.",
           "isCorrect": false,
-          "explanation": "While documentation is part of the process, Configuration Management's core function is to manage changes and maintain consistency."
+          "explanation": "Its core function is to manage changes and maintain consistency."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "configuration management",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3.4",
       "source-question": "ChatGPT",
@@ -342,7 +335,7 @@
       "text": "Select both key aspects of the Risk Management Process that help mitigate uncertainties in Technical Management. (select 2)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Risk Management",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -362,7 +355,7 @@
           "id": "q8-se-lifecycle-quiz-2-a3",
           "text": "Ignoring minor risks to focus on major issues.",
           "isCorrect": false,
-          "explanation": "Even minor risks need to be evaluated, as they can accumulate and affect the project."
+          "explanation": "Even minor risks need evaluation as they can accumulate and affect the project."
         },
         {
           "id": "q8-se-lifecycle-quiz-2-a4",
@@ -373,9 +366,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "risk management",
+        "concepts"
       ],
       "source": "ISO/IEC/IEEE 15288 & INCOSE Handbook 4.0",
       "source-question": "ChatGPT",
@@ -388,7 +380,7 @@
       "text": "Which statement best distinguishes the Acquisition Process from the Supply Process in Agreement Processes?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Agreement Processes",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -419,9 +411,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "agreement processes",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3.2",
       "source-question": "ChatGPT",
@@ -430,11 +421,11 @@
       "notations": []
     },
     {
-      "id": "q1-se-lifecycle-quiz-20",
+      "id": "q1-se-lifecycle-quiz-20-se-lifecycle-quiz-1",
       "text": "Select 3 out of the following 4 benefits of incorporating iterative reviews during the system life cycle (select 3).",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Iterative Reviews",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -465,9 +456,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "iterative reviews",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3 & ISO/IEC/IEEE 15288",
       "source-question": "ChatGPT",

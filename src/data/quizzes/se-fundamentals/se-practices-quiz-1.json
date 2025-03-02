@@ -8,8 +8,8 @@
         "text": "Which skill set combination best describes a well-rounded Systems Engineering practitioner?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Systems Engineering Competencies",
+        "chapter": "5.1 Systems Engineering Competencies",
         "important": false,
         "answers": [
           {
@@ -53,8 +53,8 @@
         "text": "Select 3 out of the following 4 reasons why diversity, equity, and inclusion matter in Systems Engineering (Select 3):",
         "type": "multiple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Diversity and Inclusion in SE",
+        "chapter": "5.2 Diversity, Equity, and Inclusion",
         "important": false,
         "answers": [
           {
@@ -98,8 +98,8 @@
         "text": "Which statement best describes the relationship between Systems Engineering and Software Engineering?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "SE and Software Engineering",
+        "chapter": "5.3.1 SE and Software Engineering (SWE)",
         "important": false,
         "answers": [
           {
@@ -143,8 +143,8 @@
         "text": "Which of the following statements accurately reflects the role of digital engineering in SE?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Digital Engineering",
+        "chapter": "5.4 Digital Engineering",
         "important": false,
         "answers": [
           {
@@ -188,8 +188,8 @@
         "text": "Which dimension of diversity includes factors such as problem-solving style, communication preferences, or leadership approach?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Diversity and Inclusion in SE",
+        "chapter": "5.2 Diversity, Equity, and Inclusion",
         "important": false,
         "answers": [
           {
@@ -233,8 +233,8 @@
         "text": "Select 2 out of the following 3 statements that characterize effective technical leadership in Systems Engineering (Select 2):",
         "type": "multiple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Technical Leadership",
+        "chapter": "5.1 Systems Engineering Competencies",
         "important": false,
         "answers": [
           {
@@ -272,8 +272,8 @@
         "text": "What is one of the primary roles of Industrial Engineering in relation to Systems Engineering?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "SE and Industrial Engineering",
+        "chapter": "5.3.4 SE and Industrial Engineering (IE)",
         "important": false,
         "answers": [
           {
@@ -317,8 +317,8 @@
         "text": "Which statement best captures the role of Operations Research (OR) in Systems Engineering?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "SE and Operations Research",
+        "chapter": "5.3.5 SE and Operations Research (OR)",
         "important": false,
         "answers": [
           {
@@ -362,8 +362,8 @@
         "text": "Select 3 out of the following 4 potential advantages of adopting digital engineering in SE. (Select 3)",
         "type": "multiple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Digital Engineering",
+        "chapter": "5.4 Digital Engineering",
         "important": false,
         "answers": [
           {
@@ -382,7 +382,7 @@
             "id": "a3-q9-se-practice-quiz-1",
             "text": "Complete elimination of physical testing",
             "isCorrect": false,
-            "explanation": "While digital engineering reduces reliance on physical prototypes, testing is still necessary."
+            "explanation": "While digital engineering reduces reliance on physical prototypes, testing remains necessary."
           },
           {
             "id": "a4-q9-se-practice-quiz-1",
@@ -407,8 +407,8 @@
         "text": "Which of the following is a likely future trend for Systems Engineering according to the handbook?",
         "type": "simple-choice",
         "difficulty": "medium",
-        "topic": "Systems Engineering in Practice",
-        "chapter": "Systems Engineering in Practice",
+        "topic": "Future of Systems Engineering",
+        "chapter": "5.6 Future of SE",
         "important": false,
         "answers": [
           {
