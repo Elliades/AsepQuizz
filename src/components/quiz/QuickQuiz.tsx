@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Question, UserAnswer } from '@/types';
 import QuizQuestion from '../questions/QuizQuestion';
+import SwipeableNavigation from '../navigation/SwipeableNavigation';
 
 interface QuickQuizProps {
   questions: Question[];
@@ -18,6 +19,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
   const [showExplanation, setShowExplanation] = useState(false);
   const [startTime, setStartTime] = useState(Date.now());
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
+  const quizContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setStartTime(Date.now());
@@ -149,6 +151,26 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
     }
   };
 
+  const handlePrevious = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+      setShowExplanation(!!answers[currentQuestionIndex - 1]); // Show explanation if the question was answered
+    }
+  };
+
+  const shouldShowNextArrow = () => {
+    // Always show next arrow for answered questions
+    if (showExplanation) return true;
+    
+    // Show next arrow if we're viewing a previously answered question
+    return !!answers[currentQuestionIndex];
+  };
+
+  const isNextArrowEnabled = () => {
+    // Enable (green) only after submitting the current question
+    return showExplanation && !answers[currentQuestionIndex + 1];
+  };
+
   const renderQuestion = (question: Question, index: number) => {
     return (
       <QuizQuestion
@@ -193,7 +215,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
   }
 
   return (
-    <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
+    <div ref={quizContainerRef} className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
       <div className="mb-4 flex justify-between items-center">
         <h2 className="text-xl font-bold">Question {currentQuestionIndex + 1}/{questions.length}</h2>
         <span className="text-gray-400">Score: {score}</span>
@@ -214,16 +236,15 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
         </div>
       )}
 
-      <div className="flex justify-end">
-        {showExplanation && (
-          <button
-            onClick={handleNext}
-            className="px-4 py-2 bg-green-600 rounded-lg"
-          >
-            {currentQuestionIndex === questions.length - 1 ? 'Finish' : 'Next'}
-          </button>
-        )}
-      </div>
+      <SwipeableNavigation
+        onNext={handleNext}
+        onPrevious={handlePrevious}
+        showNext={shouldShowNextArrow()}
+        isNextEnabled={isNextArrowEnabled()}
+        isLastQuestion={currentQuestionIndex === questions.length - 1}
+        isFirstQuestion={currentQuestionIndex === 0}
+        containerRef={quizContainerRef}
+      />
     </div>
   );
 };
