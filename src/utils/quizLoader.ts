@@ -2,6 +2,10 @@ import { Subject, QuizSeries, Chapter, Question } from '@/types';
 import subjects from '../data/subjects/index.json';
 import path from 'path';
 import fs from 'fs';
+import sourcesUtils from './sourcesUtilsBrowser';
+import topicUtils from './topicUtilsBrowser';
+import quizTopicMapper from './quizTopicMapper';
+import subjectMapper from './subjectMapper';
 
 // Dynamic imports for quiz files
 const quizModules = import.meta.glob('../data/quizzes/**/*.json', { eager: true });
@@ -9,14 +13,15 @@ const quizModules = import.meta.glob('../data/quizzes/**/*.json', { eager: true 
 const loadQuizzes = (): Record<string, QuizSeries[]> => {
   console.log('Starting quiz loading...');
   console.log('Available quiz modules:', Object.keys(quizModules));
-  console.log('Subjects_Pages from index:', subjects.subjects);
+  console.log('Subjects from index:', subjects.subjects);
+  console.log('Valid subject IDs:', subjectMapper.getAllSubjectIds());
 
   const quizzesBySubject: Record<string, QuizSeries[]> = {};
   
-  // Initialize arrays for each subject
-  subjects.subjects.forEach(subject => {
-    console.log(`Initializing subject: ${subject.id}`);
-    quizzesBySubject[subject.id] = [];
+  // Initialize arrays for all valid subject IDs
+  subjectMapper.getAllSubjectIds().forEach(subjectId => {
+    console.log(`Initializing subject: ${subjectId}`);
+    quizzesBySubject[subjectId] = [];
   });
 
   // Use a Set to track used question IDs
@@ -27,36 +32,63 @@ const loadQuizzes = (): Record<string, QuizSeries[]> => {
     try {
       console.log('Processing module:', module);
       const quiz = module.default as QuizSeries;
-      if (!quiz?.subjectId || !subjects.subjects.find(s => s.id === quiz.subjectId)) {
-        console.warn(`Invalid subject ID in quiz: ${quiz?.id}. Valid subjects are: ${subjects.subjects.map(s => s.id).join(', ')}`);
+      
+      if (!quiz?.subjectId) {
+        console.warn(`Quiz is missing a subject ID: ${quiz?.id}`);
         return;
       }
-      if (quiz?.subjectId && quizzesBySubject[quiz.subjectId]) {
-        // Ensure question IDs are unique *across all quizzes*
-        const uniqueQuestions: Question[] = quiz.questions.map(question => {
-          let uniqueId = question.id;
-          let counter = 1;
-          // If ID already exists, generate a new unique ID
-          while (usedQuestionIds.has(uniqueId)) {
-            uniqueId = `${question.id}-${counter}`;
-            counter++;
-          }
-          usedQuestionIds.add(uniqueId);
-          return { ...question, id: uniqueId, topic: question.topic || "General" }; // Ensure topic is set
-        });
+      
+      // Try to register the subject ID if it's not already valid
+      if (!subjectMapper.isValidSubjectId(quiz.subjectId)) {
+        console.warn(`Unrecognized subject ID in quiz: ${quiz?.id}. Subject ID: ${quiz.subjectId}`);
+        console.warn(`Attempting to register as a new subject ID...`);
+        
+        // Register the new subject ID with a default mapping to INCOSE_SEHB5
+        subjectMapper.registerSubjectId(quiz.subjectId);
+        
+        // Initialize an array for this subject ID if it doesn't exist
+        if (!quizzesBySubject[quiz.subjectId]) {
+          console.log(`Initializing newly registered subject: ${quiz.subjectId}`);
+          quizzesBySubject[quiz.subjectId] = [];
+        }
+      }
+      
+      // Ensure question IDs are unique *across all quizzes*
+      const uniqueQuestions: Question[] = quiz.questions.map(question => {
+        let uniqueId = question.id;
+        let counter = 1;
+        // If ID already exists, generate a new unique ID
+        while (usedQuestionIds.has(uniqueId)) {
+          uniqueId = `${question.id}-${counter}`;
+          counter++;
+        }
+        usedQuestionIds.add(uniqueId);
+        
+        // Map the question's chapter/topic to a standardized topic from the index
+        const standardizedTopic = quizTopicMapper.findTopicForQuestion(question);
+        
+        return { 
+          ...question, 
+          id: uniqueId, 
+          topic: standardizedTopic 
+        };
+      });
 
-        quizzesBySubject[quiz.subjectId].push({ ...quiz, questions: uniqueQuestions }); // Use unique questions
-        console.log(`Added quiz to subject ${quiz.subjectId}`);
-      } else {
-        console.warn('Invalid quiz data:', quiz);
-        console.warn('Available subjects:', Object.keys(quizzesBySubject));
+      quizzesBySubject[quiz.subjectId].push({ ...quiz, questions: uniqueQuestions });
+      console.log(`Added quiz to subject ${quiz.subjectId}`);
+      
+      // If this quiz subject maps to an index subject, also add it there
+      const standardizedSubjectId = subjectMapper.getStandardizedSubjectId(quiz.subjectId);
+      if (standardizedSubjectId !== quiz.subjectId) {
+        quizzesBySubject[standardizedSubjectId].push({ ...quiz, questions: uniqueQuestions });
+        console.log(`Also added quiz to standardized subject ${standardizedSubjectId}`);
       }
     } catch (error) {
       console.error('Error processing quiz module:', error);
     }
   });
   
-  console.log('Final quizzes by subject:', quizzesBySubject);
+  console.log('Final quizzes by subject:', Object.keys(quizzesBySubject));
   return quizzesBySubject;
 };
 
@@ -145,12 +177,40 @@ export function getRandomQuestions(count: number = 10): Question[] {
  * @returns Detailed subject information or null if not found
  */
 export const getSubjectDetails = (subjectId: string) => {
-  try {
-    const sourcesPath = path.join(__dirname, '../data/subjects/sources.json');
-    const sourcesData = JSON.parse(fs.readFileSync(sourcesPath, 'utf8'));
-    return sourcesData.sources.find(source => source.id === subjectId) || null;
-  } catch (error) {
-    console.error('Error loading subject details:', error);
-    return null;
-  }
+  return sourcesUtils.getSourceById(subjectId);
+};
+
+// Add this function to get quizzes by topic
+export const getQuizzesByTopic = (topicName: string): QuizSeries[] => {
+  const allQuizzes = Object.values(quizzesBySubject).flat();
+  
+  // Filter quizzes that have questions with the specified topic
+  return allQuizzes.filter(quiz => 
+    quiz.questions.some(question => question.topic === topicName)
+  );
+};
+
+// Add this function to get questions by topic
+export const getQuestionsByTopic = (topicName: string): Question[] => {
+  const allQuizzes = Object.values(quizzesBySubject).flat();
+  
+  // Extract all questions with the specified topic
+  return allQuizzes.flatMap(quiz => 
+    quiz.questions.filter(question => question.topic === topicName)
+  );
+};
+
+// Add this function to get related questions for a topic
+export const getRelatedQuestions = (topicName: string): Question[] => {
+  // Get related topics
+  const relatedTopics = topicUtils.getRelatedTopics(topicName);
+  const relatedTopicNames = relatedTopics.map(topic => topic.name);
+  
+  // Get questions for all related topics
+  const allQuizzes = Object.values(quizzesBySubject).flat();
+  return allQuizzes.flatMap(quiz => 
+    quiz.questions.filter(question => 
+      relatedTopicNames.includes(question.topic)
+    )
+  );
 }; 

@@ -1,0 +1,358 @@
+{
+    "id": "risk-management-strategies-quiz",
+    "name": "Risk Management Strategies Quiz",
+    "subjectId": "se-handbook",
+    "questions": [
+      {
+        "id": "q1-risk-strat-quiz",
+        "text": "What does 'risk exposure' refer to in the context of Systems Engineering?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Risk Concepts",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q1-risk-strat-quiz",
+            "text": "The combination of the probability of a risk occurring and its potential impact on the project",
+            "isCorrect": true,
+            "explanation": "Risk exposure quantifies the overall threat by combining likelihood and consequence."
+          },
+          {
+            "id": "a2-q1-risk-strat-quiz",
+            "text": "The total number of risks identified in a project",
+            "isCorrect": false,
+            "explanation": "Exposure considers both probability and impact, not just the count of risks."
+          },
+          {
+            "id": "a3-q1-risk-strat-quiz",
+            "text": "A measure of only the financial impact of a risk",
+            "isCorrect": false,
+            "explanation": "Risk exposure encompasses various dimensions such as schedule, performance, and cost."
+          },
+          {
+            "id": "a4-q1-risk-strat-quiz",
+            "text": "The likelihood of risks being transferred to external parties",
+            "isCorrect": false,
+            "explanation": "Risk exposure is not about transfer, but about the inherent threat level."
+          }
+        ]
+      },
+      {
+        "id": "q2-risk-strat-quiz",
+        "text": "Select all that apply: Which of the following are common techniques for risk analysis in SE? (Select 3)",
+        "type": "multiple-choice",
+        "difficulty": "medium",
+        "topic": "Risk Analysis Techniques",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q2-risk-strat-quiz",
+            "text": "Fault Tree Analysis (FTA)",
+            "isCorrect": true,
+            "explanation": "FTA is used to analyze the probability of system failures."
+          },
+          {
+            "id": "a2-q2-risk-strat-quiz",
+            "text": "Failure Modes and Effects Analysis (FMEA)",
+            "isCorrect": true,
+            "explanation": "FMEA identifies potential failure modes and assesses their impacts."
+          },
+          {
+            "id": "a3-q2-risk-strat-quiz",
+            "text": "Monte Carlo Simulation",
+            "isCorrect": true,
+            "explanation": "Monte Carlo Simulation quantifies risk exposure by modeling uncertainty."
+          },
+          {
+            "id": "a4-q2-risk-strat-quiz",
+            "text": "Ignoring historical project data",
+            "isCorrect": false,
+            "explanation": "Historical data is valuable for identifying and assessing risks."
+          }
+        ]
+      },
+      {
+        "id": "q3-risk-strat-quiz",
+        "text": "How does risk prioritization influence decision-making in Systems Engineering?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Risk Prioritization",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q3-risk-strat-quiz",
+            "text": "It helps focus resources on mitigating the most critical risks first",
+            "isCorrect": true,
+            "explanation": "Prioritization ensures that high-exposure risks are addressed to minimize potential negative impacts."
+          },
+          {
+            "id": "a2-q3-risk-strat-quiz",
+            "text": "It delays decision-making until all risks are eliminated",
+            "isCorrect": false,
+            "explanation": "No process can eliminate all risks; prioritization guides timely decisions."
+          },
+          {
+            "id": "a3-q3-risk-strat-quiz",
+            "text": "It reduces the overall number of risks by merging similar ones",
+            "isCorrect": false,
+            "explanation": "Prioritization evaluates risk impact and likelihood rather than reducing their number."
+          },
+          {
+            "id": "a4-q3-risk-strat-quiz",
+            "text": "It only focuses on cost-related risks",
+            "isCorrect": false,
+            "explanation": "Risk prioritization considers multiple dimensions such as schedule, performance, and quality."
+          }
+        ]
+      },
+      {
+        "id": "q4-risk-strat-quiz",
+        "text": "Select all that apply: Which factors can contribute to an increase in project risk? (Select 2)",
+        "type": "multiple-choice",
+        "difficulty": "hard",
+        "topic": "Risk Factors",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q4-risk-strat-quiz",
+            "text": "Ambiguous or incomplete requirements",
+            "isCorrect": true,
+            "explanation": "Poorly defined requirements increase uncertainty and risk."
+          },
+          {
+            "id": "a2-q4-risk-strat-quiz",
+            "text": "High system complexity and interdependencies",
+            "isCorrect": true,
+            "explanation": "Complex systems tend to have a higher potential for unforeseen interactions and failures."
+          },
+          {
+            "id": "a3-q4-risk-strat-quiz",
+            "text": "Over-standardization of processes",
+            "isCorrect": false,
+            "explanation": "While rigidity can be an issue, over-standardization is not a primary risk factor."
+          },
+          {
+            "id": "a4-q4-risk-strat-quiz",
+            "text": "Excessive focus on aesthetic design",
+            "isCorrect": false,
+            "explanation": "Aesthetic design is generally not a contributor to project risk in SE."
+          }
+        ]
+      },
+      {
+        "id": "q5-risk-strat-quiz",
+        "text": "What is the role of contingency planning in risk management?",
+        "type": "simple-choice",
+        "difficulty": "hard",
+        "topic": "Risk Response",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q5-risk-strat-quiz",
+            "text": "To develop alternative strategies and actions to be implemented if a risk event occurs",
+            "isCorrect": true,
+            "explanation": "Contingency planning ensures that the team is prepared with predefined actions if risks materialize."
+          },
+          {
+            "id": "a2-q5-risk-strat-quiz",
+            "text": "To completely avoid all identified risks",
+            "isCorrect": false,
+            "explanation": "It is unrealistic to avoid all risks; the goal is to mitigate their impact."
+          },
+          {
+            "id": "a3-q5-risk-strat-quiz",
+            "text": "To solely focus on cost savings in risk response",
+            "isCorrect": false,
+            "explanation": "Contingency planning encompasses multiple response strategies beyond just cost considerations."
+          },
+          {
+            "id": "a4-q5-risk-strat-quiz",
+            "text": "To delay project execution until risks are resolved",
+            "isCorrect": false,
+            "explanation": "Contingency plans are designed to address risks while allowing the project to continue."
+          }
+        ]
+      },
+      {
+        "id": "q6-risk-strat-quiz",
+        "text": "Which statement best describes the relationship between risk management and configuration management in SE?",
+        "type": "simple-choice",
+        "difficulty": "hard",
+        "topic": "Risk & Configuration Management",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q6-risk-strat-quiz",
+            "text": "Effective configuration management helps control changes that may introduce new risks or exacerbate existing ones",
+            "isCorrect": true,
+            "explanation": "By managing changes systematically, configuration management supports risk mitigation."
+          },
+          {
+            "id": "a2-q6-risk-strat-quiz",
+            "text": "Risk management and configuration management are independent and unrelated processes",
+            "isCorrect": false,
+            "explanation": "They are interrelated; changes managed through configuration management can impact risk levels."
+          },
+          {
+            "id": "a3-q6-risk-strat-quiz",
+            "text": "Configuration management eliminates the need for risk management",
+            "isCorrect": false,
+            "explanation": "While configuration management controls change, risk management remains necessary to address uncertainties."
+          },
+          {
+            "id": "a4-q6-risk-strat-quiz",
+            "text": "Risk management replaces configuration management in iterative projects",
+            "isCorrect": false,
+            "explanation": "Both processes are essential and complement each other in complex projects."
+          }
+        ]
+      },
+      {
+        "id": "q7-risk-strat-quiz",
+        "text": "Select all that apply: What are the benefits of integrating risk management throughout the system life cycle? (Select 2)",
+        "type": "multiple-choice",
+        "difficulty": "medium",
+        "topic": "Risk Integration",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q7-risk-strat-quiz",
+            "text": "Improved responsiveness to changing project conditions",
+            "isCorrect": true,
+            "explanation": "Continuous risk management allows for prompt adjustments as new risks emerge."
+          },
+          {
+            "id": "a2-q7-risk-strat-quiz",
+            "text": "Enhanced decision-making through up-to-date risk data",
+            "isCorrect": true,
+            "explanation": "Regular risk assessments provide timely data that inform better decisions."
+          },
+          {
+            "id": "a3-q7-risk-strat-quiz",
+            "text": "Increased project delays due to excessive monitoring",
+            "isCorrect": false,
+            "explanation": "Effective risk integration is designed to mitigate delays, not cause them."
+          },
+          {
+            "id": "a4-q7-risk-strat-quiz",
+            "text": "Complete elimination of all project risks",
+            "isCorrect": false,
+            "explanation": "Risk management reduces uncertainty; it does not completely eliminate all risks."
+          }
+        ]
+      },
+      {
+        "id": "q8-risk-strat-quiz",
+        "text": "What is the difference between qualitative and quantitative risk analysis?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Risk Analysis Techniques",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q8-risk-strat-quiz",
+            "text": "Qualitative analysis assesses risks using descriptive scales, while quantitative analysis uses numerical data to measure risk exposure",
+            "isCorrect": true,
+            "explanation": "This distinction outlines how risks are evaluated using either descriptive or numerical methods."
+          },
+          {
+            "id": "a2-q8-risk-strat-quiz",
+            "text": "Qualitative analysis is more precise than quantitative analysis",
+            "isCorrect": false,
+            "explanation": "Quantitative analysis is typically more precise; qualitative analysis provides a general risk ranking."
+          },
+          {
+            "id": "a3-q8-risk-strat-quiz",
+            "text": "There is no difference; both use numerical data exclusively",
+            "isCorrect": false,
+            "explanation": "They differ fundamentally in approach—one uses descriptive scales while the other uses numbers."
+          },
+          {
+            "id": "a4-q8-risk-strat-quiz",
+            "text": "Quantitative analysis is only used in financial risk assessment",
+            "isCorrect": false,
+            "explanation": "Quantitative methods are used across various dimensions of risk, not just financial."
+          }
+        ]
+      },
+      {
+        "id": "q9-risk-strat-quiz",
+        "text": "Which of the following is NOT considered a risk response strategy?",
+        "type": "simple-choice",
+        "difficulty": "medium",
+        "topic": "Risk Response",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q9-risk-strat-quiz",
+            "text": "Avoidance",
+            "isCorrect": false,
+            "explanation": "Avoidance is a recognized risk response strategy."
+          },
+          {
+            "id": "a2-q9-risk-strat-quiz",
+            "text": "Transfer",
+            "isCorrect": false,
+            "explanation": "Risk transfer is a common strategy, for example by using insurance or outsourcing."
+          },
+          {
+            "id": "a3-q9-risk-strat-quiz",
+            "text": "Acceptance",
+            "isCorrect": false,
+            "explanation": "Acceptance is a valid approach when risks are tolerable."
+          },
+          {
+            "id": "a4-q9-risk-strat-quiz",
+            "text": "Isolation",
+            "isCorrect": true,
+            "explanation": "Isolation is not recognized as a standard risk response strategy."
+          }
+        ]
+      },
+      {
+        "id": "q10-risk-strat-quiz",
+        "text": "Select all that apply: Which organizational factors can impede effective risk management in SE? (Select 2)",
+        "type": "multiple-choice",
+        "difficulty": "hard",
+        "topic": "Organizational Risk Factors",
+        "chapter": "Risk Management Processes",
+        "important": true,
+        "answers": [
+          {
+            "id": "a1-q10-risk-strat-quiz",
+            "text": "Lack of a risk-aware culture",
+            "isCorrect": true,
+            "explanation": "Without a culture that recognizes and proactively manages risks, processes can fail."
+          },
+          {
+            "id": "a2-q10-risk-strat-quiz",
+            "text": "Inadequate communication and collaboration among teams",
+            "isCorrect": true,
+            "explanation": "Poor communication hampers the sharing of risk information and effective mitigation."
+          },
+          {
+            "id": "a3-q10-risk-strat-quiz",
+            "text": "Excessive reliance on automated risk management tools",
+            "isCorrect": false,
+            "explanation": "While overreliance can be problematic, the lack of human judgment is usually the bigger issue."
+          },
+          {
+            "id": "a4-q10-risk-strat-quiz",
+            "text": "Over-standardization of risk processes, leading to inflexibility",
+            "isCorrect": false,
+            "explanation": "Standardization can be helpful if balanced with flexibility; it is not inherently an impediment."
+          }
+        ]
+      }
+    ]
+  }
+  
