@@ -131,16 +131,17 @@ const MultipleChoiceQuestionComponent: React.FC<MultipleChoiceQuestionProps> = (
         <>
           {question.answers
             .filter(answer => selectedAnswers.includes(answer.id))
-            .map(answer => (
-              answerElements.current[answer.id] ? (
+            .map(answer => {
+              const element = answerElements.current[answer.id];
+              return element ? (
                 <AnswerFeedback 
                   key={answer.id}
                   isCorrect={answer.isCorrect}
                   isVisible={showFeedback}
-                  element={answerElements.current[answer.id]}
+                  element={element}
                 />
-              ) : null
-            ))}
+              ) : null;
+            })}
         </>
       )}
     </QuestionLayout>
