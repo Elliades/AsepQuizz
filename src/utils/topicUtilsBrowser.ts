@@ -6,7 +6,7 @@
  * 
  * This is a browser-compatible version that works with pre-loaded data.
  */
-import { IndexData, Topic } from './sourcesTypes';
+import { IndexData, Topic, TopicsMap } from './sourcesTypes';
 import indexData from '../data/subjects/index.json';
 
 // Cache the index data
@@ -17,7 +17,13 @@ const indexCache = indexData as IndexData;
  * @returns Array of all topics
  */
 export function getAllTopics(): Topic[] {
-  return indexCache.topics || [];
+  // If topicsArray exists, use it
+  if (indexCache.topicsArray) {
+    return indexCache.topicsArray;
+  }
+  
+  // Otherwise, convert the topics object to an array
+  return Object.values(indexCache.topics || {});
 }
 
 /**
@@ -26,7 +32,13 @@ export function getAllTopics(): Topic[] {
  * @returns The topic object or null if not found
  */
 export function getTopicByName(topicName: string): Topic | null {
-  return indexCache.topics?.find(topic => topic.name === topicName) || null;
+  // Direct lookup from the topics object (more efficient)
+  if (indexCache.topics && indexCache.topics[topicName]) {
+    return indexCache.topics[topicName];
+  }
+  
+  // Fallback to array search
+  return getAllTopics().find(topic => topic.name === topicName) || null;
 }
 
 /**
@@ -35,9 +47,9 @@ export function getTopicByName(topicName: string): Topic | null {
  * @returns Array of topics related to the source
  */
 export function getTopicsBySourceId(sourceId: string): Topic[] {
-  return indexCache.topics?.filter(topic => 
+  return getAllTopics().filter(topic => 
     topic.sources.some(source => source.id === sourceId)
-  ) || [];
+  );
 }
 
 /**
@@ -46,9 +58,9 @@ export function getTopicsBySourceId(sourceId: string): Topic[] {
  * @returns Array of topics related to the chapter
  */
 export function getTopicsByChapterId(chapterId: string): Topic[] {
-  return indexCache.topics?.filter(topic => 
+  return getAllTopics().filter(topic => 
     topic.chapters.some(chapter => chapter.id === chapterId)
-  ) || [];
+  );
 }
 
 /**
@@ -57,9 +69,9 @@ export function getTopicsByChapterId(chapterId: string): Topic[] {
  * @returns Array of topics related to the section
  */
 export function getTopicsBySectionId(sectionId: string): Topic[] {
-  return indexCache.topics?.filter(topic => 
+  return getAllTopics().filter(topic => 
     topic.sections.some(section => section.id === sectionId)
-  ) || [];
+  );
 }
 
 /**
@@ -70,9 +82,17 @@ export function getTopicsBySectionId(sectionId: string): Topic[] {
 export function searchTopics(keyword: string): Topic[] {
   const lowerKeyword = keyword.toLowerCase();
   
-  return indexCache.topics?.filter(topic => 
+  // If we have the topics object, we can do a more efficient search
+  if (indexCache.topics) {
+    return Object.values(indexCache.topics).filter(topic => 
+      topic.name.toLowerCase().includes(lowerKeyword)
+    );
+  }
+  
+  // Fallback to array search
+  return getAllTopics().filter(topic => 
     topic.name.toLowerCase().includes(lowerKeyword)
-  ) || [];
+  );
 }
 
 /**
@@ -87,7 +107,7 @@ export function getRelatedTopics(topicName: string): Topic[] {
   const relatedTopics: Topic[] = [];
   
   // Find topics that share sources, chapters, or sections
-  for (const otherTopic of indexCache.topics || []) {
+  for (const otherTopic of getAllTopics()) {
     if (otherTopic.name === topicName) continue;
     
     // Check if they share sources

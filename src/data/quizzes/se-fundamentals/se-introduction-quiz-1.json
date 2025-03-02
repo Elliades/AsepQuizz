@@ -1,468 +1,457 @@
 {
-    "id": "se-intro-quiz-1",
-    "name": "Systems Engineering Introduction Quiz 1",
-    "subjectId": "se-fundamentals",
-    "questions": [
-      {
-        "id": "q1-se-intro-quiz-1",
-        "text": "What is the primary definition of Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q1-se-intro-quiz-1-a1",
-            "text": "A transdisciplinary and integrative approach to enable successful system realization through the coordination of technical and managerial processes.",
-            "isCorrect": true,
-            "explanation": "Systems Engineering combines various disciplines and processes to ensure that systems meet stakeholder needs effectively."
-          },
-          {
-            "id": "q1-se-intro-quiz-1-a2",
-            "text": "A purely technical process that focuses only on hardware design.",
-            "isCorrect": false,
-            "explanation": "Systems Engineering is not limited to hardware; it integrates both technical and managerial aspects across the lifecycle."
-          },
-          {
-            "id": "q1-se-intro-quiz-1-a3",
-            "text": "A financial planning method for resource allocation.",
-            "isCorrect": false,
-            "explanation": "While cost considerations are important, Systems Engineering primarily focuses on the holistic integration of system components."
-          },
-          {
-            "id": "q1-se-intro-quiz-1-a4",
-            "text": "A set of coding standards for software development.",
-            "isCorrect": false,
-            "explanation": "Systems Engineering encompasses much more than just software coding practices."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q2-se-intro-quiz-1",
-        "text": "Which of the following is a key characteristic of a system according to Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q2-se-intro-quiz-1-a1",
-            "text": "A collection of independent parts that operate in isolation.",
-            "isCorrect": false,
-            "explanation": "A system is more than just a collection of parts; its behavior emerges from the interactions among its components."
-          },
-          {
-            "id": "q2-se-intro-quiz-1-a2",
-            "text": "Emergence, where the whole exhibits properties not found in its individual components.",
-            "isCorrect": true,
-            "explanation": "Emergence is a fundamental concept in Systems Engineering that explains how interactions lead to new system properties."
-          },
-          {
-            "id": "q2-se-intro-quiz-1-a3",
-            "text": "A set of software applications working together.",
-            "isCorrect": false,
-            "explanation": "Systems Engineering applies to both hardware and software, and involves integration beyond just applications."
-          },
-          {
-            "id": "q2-se-intro-quiz-1-a4",
-            "text": "A method solely focused on cost reduction.",
-            "isCorrect": false,
-            "explanation": "While cost is a factor, the key characteristic of a system is the emergent behavior from integrated components."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q3-se-intro-quiz-1",
-        "text": "How does Systems Engineering address system complexity?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q3-se-intro-quiz-1-a1",
-            "text": "By focusing solely on individual components without considering their interactions.",
-            "isCorrect": false,
-            "explanation": "Ignoring interactions does not resolve complexity; Systems Engineering emphasizes integration across components."
-          },
-          {
-            "id": "q3-se-intro-quiz-1-a2",
-            "text": "By integrating technical, managerial, and human factors to ensure that all parts work together effectively.",
-            "isCorrect": true,
-            "explanation": "A holistic approach that coordinates various aspects of a system is essential to manage complexity."
-          },
-          {
-            "id": "q3-se-intro-quiz-1-a3",
-            "text": "By outsourcing complex components to specialized vendors.",
-            "isCorrect": false,
-            "explanation": "While outsourcing may be part of a strategy, it does not address the inherent complexity within system interactions."
-          },
-          {
-            "id": "q3-se-intro-quiz-1-a4",
-            "text": "By eliminating non-essential components regardless of functionality.",
-            "isCorrect": false,
-            "explanation": "Elimination of components without analysis can lead to loss of essential functions; integration is key."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q4-se-intro-quiz-1",
-        "text": "What does 'systems thinking' imply in the context of Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q4-se-intro-quiz-1-a1",
-            "text": "Analyzing components in isolation without considering their relationships.",
-            "isCorrect": false,
-            "explanation": "Systems thinking requires understanding the interactions and interdependencies between components."
-          },
-          {
-            "id": "q4-se-intro-quiz-1-a2",
-            "text": "Focusing solely on cost and schedule constraints.",
-            "isCorrect": false,
-            "explanation": "While cost and schedule are important, systems thinking is about the overall behavior and integration of the system."
-          },
-          {
-            "id": "q4-se-intro-quiz-1-a3",
-            "text": "Understanding and managing the interrelationships among system components to optimize overall performance.",
-            "isCorrect": true,
-            "explanation": "This approach ensures that the system functions as an integrated whole rather than as isolated parts."
-          },
-          {
-            "id": "q4-se-intro-quiz-1-a4",
-            "text": "A method for rapid software development.",
-            "isCorrect": false,
-            "explanation": "Systems thinking is not limited to software development; it applies to the entire system lifecycle."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q5-se-intro-quiz-1",
-        "text": "Why is defining system boundaries important in Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q5-se-intro-quiz-1-a1",
-            "text": "It clarifies which elements are part of the system and identifies external interfaces.",
-            "isCorrect": true,
-            "explanation": "Clear boundaries help in understanding the scope and interactions of the system with its environment."
-          },
-          {
-            "id": "q5-se-intro-quiz-1-a2",
-            "text": "It limits the system to internal components only, excluding any external factors.",
-            "isCorrect": false,
-            "explanation": "Excluding external interfaces is contrary to Systems Engineering, which considers all relevant interactions."
-          },
-          {
-            "id": "q5-se-intro-quiz-1-a3",
-            "text": "It is used solely for reducing project costs.",
-            "isCorrect": false,
-            "explanation": "While cost is a consideration, the primary purpose of defining boundaries is to understand system scope and interfaces."
-          },
-          {
-            "id": "q5-se-intro-quiz-1-a4",
-            "text": "It eliminates the need for stakeholder analysis.",
-            "isCorrect": false,
-            "explanation": "Defining boundaries does not remove the need to consider stakeholder requirements; rather, it helps focus them."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q6-se-intro-quiz-1",
-        "text": "What is a core objective of Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q6-se-intro-quiz-1-a1",
-            "text": "To deliver systems that are fit for purpose and meet stakeholder requirements throughout the lifecycle.",
-            "isCorrect": true,
-            "explanation": "Meeting stakeholder needs and ensuring system fitness is central to Systems Engineering."
-          },
-          {
-            "id": "q6-se-intro-quiz-1-a2",
-            "text": "To focus solely on cost minimization regardless of system performance.",
-            "isCorrect": false,
-            "explanation": "Cost minimization is important, but it should not compromise the system's ability to meet its intended purpose."
-          },
-          {
-            "id": "q6-se-intro-quiz-1-a3",
-            "text": "To develop isolated technical solutions without considering integration.",
-            "isCorrect": false,
-            "explanation": "Systems Engineering emphasizes integration and holistic solution development, not isolated technical fixes."
-          },
-          {
-            "id": "q6-se-intro-quiz-1-a4",
-            "text": "To standardize software development practices exclusively.",
-            "isCorrect": false,
-            "explanation": "While standardization can be a part of the process, Systems Engineering covers a broader range of activities beyond software."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q7-se-intro-quiz-1",
-        "text": "How does Systems Engineering typically address uncertainty in projects?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q7-se-intro-quiz-1-a1",
-            "text": "By ignoring risks and focusing only on technical solutions.",
-            "isCorrect": false,
-            "explanation": "Ignoring risks can lead to unforeseen issues; effective risk management is crucial in Systems Engineering."
-          },
-          {
-            "id": "q7-se-intro-quiz-1-a2",
-            "text": "By incorporating iterative reviews and risk management processes to mitigate uncertainty throughout the lifecycle.",
-            "isCorrect": true,
-            "explanation": "Iterative reviews and proactive risk management help manage uncertainties and adapt to changes."
-          },
-          {
-            "id": "q7-se-intro-quiz-1-a3",
-            "text": "By relying solely on historical data to predict future issues.",
-            "isCorrect": false,
-            "explanation": "While historical data is useful, it must be complemented with proactive and adaptive strategies."
-          },
-          {
-            "id": "q7-se-intro-quiz-1-a4",
-            "text": "By eliminating all uncertainties before project initiation.",
-            "isCorrect": false,
-            "explanation": "It is impossible to eliminate all uncertainties; the goal is to manage and mitigate them effectively."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q8-se-intro-quiz-1",
-        "text": "What does the concept of 'emergence' in Systems Engineering refer to?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q8-se-intro-quiz-1-a1",
-            "text": "The predictable behavior of individual components when analyzed separately.",
-            "isCorrect": false,
-            "explanation": "Emergence refers to properties that appear only when components interact as a whole."
-          },
-          {
-            "id": "q8-se-intro-quiz-1-a2",
-            "text": "Properties of a system that arise from the interactions among its parts and are not present in the individual elements.",
-            "isCorrect": true,
-            "explanation": "This definition captures the essence of emergence, a key concept in understanding system behavior."
-          },
-          {
-            "id": "q8-se-intro-quiz-1-a3",
-            "text": "A method of rapidly assembling system components without testing interactions.",
-            "isCorrect": false,
-            "explanation": "Emergence is about natural system properties, not about the process of assembly."
-          },
-          {
-            "id": "q8-se-intro-quiz-1-a4",
-            "text": "A design strategy that ignores the interactions between system components.",
-            "isCorrect": false,
-            "explanation": "Ignoring interactions contradicts the principle of emergence in Systems Engineering."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q9-se-intro-quiz-1",
-        "text": "What is the significance of stakeholder needs in Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q9-se-intro-quiz-1-a1",
-            "text": "Stakeholder needs are optional and do not affect system design.",
-            "isCorrect": false,
-            "explanation": "Ignoring stakeholder needs can lead to a system that fails to meet its intended purpose."
-          },
-          {
-            "id": "q9-se-intro-quiz-1-a2",
-            "text": "They are central to the development process and influence every stage of the system lifecycle.",
-            "isCorrect": true,
-            "explanation": "Addressing stakeholder needs ensures that the final system aligns with the expectations and requirements of its users."
-          },
-          {
-            "id": "q9-se-intro-quiz-1-a3",
-            "text": "They only affect the marketing strategy and are not considered in technical design.",
-            "isCorrect": false,
-            "explanation": "Stakeholder needs drive both technical and managerial decisions throughout the system lifecycle."
-          },
-          {
-            "id": "q9-se-intro-quiz-1-a4",
-            "text": "They determine the color and aesthetic design of the system.",
-            "isCorrect": false,
-            "explanation": "While aesthetics may be a factor, stakeholder needs primarily influence functionality and performance."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      },
-      {
-        "id": "q1-se-intro-quiz-10-se-intro-quiz-1",
-        "text": "Which statement best describes the holistic approach of Systems Engineering?",
-        "type": "simple-choice",
-        "difficulty": "medium",
-        "topic": "Systems Engineering Introduction",
-        "chapter": "Systems Engineering Introduction",
-        "important": false,
-        "answers": [
-          {
-            "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a1",
-            "text": "Focusing solely on individual technical disciplines without considering their integration.",
-            "isCorrect": false,
-            "explanation": "A holistic approach requires integrating all relevant disciplines to ensure a cohesive system solution."
-          },
-          {
-            "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a2",
-            "text": "Integrating technical, managerial, and human factors to address the entire system lifecycle.",
-            "isCorrect": true,
-            "explanation": "This answer correctly reflects the comprehensive, interdisciplinary nature of Systems Engineering."
-          },
-          {
-            "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a3",
-            "text": "Prioritizing cost reduction above all other factors.",
-            "isCorrect": false,
-            "explanation": "While cost is important, the holistic approach balances multiple factors to achieve a system that meets all stakeholder needs."
-          },
-          {
-            "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a4",
-            "text": "Focusing exclusively on the technical design without considering operational use.",
-            "isCorrect": false,
-            "explanation": "Systems Engineering considers both technical and operational aspects to ensure that the system is effective in its intended environment."
-          }
-        ],
-        "tags": [
-          "systems-engineering overall",
-          "concepts",
-          "concepts",
-          "systems"
-        ],
-        "source": "INCOSE Handbook 4.0, Section 1.1",
-        "sourceQuestion": "ChatGPT",
-        "user-tags": [],
-        "comments": [],
-        "notations": []
-      }
-    ]
-  }
-  
+  "id": "se-intro-quiz-1",
+  "name": "Systems Engineering Introduction Quiz 1",
+  "subjectId": "se-fundamentals",
+  "questions": [
+    {
+      "id": "q1-se-intro-quiz-1",
+      "text": "What is the primary definition of Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q1-se-intro-quiz-1-a1",
+          "text": "A transdisciplinary and integrative approach to enable successful system realization through the coordination of technical and managerial processes.",
+          "isCorrect": true,
+          "explanation": "Systems Engineering combines various disciplines and processes to ensure that systems effectively meet stakeholder needs."
+        },
+        {
+          "id": "q1-se-intro-quiz-1-a2",
+          "text": "A purely technical process that focuses only on hardware design.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering encompasses both technical and managerial aspects across the lifecycle."
+        },
+        {
+          "id": "q1-se-intro-quiz-1-a3",
+          "text": "A financial planning method for resource allocation.",
+          "isCorrect": false,
+          "explanation": "While cost is a factor, the primary focus is on the holistic integration of system components."
+        },
+        {
+          "id": "q1-se-intro-quiz-1-a4",
+          "text": "A set of coding standards for software development.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering covers much more than just software coding practices."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q2-se-intro-quiz-1",
+      "text": "Which of the following is a key characteristic of a system according to Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q2-se-intro-quiz-1-a1",
+          "text": "A collection of independent parts that operate in isolation.",
+          "isCorrect": false,
+          "explanation": "A system is defined by the interactions among its components, not their isolation."
+        },
+        {
+          "id": "q2-se-intro-quiz-1-a2",
+          "text": "Emergence, where the whole exhibits properties not found in its individual components.",
+          "isCorrect": true,
+          "explanation": "Emergence is a core concept that illustrates how interactions lead to new system properties."
+        },
+        {
+          "id": "q2-se-intro-quiz-1-a3",
+          "text": "A set of software applications working together.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering applies to both hardware and software and involves more than just applications."
+        },
+        {
+          "id": "q2-se-intro-quiz-1-a4",
+          "text": "A method solely focused on cost reduction.",
+          "isCorrect": false,
+          "explanation": "Although cost is important, the key characteristic is the emergent behavior from integrated components."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q3-se-intro-quiz-1",
+      "text": "How does Systems Engineering address system complexity?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q3-se-intro-quiz-1-a1",
+          "text": "By focusing solely on individual components without considering their interactions.",
+          "isCorrect": false,
+          "explanation": "Ignoring interactions does not manage complexity; integration is key."
+        },
+        {
+          "id": "q3-se-intro-quiz-1-a2",
+          "text": "By integrating technical, managerial, and human factors to ensure that all parts work together effectively.",
+          "isCorrect": true,
+          "explanation": "A holistic approach that coordinates all aspects of the system is essential to manage complexity."
+        },
+        {
+          "id": "q3-se-intro-quiz-1-a3",
+          "text": "By outsourcing complex components to specialized vendors.",
+          "isCorrect": false,
+          "explanation": "Outsourcing does not inherently address the complexity arising from interactions."
+        },
+        {
+          "id": "q3-se-intro-quiz-1-a4",
+          "text": "By eliminating non-essential components regardless of functionality.",
+          "isCorrect": false,
+          "explanation": "Elimination without analysis risks losing essential system functions."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q4-se-intro-quiz-1",
+      "text": "What does 'systems thinking' imply in the context of Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q4-se-intro-quiz-1-a1",
+          "text": "Analyzing components in isolation without considering their relationships.",
+          "isCorrect": false,
+          "explanation": "Systems thinking requires understanding the interdependencies between components."
+        },
+        {
+          "id": "q4-se-intro-quiz-1-a2",
+          "text": "Focusing solely on cost and schedule constraints.",
+          "isCorrect": false,
+          "explanation": "While cost and schedule are important, systems thinking emphasizes holistic integration."
+        },
+        {
+          "id": "q4-se-intro-quiz-1-a3",
+          "text": "Understanding and managing the interrelationships among system components to optimize overall performance.",
+          "isCorrect": true,
+          "explanation": "This ensures that the system functions as an integrated whole."
+        },
+        {
+          "id": "q4-se-intro-quiz-1-a4",
+          "text": "A method for rapid software development.",
+          "isCorrect": false,
+          "explanation": "Systems thinking applies across the entire lifecycle, not limited to software."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q5-se-intro-quiz-1",
+      "text": "Why is defining system boundaries important in Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q5-se-intro-quiz-1-a1",
+          "text": "It clarifies which elements are part of the system and identifies external interfaces.",
+          "isCorrect": true,
+          "explanation": "Clear boundaries are essential for understanding the system's scope and interactions."
+        },
+        {
+          "id": "q5-se-intro-quiz-1-a2",
+          "text": "It limits the system to internal components only, excluding external factors.",
+          "isCorrect": false,
+          "explanation": "Excluding external factors contradicts Systems Engineering, which considers all relevant interfaces."
+        },
+        {
+          "id": "q5-se-intro-quiz-1-a3",
+          "text": "It is used solely for reducing project costs.",
+          "isCorrect": false,
+          "explanation": "Cost is a consideration but not the primary reason for defining boundaries."
+        },
+        {
+          "id": "q5-se-intro-quiz-1-a4",
+          "text": "It eliminates the need for stakeholder analysis.",
+          "isCorrect": false,
+          "explanation": "Defining boundaries supports stakeholder analysis by clarifying the scope of influence."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q6-se-intro-quiz-1",
+      "text": "What is a core objective of Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q6-se-intro-quiz-1-a1",
+          "text": "To deliver systems that are fit for purpose and meet stakeholder requirements throughout the lifecycle.",
+          "isCorrect": true,
+          "explanation": "Meeting stakeholder needs and ensuring system fitness is central to Systems Engineering."
+        },
+        {
+          "id": "q6-se-intro-quiz-1-a2",
+          "text": "To focus solely on cost minimization regardless of system performance.",
+          "isCorrect": false,
+          "explanation": "While cost is important, it should not compromise system performance or stakeholder needs."
+        },
+        {
+          "id": "q6-se-intro-quiz-1-a3",
+          "text": "To develop isolated technical solutions without considering integration.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering emphasizes integration and holistic solution development."
+        },
+        {
+          "id": "q6-se-intro-quiz-1-a4",
+          "text": "To standardize software development practices exclusively.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering covers a broader range of activities beyond just software development."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q7-se-intro-quiz-1",
+      "text": "How does Systems Engineering typically address uncertainty in projects?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q7-se-intro-quiz-1-a1",
+          "text": "By ignoring risks and focusing only on technical solutions.",
+          "isCorrect": false,
+          "explanation": "Ignoring risks leads to unforeseen issues; risk management is critical in Systems Engineering."
+        },
+        {
+          "id": "q7-se-intro-quiz-1-a2",
+          "text": "By incorporating iterative reviews and risk management processes to mitigate uncertainty throughout the lifecycle.",
+          "isCorrect": true,
+          "explanation": "Continuous reviews and proactive risk management help adapt to and mitigate uncertainty."
+        },
+        {
+          "id": "q7-se-intro-quiz-1-a3",
+          "text": "By relying solely on historical data to predict future issues.",
+          "isCorrect": false,
+          "explanation": "Historical data must be complemented with adaptive strategies to address uncertainty."
+        },
+        {
+          "id": "q7-se-intro-quiz-1-a4",
+          "text": "By eliminating all uncertainties before project initiation.",
+          "isCorrect": false,
+          "explanation": "It is impossible to eliminate all uncertainties; effective management is the goal."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q8-se-intro-quiz-1",
+      "text": "What does the concept of 'emergence' in Systems Engineering refer to?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q8-se-intro-quiz-1-a1",
+          "text": "The predictable behavior of individual components when analyzed separately.",
+          "isCorrect": false,
+          "explanation": "Emergence refers to properties that arise only from the interactions among components."
+        },
+        {
+          "id": "q8-se-intro-quiz-1-a2",
+          "text": "Properties of a system that arise from the interactions among its parts and are not present in the individual elements.",
+          "isCorrect": true,
+          "explanation": "This captures the essence of emergence in Systems Engineering."
+        },
+        {
+          "id": "q8-se-intro-quiz-1-a3",
+          "text": "A method of rapidly assembling system components without testing interactions.",
+          "isCorrect": false,
+          "explanation": "Emergence is about natural system properties, not the assembly process."
+        },
+        {
+          "id": "q8-se-intro-quiz-1-a4",
+          "text": "A design strategy that ignores the interactions between system components.",
+          "isCorrect": false,
+          "explanation": "Ignoring interactions contradicts the principle of emergence."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q9-se-intro-quiz-1",
+      "text": "What is the significance of stakeholder needs in Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q9-se-intro-quiz-1-a1",
+          "text": "Stakeholder needs are optional and do not affect system design.",
+          "isCorrect": false,
+          "explanation": "Ignoring stakeholder needs can lead to a system that fails to meet its intended purpose."
+        },
+        {
+          "id": "q9-se-intro-quiz-1-a2",
+          "text": "They are central to the development process and influence every stage of the system lifecycle.",
+          "isCorrect": true,
+          "explanation": "Addressing stakeholder needs is essential for ensuring the final system meets its requirements."
+        },
+        {
+          "id": "q9-se-intro-quiz-1-a3",
+          "text": "They only affect the marketing strategy and are not considered in technical design.",
+          "isCorrect": false,
+          "explanation": "Stakeholder needs drive both technical and managerial decisions throughout the lifecycle."
+        },
+        {
+          "id": "q9-se-intro-quiz-1-a4",
+          "text": "They determine the color and aesthetic design of the system.",
+          "isCorrect": false,
+          "explanation": "While aesthetics may be a factor, stakeholder needs primarily influence functionality and performance."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    },
+    {
+      "id": "q1-se-intro-quiz-10-se-intro-quiz-1",
+      "text": "Which statement best describes the holistic approach of Systems Engineering?",
+      "type": "simple-choice",
+      "difficulty": "medium",
+      "topic": "Systems Engineering Introduction",
+      "chapter": "1.1 Systems Engineering Introduction",
+      "important": false,
+      "answers": [
+        {
+          "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a1",
+          "text": "Focusing solely on individual technical disciplines without considering their integration.",
+          "isCorrect": false,
+          "explanation": "A holistic approach requires integrating all relevant disciplines for a cohesive system solution."
+        },
+        {
+          "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a2",
+          "text": "Integrating technical, managerial, and human factors to address the entire system lifecycle.",
+          "isCorrect": true,
+          "explanation": "This reflects the comprehensive, interdisciplinary nature of Systems Engineering."
+        },
+        {
+          "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a3",
+          "text": "Prioritizing cost reduction above all other factors.",
+          "isCorrect": false,
+          "explanation": "While cost is important, a holistic approach balances multiple factors to meet stakeholder needs."
+        },
+        {
+          "id": "q1-se-intro-quiz-10-se-intro-quiz-1-a4",
+          "text": "Focusing exclusively on the technical design without considering operational use.",
+          "isCorrect": false,
+          "explanation": "Systems Engineering considers both technical and operational aspects to ensure effectiveness in real-world conditions."
+        }
+      ],
+      "tags": [
+        "systems-engineering overall",
+        "concepts",
+        "systems"
+      ],
+      "source": "INCOSE Handbook 4.0, Section 1.1",
+      "sourceQuestion": "ChatGPT",
+      "user-tags": [],
+      "comments": [],
+      "notations": []
+    }
+  ]
+}

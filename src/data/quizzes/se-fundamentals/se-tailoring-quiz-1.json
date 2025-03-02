@@ -8,8 +8,8 @@
       "text": "What is the primary objective of tailoring in Systems Engineering?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
@@ -53,8 +53,8 @@
       "text": "Which of the following factors should be considered when tailoring SE processes? (Select all 3 correct answers out of 4)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
@@ -79,7 +79,7 @@
           "id": "a4-q2-se-tailoring-quiz-1",
           "text": "Personal opinions of unrelated engineers",
           "isCorrect": false,
-          "explanation": "Tailoring should be based on project and organizational factors, not on unrelated personal opinions."
+          "explanation": "Tailoring should be based on project-specific factors, not on unrelated personal opinions."
         }
       ],
       "tags": [
@@ -98,27 +98,27 @@
       "text": "What does 'Tailoring Considerations' in SE primarily involve?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
           "id": "a1-q3-se-tailoring-quiz-1",
           "text": "Selecting and adapting processes and activities to suit project needs",
           "isCorrect": true,
-          "explanation": "Tailoring Considerations focus on adapting the generic SE processes to the specifics of a project."
+          "explanation": "Tailoring Considerations focus on adapting generic SE processes to the specifics of a project."
         },
         {
           "id": "a2-q3-se-tailoring-quiz-1",
           "text": "Applying a one-size-fits-all process model to every project",
           "isCorrect": false,
-          "explanation": "A one-size-fits-all approach ignores the unique aspects of each project, contrary to the concept of tailoring."
+          "explanation": "A one-size-fits-all approach ignores the unique aspects of each project."
         },
         {
           "id": "a3-q3-se-tailoring-quiz-1",
           "text": "Focusing solely on cost reduction measures",
           "isCorrect": false,
-          "explanation": "Tailoring encompasses more than cost; it addresses overall project context and constraints."
+          "explanation": "Tailoring addresses multiple project dimensions, not only cost."
         },
         {
           "id": "a4-q3-se-tailoring-quiz-1",
@@ -143,8 +143,8 @@
       "text": "Select both correct aspects of SE Methodology/Approach Considerations. (Select both correct answers out of 3)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "SE Methodology/Approach Considerations",
+      "chapter": "4.2 SE Methodology/Approach Considerations",
       "important": false,
       "answers": [
         {
@@ -157,13 +157,13 @@
           "id": "a2-q4-se-tailoring-quiz-1",
           "text": "Agile Systems Engineering practices",
           "isCorrect": true,
-          "explanation": "Agile practices allow for flexible and iterative process adaptation, a core element in tailoring."
+          "explanation": "Agile practices allow for flexible and iterative process adaptation, which is central to tailoring."
         },
         {
           "id": "a3-q4-se-tailoring-quiz-1",
           "text": "Exclusive reliance on traditional waterfall methods",
           "isCorrect": false,
-          "explanation": "A rigid waterfall approach does not allow for the flexibility required in tailoring."
+          "explanation": "A rigid waterfall approach does not provide the flexibility required in tailoring."
         }
       ],
       "tags": [
@@ -171,7 +171,7 @@
         "tailoring",
         "application considerations"
       ],
-      "source": "INCOSE Handbook 4.0, Section 4.1",
+      "source": "INCOSE Handbook 4.0, Section 4.2",
       "source-question": "ChatGPT",
       "user-tags": [],
       "comments": [],
@@ -182,8 +182,8 @@
       "text": "Which of the following is NOT typically a factor considered in tailoring SE processes?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
@@ -227,8 +227,8 @@
       "text": "How do System Types Considerations influence tailoring in Systems Engineering?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "System Types Considerations",
+      "chapter": "4.3 System Types Considerations",
       "important": false,
       "answers": [
         {
@@ -261,7 +261,7 @@
         "tailoring",
         "application considerations"
       ],
-      "source": "INCOSE Handbook 4.0, Section 4.1",
+      "source": "INCOSE Handbook 4.0, Section 4.3",
       "source-question": "ChatGPT",
       "user-tags": [],
       "comments": [],
@@ -272,8 +272,8 @@
       "text": "Select all potential benefits of tailoring SE processes for specific domains. (Select all 3 correct answers out of 4)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Application of SE for Specific Domains",
+      "chapter": "4.4 Application of SE for Specific Product Sector or Domain Application",
       "important": false,
       "answers": [
         {
@@ -306,7 +306,7 @@
         "tailoring",
         "application considerations"
       ],
-      "source": "INCOSE Handbook 4.0, Section 4.1",
+      "source": "INCOSE Handbook 4.0, Section 4.4",
       "source-question": "ChatGPT",
       "user-tags": [],
       "comments": [],
@@ -317,8 +317,8 @@
       "text": "Which tailoring aspect is critical for aligning SE processes with existing organizational practices?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
@@ -331,13 +331,13 @@
           "id": "a2-q8-se-tailoring-quiz-1",
           "text": "Global market competition",
           "isCorrect": false,
-          "explanation": "While important, global competition is less critical than internal organizational factors for tailoring."
+          "explanation": "Global competition is less directly influential than internal organizational factors for tailoring."
         },
         {
           "id": "a3-q8-se-tailoring-quiz-1",
           "text": "Vendor capabilities",
           "isCorrect": false,
-          "explanation": "Vendor capabilities may influence some decisions, but aligning with internal practices is more crucial."
+          "explanation": "Vendor capabilities may influence decisions but aligning with internal practices is more crucial."
         },
         {
           "id": "a4-q8-se-tailoring-quiz-1",
@@ -362,8 +362,8 @@
       "text": "In tailoring, what role do project-specific constraints play?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
@@ -382,13 +382,13 @@
           "id": "a3-q9-se-tailoring-quiz-1",
           "text": "They only affect the budgeting phase",
           "isCorrect": false,
-          "explanation": "Constraints influence all aspects of the tailored process, not just budgeting."
+          "explanation": "Constraints influence the entire process, not solely budgeting."
         },
         {
           "id": "a4-q9-se-tailoring-quiz-1",
           "text": "They mandate the use of a fixed process model",
           "isCorrect": false,
-          "explanation": "Constraints are used to adapt the process, not to force a rigid, unchanging model."
+          "explanation": "Constraints are used to adapt the process, not to impose a rigid model."
         }
       ],
       "tags": [
@@ -407,8 +407,8 @@
       "text": "Select 3 out of the following 4 benefits of effective tailoring in Systems Engineering. (Select 3)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "Tailoring and Application Considerations",
-      "chapter": "Tailoring and Application Considerations",
+      "topic": "Tailoring Considerations",
+      "chapter": "4.1 Tailoring Considerations",
       "important": false,
       "answers": [
         {
@@ -421,19 +421,19 @@
           "id": "a2-q10-se-tailoring-quiz-1",
           "text": "Better risk management through customized process adaptation",
           "isCorrect": true,
-          "explanation": "By adapting processes to the project's context, risks can be managed more effectively."
+          "explanation": "Adapting processes to the project's context enables more effective risk mitigation."
         },
         {
           "id": "a3-q10-se-tailoring-quiz-1",
           "text": "Enhanced stakeholder satisfaction by aligning with specific needs",
           "isCorrect": true,
-          "explanation": "Tailored processes better meet stakeholder requirements, leading to higher satisfaction."
+          "explanation": "Tailored processes better meet stakeholder requirements."
         },
         {
           "id": "a4-q10-se-tailoring-quiz-1",
           "text": "Universal application of a rigid process model across all projects",
           "isCorrect": false,
-          "explanation": "A rigid, non-tailored process is contrary to the benefits of tailoring."
+          "explanation": "A rigid process contradicts the benefits of effective tailoring."
         }
       ],
       "tags": [

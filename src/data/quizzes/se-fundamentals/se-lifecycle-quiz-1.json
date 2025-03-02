@@ -8,7 +8,7 @@
       "text": "Which of the following are considered typical stages in a system life cycle? (Select all 6 correct answers from the options below)",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "System Life Cycle",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -57,9 +57,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "system life cycle",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.1",
       "source-question": "ChatGPT",
@@ -72,7 +71,7 @@
       "text": "What is the primary purpose of decision gates in the system life cycle?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Decision Gates",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -103,9 +102,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "decision gates",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.1",
       "source-question": "ChatGPT",
@@ -118,7 +116,7 @@
       "text": "Which statement best describes the Sequential Life Cycle Model?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Life Cycle Models",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -149,9 +147,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "life cycle models",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.2.1",
       "source-question": "ChatGPT",
@@ -164,7 +161,7 @@
       "text": "Select 3 out of the following 4 characteristics that best describe the Incremental Life Cycle Model Approach.",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Life Cycle Models",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -195,9 +192,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "life cycle models",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.2.2",
       "source-question": "ChatGPT",
@@ -210,7 +206,7 @@
       "text": "Which life cycle model approach emphasizes the continuous evolution of system requirements and design?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Life Cycle Models",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -241,9 +237,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "life cycle models",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.2.3",
       "source-question": "ChatGPT",
@@ -256,7 +251,7 @@
       "text": "What is the primary purpose of technical reviews and audits in system life cycle processes?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Technical Reviews",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -287,11 +282,10 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "technical reviews",
+        "concepts"
       ],
-      "source": "INCOSE Handbook 4.0, Section 2.1-2.3",
+      "source": "INCOSE Handbook 4.0, Sections 2.1-2.3",
       "source-question": "ChatGPT",
       "user-tags": [],
       "comments": [],
@@ -302,7 +296,7 @@
       "text": "Select 3 out of the following 4 statements that correctly describe 'life cycle characteristics'.",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Life Cycle Characteristics",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -333,9 +327,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "life cycle characteristics",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.1",
       "source-question": "ChatGPT",
@@ -348,7 +341,7 @@
       "text": "Which of the following is NOT typically considered a component of system life cycle processes as defined by ISO/IEC/IEEE 15288?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "System Life Cycle Components",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -379,9 +372,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "system life cycle components",
+        "concepts"
       ],
       "source": "ISO/IEC/IEEE 15288 & INCOSE Handbook 4.0",
       "source-question": "ChatGPT",
@@ -394,7 +386,7 @@
       "text": "Select 4 out of the following 5 activities that are part of Technical Management Processes.",
       "type": "multiple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Technical Management Processes",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -426,14 +418,13 @@
           "id": "q9-se-lifecycle-quiz-1-a5",
           "text": "Human Resource Management Process",
           "isCorrect": false,
-          "explanation": "Human Resource Management is categorized under Organizational Project-Enabling Processes rather than Technical Management Processes."
+          "explanation": "Human Resource Management is categorized under Organizational Project-Enabling Processes."
         }
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "technical management",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3.4",
       "source-question": "ChatGPT",
@@ -446,7 +437,7 @@
       "text": "What is the primary purpose of Agreement Processes in the system life cycle?",
       "type": "simple-choice",
       "difficulty": "medium",
-      "topic": "System Life Cycle Concepts, Models, and Processes",
+      "topic": "Agreement Processes",
       "chapter": "System Life Cycle Concepts, Models, and Processes",
       "important": false,
       "answers": [
@@ -460,7 +451,7 @@
           "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1-a2",
           "text": "To solely focus on internal team communication",
           "isCorrect": false,
-          "explanation": "While internal communication is important, Agreement Processes are externally focused on contractual and mutual commitments."
+          "explanation": "While internal communication is important, Agreement Processes are externally focused on contractual commitments."
         },
         {
           "id": "q1-se-lifecycle-quiz-10-se-lifecycle-quiz-1-a3",
@@ -477,9 +468,8 @@
       ],
       "tags": [
         "systems-engineering overall",
-        "concepts",
-        "concepts",
-        "systems"
+        "agreement processes",
+        "concepts"
       ],
       "source": "INCOSE Handbook 4.0, Section 2.3.2",
       "source-question": "ChatGPT",

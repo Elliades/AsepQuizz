@@ -4,38 +4,14 @@
  * This utility provides functions to search and retrieve data from the sources.json file.
  * It offers various ways to query the hierarchical structure of subjects, chapters, sections, and topics.
  */
-import fs from 'fs';
+import fs from 'fs-extra';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import { Source, SourceChapter, SourceSection, SourcesData } from './sourcesTypes.js';
 
-// Types for sources data
-interface SourceSection {
-  id: string;
-  name: string;
-  subjectId?: string;
-  topics: string[];
-  sections?: SourceSection[];
-}
-
-interface SourceChapter {
-  id: string;
-  name: string;
-  description: string;
-  subjectId: string;
-  startPage: number;
-  topics: string[];
-  sections: SourceSection[];
-}
-
-interface Source {
-  id: string;
-  name: string;
-  description: string;
-  chapters: SourceChapter[];
-}
-
-interface SourcesData {
-  sources: Source[];
-}
+// Get the directory name in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Cache the sources data to avoid repeated file reads
 let sourcesCache: SourcesData | null = null;
@@ -44,14 +20,14 @@ let sourcesCache: SourcesData | null = null;
  * Loads the sources data from sources.json
  * @returns The sources data object
  */
-export function loadSources(): SourcesData {
+export async function loadSources(): Promise<SourcesData> {
   if (sourcesCache) {
     return sourcesCache;
   }
 
   try {
     const sourcesPath = path.join(__dirname, '../data/subjects/sources.json');
-    const sourcesData = JSON.parse(fs.readFileSync(sourcesPath, 'utf8')) as SourcesData;
+    const sourcesData = await fs.readJson(sourcesPath) as SourcesData;
     sourcesCache = sourcesData;
     return sourcesData;
   } catch (error) {

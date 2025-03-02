@@ -1,9 +1,14 @@
 /**
  * CLI script to generate index.json from sources.json
  * 
+ * Behavior:
+ * - Reads sources.json
+ * - Generates index.json by calling generateIndex.js
+ * - Writes index.json to data/subjects/index.json
+ * 
  * Run with: npm run generate-index
  */
-import generateIndex from '../utils/generateIndex';
+import generateIndex from '../utils/generateIndex.js';
 
 console.log('Starting index generation process...');
 
