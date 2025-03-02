@@ -397,6 +397,57 @@ export const getTopicsBySubject = async (subjectId: string): Promise<Topic[]> =>
       },
       // Add more topics as needed
     ],
+    'management-processes': [
+      {
+        id: 'mp-planning',
+        name: 'Project Planning',
+        subjectId: 'management-processes',
+        questionCount: 20,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'mp-assessment',
+        name: 'Project Assessment',
+        subjectId: 'management-processes',
+        questionCount: 15,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'mp-control',
+        name: 'Project Control',
+        subjectId: 'management-processes',
+        questionCount: 18,
+        difficulty: 'advanced'
+      },
+      {
+        id: 'mp-decision',
+        name: 'Decision Management',
+        subjectId: 'management-processes',
+        questionCount: 12,
+        difficulty: 'advanced'
+      },
+      {
+        id: 'mp-risk',
+        name: 'Risk Management',
+        subjectId: 'management-processes',
+        questionCount: 22,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'mp-configuration',
+        name: 'Configuration Management',
+        subjectId: 'management-processes',
+        questionCount: 16,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'mp-information',
+        name: 'Information Management',
+        subjectId: 'management-processes',
+        questionCount: 14,
+        difficulty: 'beginner'
+      }
+    ],
     // Add more subjects as needed
   };
   

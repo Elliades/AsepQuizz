@@ -38,6 +38,7 @@ const Subjects_Pages: React.FC = () => {
   const [difficultyFilter, setDifficultyFilter] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [isStartingQuiz, setIsStartingQuiz] = useState(false);
 
   // Fetch all subjects and topics on component mount
   useEffect(() => {
@@ -69,6 +70,7 @@ const Subjects_Pages: React.FC = () => {
     if (selectedSubject) {
       const loadTopics = async () => {
         try {
+          setTopics([]); // Clear topics while loading
           const topicsData = await getTopicsBySubject(selectedSubject);
           setTopics(topicsData);
         } catch (error) {
@@ -112,9 +114,17 @@ const Subjects_Pages: React.FC = () => {
       return;
     }
     
-    navigate('/quiz/custom', { 
+    setIsStartingQuiz(true);
+    
+    // Get the selected topic objects to pass to the quiz
+    const selectedTopicObjects = topics.filter(topic => 
+      selectedTopics.includes(topic.id)
+    );
+    
+    // Navigate to the quiz page with the selected topics
+    navigate('/quiz/random', { 
       state: { 
-        topics: selectedTopics,
+        topics: selectedTopicObjects,
         difficulty: difficultyFilter.length > 0 ? difficultyFilter : undefined
       } 
     });
@@ -168,39 +178,46 @@ const Subjects_Pages: React.FC = () => {
               ))}
             </div>
             
+            {/* Difficulty filters */}
             <div className="mt-6">
-              <h3 className="font-medium mb-2">Difficulty</h3>
+              <h3 className="font-medium mb-3">Difficulty</h3>
               <div className="flex flex-wrap gap-2">
-                {['beginner', 'intermediate', 'advanced'].map(difficulty => (
-                  <button
-                    key={difficulty}
-                    className={`px-3 py-1 rounded-full text-sm ${
-                      difficultyFilter.includes(difficulty)
-                        ? 'bg-primary text-white'
-                        : 'bg-gray-700 hover:bg-gray-600'
-                    }`}
-                    onClick={() => handleDifficultyToggle(difficulty)}
-                  >
-                    {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
-                  </button>
-                ))}
-              </div>
-            </div>
-            
-            {selectedTopics.length > 0 && (
-              <div className="mt-6">
                 <button
-                  className="w-full py-2 bg-green-600 hover:bg-green-700 rounded-lg font-medium"
-                  onClick={startCustomQuiz}
+                  className={`px-3 py-1 rounded-full text-sm ${
+                    difficultyFilter.includes('beginner')
+                      ? 'bg-green-500/20 text-green-400 border border-green-500'
+                      : 'bg-gray-700 hover:bg-gray-600'
+                  }`}
+                  onClick={() => handleDifficultyToggle('beginner')}
                 >
-                  Start Quiz ({selectedTopics.length} topics)
+                  Beginner
+                </button>
+                <button
+                  className={`px-3 py-1 rounded-full text-sm ${
+                    difficultyFilter.includes('intermediate')
+                      ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500'
+                      : 'bg-gray-700 hover:bg-gray-600'
+                  }`}
+                  onClick={() => handleDifficultyToggle('intermediate')}
+                >
+                  Intermediate
+                </button>
+                <button
+                  className={`px-3 py-1 rounded-full text-sm ${
+                    difficultyFilter.includes('advanced')
+                      ? 'bg-red-500/20 text-red-400 border border-red-500'
+                      : 'bg-gray-700 hover:bg-gray-600'
+                  }`}
+                  onClick={() => handleDifficultyToggle('advanced')}
+                >
+                  Advanced
                 </button>
               </div>
-            )}
+            </div>
           </div>
         </div>
         
-        {/* Main content area */}
+        {/* Main content */}
         <div className="lg:col-span-3">
           <div className="bg-gray-800 rounded-lg p-6">
             <div className="flex justify-between items-center mb-6">
@@ -234,7 +251,11 @@ const Subjects_Pages: React.FC = () => {
             
             {/* Topics grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {filteredTopics.length > 0 ? (
+              {topics.length === 0 ? (
+                <div className="col-span-2 py-8 text-center text-gray-400">
+                  Loading topics...
+                </div>
+              ) : filteredTopics.length > 0 ? (
                 filteredTopics.map(topic => (
                   <motion.div
                     key={topic.id}
@@ -301,7 +322,10 @@ const Subjects_Pages: React.FC = () => {
                         {topic.name}
                         <button
                           className="ml-2 text-gray-400 hover:text-white"
-                          onClick={() => handleTopicToggle(topicId)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleTopicToggle(topicId);
+                          }}
                         >
                           ×
                         </button>
@@ -310,10 +334,15 @@ const Subjects_Pages: React.FC = () => {
                   })}
                 </div>
                 <button
-                  className="mt-4 w-full py-2 bg-green-600 hover:bg-green-700 rounded-lg font-medium"
+                  className={`mt-4 w-full py-2 rounded-lg font-medium ${
+                    isStartingQuiz 
+                      ? 'bg-green-700 cursor-not-allowed' 
+                      : 'bg-green-600 hover:bg-green-700'
+                  }`}
                   onClick={startCustomQuiz}
+                  disabled={isStartingQuiz}
                 >
-                  Start Custom Quiz
+                  {isStartingQuiz ? 'Starting Quiz...' : 'Start Custom Quiz'}
                 </button>
               </div>
             )}
