@@ -213,4 +213,192 @@ export const getRelatedQuestions = (topicName: string): Question[] => {
       relatedTopicNames.includes(question.topic)
     )
   );
+};
+
+/**
+ * Get all available subjects
+ * @returns Promise<Subject[]> Array of all subjects
+ */
+export const getAllSubjects = async (): Promise<Subject[]> => {
+  // This would normally fetch from an API
+  // For now, we'll return mock data
+  return [
+    {
+      id: 'systems-thinking',
+      name: 'Systems Thinking',
+      description: 'Understanding systems concepts and thinking holistically',
+      topicCount: 5,
+      icon: 'diagram'
+    },
+    {
+      id: 'lifecycle-processes',
+      name: 'Lifecycle Processes',
+      description: 'Understanding the various stages of system development',
+      topicCount: 8,
+      icon: 'cycle'
+    },
+    {
+      id: 'technical-processes',
+      name: 'Technical Processes',
+      description: 'Core technical activities in systems engineering',
+      topicCount: 12,
+      icon: 'tools'
+    },
+    {
+      id: 'management-processes',
+      name: 'Management Processes',
+      description: 'Planning, assessment, and control of systems engineering',
+      topicCount: 7,
+      icon: 'chart'
+    },
+    {
+      id: 'agreement-processes',
+      name: 'Agreement Processes',
+      description: 'Acquisition and supply processes',
+      topicCount: 3,
+      icon: 'handshake'
+    },
+    {
+      id: 'organizational-processes',
+      name: 'Organizational Processes',
+      description: 'Infrastructure, portfolio, and human resource management',
+      topicCount: 6,
+      icon: 'organization'
+    }
+  ];
+};
+
+/**
+ * Get topics for a specific subject
+ * @param subjectId ID of the subject to get topics for
+ * @returns Promise<Topic[]> Array of topics for the subject
+ */
+export const getTopicsBySubject = async (subjectId: string): Promise<Topic[]> => {
+  // This would normally fetch from an API
+  // For now, we'll return mock data based on the subject ID
+  
+  const topicsBySubject: Record<string, Topic[]> = {
+    'systems-thinking': [
+      {
+        id: 'st-concepts',
+        name: 'Systems Concepts',
+        subjectId: 'systems-thinking',
+        questionCount: 15,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'st-emergence',
+        name: 'Emergence and Complexity',
+        subjectId: 'systems-thinking',
+        questionCount: 12,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'st-modeling',
+        name: 'Systems Modeling',
+        subjectId: 'systems-thinking',
+        questionCount: 18,
+        difficulty: 'advanced'
+      },
+      {
+        id: 'st-boundaries',
+        name: 'System Boundaries',
+        subjectId: 'systems-thinking',
+        questionCount: 10,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'st-holistic',
+        name: 'Holistic Thinking',
+        subjectId: 'systems-thinking',
+        questionCount: 8,
+        difficulty: 'intermediate'
+      }
+    ],
+    'lifecycle-processes': [
+      {
+        id: 'lc-concept',
+        name: 'Concept Stage',
+        subjectId: 'lifecycle-processes',
+        questionCount: 14,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'lc-development',
+        name: 'Development Stage',
+        subjectId: 'lifecycle-processes',
+        questionCount: 20,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'lc-production',
+        name: 'Production Stage',
+        subjectId: 'lifecycle-processes',
+        questionCount: 16,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'lc-utilization',
+        name: 'Utilization Stage',
+        subjectId: 'lifecycle-processes',
+        questionCount: 12,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'lc-support',
+        name: 'Support Stage',
+        subjectId: 'lifecycle-processes',
+        questionCount: 10,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'lc-retirement',
+        name: 'Retirement Stage',
+        subjectId: 'lifecycle-processes',
+        questionCount: 8,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'lc-models',
+        name: 'Lifecycle Models',
+        subjectId: 'lifecycle-processes',
+        questionCount: 15,
+        difficulty: 'advanced'
+      },
+      {
+        id: 'lc-tailoring',
+        name: 'Lifecycle Tailoring',
+        subjectId: 'lifecycle-processes',
+        questionCount: 10,
+        difficulty: 'advanced'
+      }
+    ],
+    'technical-processes': [
+      {
+        id: 'tp-stakeholder',
+        name: 'Stakeholder Requirements',
+        subjectId: 'technical-processes',
+        questionCount: 18,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'tp-requirements',
+        name: 'Requirements Analysis',
+        subjectId: 'technical-processes',
+        questionCount: 25,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'tp-architecture',
+        name: 'Architectural Design',
+        subjectId: 'technical-processes',
+        questionCount: 22,
+        difficulty: 'advanced'
+      },
+      // Add more topics as needed
+    ],
+    // Add more subjects as needed
+  };
+  
+  return topicsBySubject[subjectId] || [];
 }; 
