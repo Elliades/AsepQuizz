@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Question, UserAnswer } from '@/types';
 import QuizQuestion from '../questions/QuizQuestion';
 import SwipeableNavigation from '../navigation/SwipeableNavigation';
+import AnswerFeedback from '../feedback/AnswerFeedback';
 
 interface QuickQuizProps {
   questions: Question[];
@@ -20,6 +21,8 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
   const [startTime, setStartTime] = useState(Date.now());
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const quizContainerRef = useRef<HTMLDivElement>(null);
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [isLastAnswerCorrect, setIsLastAnswerCorrect] = useState(false);
 
   useEffect(() => {
     setStartTime(Date.now());
@@ -95,7 +98,14 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
       }
     }
 
-
+    // Show feedback animation
+    setIsLastAnswerCorrect(isCorrect);
+    setShowFeedback(true);
+    
+    // Hide feedback after a delay
+    setTimeout(() => {
+      setShowFeedback(false);
+    }, 1500);
 
     // Track user answer
     setUserAnswers(prev => [...prev, {
@@ -235,6 +245,11 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, renderResult }) => {
             ))}
         </div>
       )}
+
+      <AnswerFeedback 
+        isCorrect={isLastAnswerCorrect} 
+        isVisible={showFeedback} 
+      />
 
       <SwipeableNavigation
         onNext={handleNext}

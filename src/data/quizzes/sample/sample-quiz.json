@@ -1,0 +1,76 @@
+{
+  "id": "sample-quiz-1",
+  "title": "Sample Quiz",
+  "description": "A sample quiz to test the quiz system",
+  "subjectId": "sample",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Systems Engineering?",
+      "type": "simple-choice",
+      "subjectId": "sample",
+      "topic": "Systems Engineering Introduction",
+      "difficulty": "beginner",
+      "answers": [
+        {
+          "id": "a1",
+          "text": "An interdisciplinary approach to enable the realization of successful systems",
+          "isCorrect": true,
+          "explanation": "Systems Engineering is an interdisciplinary approach that focuses on designing and managing complex systems over their life cycles."
+        },
+        {
+          "id": "a2",
+          "text": "A programming language for embedded systems",
+          "isCorrect": false,
+          "explanation": "Systems Engineering is not a programming language but an engineering discipline."
+        },
+        {
+          "id": "a3",
+          "text": "A project management methodology",
+          "isCorrect": false,
+          "explanation": "While Systems Engineering includes project management aspects, it is a broader engineering discipline."
+        }
+      ],
+      "comments": [],
+      "tags": [],
+      "notations": []
+    },
+    {
+      "id": "q2",
+      "text": "Which of the following are key aspects of Systems Engineering?",
+      "type": "multiple-choice",
+      "subjectId": "sample",
+      "topic": "Systems Engineering Introduction",
+      "difficulty": "beginner",
+      "answers": [
+        {
+          "id": "a1",
+          "text": "Requirements Engineering",
+          "isCorrect": true,
+          "explanation": "Requirements Engineering is a fundamental aspect of Systems Engineering."
+        },
+        {
+          "id": "a2",
+          "text": "System Integration",
+          "isCorrect": true,
+          "explanation": "System Integration is a key process in Systems Engineering."
+        },
+        {
+          "id": "a3",
+          "text": "Verification and Validation",
+          "isCorrect": true,
+          "explanation": "Verification and Validation are essential to ensure the system meets requirements."
+        },
+        {
+          "id": "a4",
+          "text": "Marketing and Sales",
+          "isCorrect": false,
+          "explanation": "While important for product success, Marketing and Sales are not core Systems Engineering activities."
+        }
+      ],
+      "comments": [],
+      "tags": [],
+      "notations": []
+    }
+  ]
+} 

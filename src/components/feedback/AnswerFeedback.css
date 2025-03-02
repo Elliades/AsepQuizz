@@ -1,0 +1,279 @@
+.answer-feedback-container {
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.answer-feedback-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: visible;
+}
+
+.answer-feedback-border.correct {
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+.answer-feedback-border.incorrect {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.7);
+  animation: pulse-red 2s infinite;
+}
+
+.answer-feedback-centered {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-feedback-centered.correct {
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+.answer-feedback-centered.incorrect {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.7);
+  animation: pulse-red 2s infinite;
+}
+
+.spark-container {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  overflow: visible;
+}
+
+.spark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+}
+
+.answer-feedback-border.correct .spark {
+  background: rgba(74, 222, 128, 1);
+  box-shadow: 0 0 8px rgba(74, 222, 128, 1);
+}
+
+.answer-feedback-border.incorrect .spark {
+  background: rgba(248, 113, 113, 1);
+  box-shadow: 0 0 8px rgba(248, 113, 113, 1);
+}
+
+.spark-centered {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.spark-centered::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, white 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  filter: blur(3px);
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.7);
+  }
+}
+
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.7);
+  }
+}
+
+@keyframes move-spark {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(100%) translateY(0);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    transform: translateX(0) translateY(100%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.answer-feedback-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.7);
+  background-color: rgba(74, 222, 128, 0.05);
+  animation: pulse-border 2s ease-in-out;
+}
+
+.shine-effect {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shine-once 1.5s ease-out forwards;
+}
+
+@keyframes shine-once {
+  0% {
+    left: -30px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: calc(100% + 30px);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.7);
+    background-color: rgba(74, 222, 128, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 1);
+    background-color: rgba(74, 222, 128, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.7);
+    background-color: rgba(74, 222, 128, 0.05);
+  }
+}
+
+/* Base styles for the active feedback state */
+.answer-feedback-active {
+  position: relative;
+  overflow: hidden !important;
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.7) !important;
+  background-color: rgba(74, 222, 128, 0.05) !important;
+  animation: pulse-border 1.2s ease-in-out !important;
+  transition: background-color 0.5s ease-out, box-shadow 0.5s ease-out !important;
+}
+
+/* Create the shine effect using a pseudo-element */
+.answer-feedback-active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shine-once 0.8s ease-out forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Create a separate pseudo-element for the background highlight */
+.answer-feedback-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(74, 222, 128, 0.05);
+  pointer-events: none;
+  z-index: 5;
+  animation: highlight-fade 1.2s ease-out forwards;
+}
+
+@keyframes shine-once {
+  0% {
+    left: -50px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: calc(100% + 50px);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.7);
+  }
+}
+
+@keyframes highlight-fade {
+  0% {
+    background-color: rgba(74, 222, 128, 0.05);
+  }
+  30% {
+    background-color: rgba(74, 222, 128, 0.1);
+  }
+  100% {
+    background-color: rgba(74, 222, 128, 0);
+  }
+} 

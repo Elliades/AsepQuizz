@@ -12,6 +12,8 @@
 - Context-aware navigation arrows (different colors for different states)
 - Ability to navigate back to previous questions
 - Fixed positioning for navigation arrows
+- Animated spark border effect for selected answers
+- Subtle animations for answer options
 
 ### Changed
 - Replaced traditional navigation buttons with swipeable arrows
@@ -22,6 +24,7 @@
 - Optimized arrow positioning to avoid overlapping with content
 - Removed back arrow on first question for better UX
 - Fixed arrow positions to stay consistent regardless of question length
+- Enhanced answer selection with elegant border animations
 
 ## [2.0.0] - 2024-06-XX
 

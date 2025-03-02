@@ -2,6 +2,7 @@ import React from 'react';
 import { Question, MultipleChoiceQuestion, SimpleChoiceQuestion } from '@/types'; // Assuming these types are imported from your types file
 import MultipleChoiceQuestionComponent from './MultipleChoiceQuestionComponent';
 import SimpleChoiceQuestionComponent from './SimpleChoiceQuestionComponent';
+import { motion } from 'framer-motion';
 
 interface QuizQuestionProps {
   question: Question;
