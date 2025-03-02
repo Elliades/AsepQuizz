@@ -224,6 +224,13 @@ export const getAllSubjects = async (): Promise<Subject[]> => {
   // For now, we'll return mock data
   return [
     {
+      id: 'any',
+      name: 'Any Subject',
+      description: 'Topics from all subjects',
+      topicCount: 30, // This will be the sum of all topics
+      icon: 'all'
+    },
+    {
       id: 'systems-thinking',
       name: 'Systems Thinking',
       description: 'Understanding systems concepts and thinking holistically',
@@ -274,9 +281,22 @@ export const getAllSubjects = async (): Promise<Subject[]> => {
  * @returns Promise<Topic[]> Array of topics for the subject
  */
 export const getTopicsBySubject = async (subjectId: string): Promise<Topic[]> => {
-  // This would normally fetch from an API
-  // For now, we'll return mock data based on the subject ID
+  // Special case for "any" subject - return all topics from all subjects
+  if (subjectId === 'any') {
+    // Get all subjects except "any"
+    const subjects = await getAllSubjects();
+    const regularSubjects = subjects.filter(s => s.id !== 'any');
+    
+    // Fetch topics for each subject and combine them
+    const allTopicsPromises = regularSubjects.map(subject => 
+      getTopicsBySubject(subject.id)
+    );
+    
+    const allTopicsArrays = await Promise.all(allTopicsPromises);
+    return allTopicsArrays.flat();
+  }
   
+  // For regular subjects, return the topics as before
   const topicsBySubject: Record<string, Topic[]> = {
     'systems-thinking': [
       {
@@ -448,7 +468,73 @@ export const getTopicsBySubject = async (subjectId: string): Promise<Topic[]> =>
         difficulty: 'beginner'
       }
     ],
-    // Add more subjects as needed
+    'agreement-processes': [
+      {
+        id: 'ap-acquisition',
+        name: 'Acquisition Process',
+        subjectId: 'agreement-processes',
+        questionCount: 14,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'ap-supply',
+        name: 'Supply Process',
+        subjectId: 'agreement-processes',
+        questionCount: 12,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'ap-contracts',
+        name: 'Contract Management',
+        subjectId: 'agreement-processes',
+        questionCount: 18,
+        difficulty: 'advanced'
+      }
+    ],
+    'organizational-processes': [
+      {
+        id: 'op-lifecycle',
+        name: 'Lifecycle Model Management',
+        subjectId: 'organizational-processes',
+        questionCount: 10,
+        difficulty: 'advanced'
+      },
+      {
+        id: 'op-infrastructure',
+        name: 'Infrastructure Management',
+        subjectId: 'organizational-processes',
+        questionCount: 8,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'op-portfolio',
+        name: 'Portfolio Management',
+        subjectId: 'organizational-processes',
+        questionCount: 12,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'op-human',
+        name: 'Human Resource Management',
+        subjectId: 'organizational-processes',
+        questionCount: 9,
+        difficulty: 'beginner'
+      },
+      {
+        id: 'op-quality',
+        name: 'Quality Management',
+        subjectId: 'organizational-processes',
+        questionCount: 15,
+        difficulty: 'intermediate'
+      },
+      {
+        id: 'op-knowledge',
+        name: 'Knowledge Management',
+        subjectId: 'organizational-processes',
+        questionCount: 11,
+        difficulty: 'intermediate'
+      }
+    ],
   };
   
   return topicsBySubject[subjectId] || [];
