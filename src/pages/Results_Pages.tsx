@@ -63,14 +63,17 @@ export default function Results_Pages() {
     return 'text-red-500';
   };
 
-  // Calculate topic statistics
-  const topicStats = questions.reduce((acc: Record<string, TopicStats>, question, index) => {
-    // Ensure topic is never undefined
+  // Calculate topic statistics with robust error handling
+  const topicStats = questions.reduce((acc: Record<string, TopicStats>, question) => {
+    // Ensure question is valid and has a topic
+    if (!question) {
+      console.warn('Encountered undefined question in results calculation');
+      return acc;
+    }
+    
     const topic = question.topic || "General";
     
-    // Log for debugging
-    console.log(`Processing question ${index}, topic: ${topic}, id: ${question.id}`);
-    
+    // Initialize the topic stats if it doesn't exist
     if (!acc[topic]) {
       acc[topic] = {
         name: topic,
@@ -85,38 +88,40 @@ export default function Results_Pages() {
       };
     }
 
-    const answer = answers.find(a => a.questionId === question.id);
-    // Log the answer details
-    console.log(`Answer for question ${question.id}:`, answer);
-    // Data Integrity Check 9: Ensure answer.isCorrect is a boolean
-    if (answer && typeof answer.isCorrect !== 'boolean')
-    {
-      console.error(`Answer for question ${question.id} has non-boolean isCorrect!`, answer)
-    }
+    // Find corresponding answer with null check
+    const answer = answers.find(a => a?.questionId === question.id);
     
-    const difficulty = (question.difficulty || 'intermediate') as 'beginner' | 'intermediate' | 'advanced';
-    
-    acc[topic].total++;
-    
-    // Make sure we check if answer exists at all
-    if (answer) {
-      if (answer.isCorrect === false) {
-        acc[topic].errors++;
-      }
-      
-      if (acc[topic].byDifficulty[difficulty]) {
-        acc[topic].byDifficulty[difficulty].total++;
-        
-        if (answer.isCorrect === true) {
-          acc[topic].correct++;
-          acc[topic].byDifficulty[difficulty].correct++;
-          console.log(`Incremented correct count for ${topic}`);
-        }
-      }
-    } else {
-      console.warn(`No answer found for question ID: ${question.id}`);
+    // Default to intermediate if difficulty is missing or invalid
+    let difficulty = 'intermediate';
+    if (question.difficulty && ['beginner', 'intermediate', 'advanced'].includes(question.difficulty)) {
+      difficulty = question.difficulty as 'beginner' | 'intermediate' | 'advanced';
     }
 
+    // Always increment total for the topic
+    acc[topic].total++;
+    
+    // Safely update statistics only if answer exists
+    if (answer) {
+      // Ensure difficulty exists in byDifficulty
+      if (!acc[topic].byDifficulty[difficulty]) {
+        acc[topic].byDifficulty[difficulty] = { total: 0, correct: 0 };
+      }
+      
+      // Always increment total for the difficulty
+      acc[topic].byDifficulty[difficulty].total++;
+      
+      // Ensure isCorrect is treated as boolean
+      const isCorrect = Boolean(answer.isCorrect);
+      
+      // Update topic stats based on correctness
+      if (isCorrect) {
+        acc[topic].correct++;
+        acc[topic].byDifficulty[difficulty].correct++;
+      } else {
+        acc[topic].errors++;
+      }
+    }
+    
     return acc;
   }, {});
 
@@ -197,31 +202,41 @@ export default function Results_Pages() {
             </span>
           </div>
 
-          {/* Fallback text if the progress bar is too small */}
-          <div className="absolute inset-0 flex items-center justify-center text-white text-sm font-medium">
-           {topic.correct}/{topic.total}
-          </div>
- 
-
                   {/* Difficulty markers */}
                   <div className="absolute inset-0 flex">
                     {['beginner', 'intermediate', 'advanced'].map((diff) => {
-                      const stats = topic.byDifficulty[diff as keyof typeof topic.byDifficulty];
-                      const width = `${(stats.total/topic.total) * 100}%`;
-                      return stats.total > 0 && (
+                      // Ensure we have stats for this difficulty level
+                      const diffKey = diff as keyof typeof topic.byDifficulty;
+                      const stats = topic.byDifficulty[diffKey];
+                      
+                      // If stats don't exist for this difficulty, return null
+                      if (!stats) return null;
+                      
+                      const totalForDiff = stats.total || 0;
+                      const correctForDiff = stats.correct || 0;
+                      
+                      // Only render if there are questions of this difficulty
+                      if (totalForDiff === 0) return null;
+                      
+                      // Safely calculate the width as a percentage of the total questions
+                      const width = topic.total > 0 
+                        ? `${(totalForDiff/topic.total) * 100}%` 
+                        : '0%';
+                      
+                      return (
                         <div
+                          key={diff}
                           className="relative"
                           style={{ width }}
                         >
                           <div
-                            key={diff}
                             className="absolute inset-0 border-r border-gray-600 flex items-center justify-center"
                             style={{
                               backgroundColor: 'rgba(255, 255, 255, 0.1)'
                             }}
                           >
-                            <span className="text-xs text-gray-400">
-                              {stats.correct}/{stats.total}
+                            <span className="text-sm text-white-400 font-bold">
+                              {correctForDiff}/{totalForDiff}
                             </span>
                           </div>
                         </div>

@@ -538,4 +538,39 @@ export const getTopicsBySubject = async (subjectId: string): Promise<Topic[]> =>
   };
   
   return topicsBySubject[subjectId] || [];
-}; 
+};
+
+/**
+ * Process quiz data to ensure all questions have valid topics and difficulties
+ * @param quiz The quiz to process
+ * @returns Processed quiz with validated data
+ */
+export const processQuizData = (quiz: QuizSeries): QuizSeries => {
+  // Create a deep copy to avoid modifying the original
+  const processedQuiz = {...quiz};
+  
+  // Process each question to ensure it has valid topic and difficulty
+  processedQuiz.questions = quiz.questions.map(question => {
+    const processedQuestion = {...question};
+    
+    // Ensure question has a topic, default to the quiz's subject if missing
+    if (!processedQuestion.topic) {
+      console.warn(`Question ${processedQuestion.id} has no topic, defaulting to ${quiz.subjectId}`);
+      processedQuestion.topic = quiz.subjectId;
+    }
+    
+    // Ensure question has a valid difficulty
+    if (!processedQuestion.difficulty || 
+        !['beginner', 'intermediate', 'advanced'].includes(processedQuestion.difficulty)) {
+      console.warn(`Question ${processedQuestion.id} has invalid difficulty, defaulting to intermediate`);
+      processedQuestion.difficulty = 'intermediate';
+    }
+    
+    return processedQuestion;
+  });
+  
+  return processedQuiz;
+};
+
+// Use this function when loading quizzes:
+// const processedQuiz = processQuizData(quiz); 
