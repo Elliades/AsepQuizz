@@ -124,10 +124,8 @@ const Subjects_Pages: React.FC = () => {
     // Navigate to the quiz page with the selected topics
     navigate('/quiz/random', { 
       state: { 
-        topics: selectedTopicObjects.map(t => t.id),
-        difficulty: difficultyFilter.length > 0 ? difficultyFilter : undefined,
-        // Include the subject ID if it's not "any"
-        subjectId: selectedSubject !== 'any' ? selectedSubject : undefined
+        topics: selectedTopicObjects,
+        difficulty: difficultyFilter.length > 0 ? difficultyFilter : undefined
       } 
     });
   };
@@ -143,21 +141,6 @@ const Subjects_Pages: React.FC = () => {
   const currentSubjectName = selectedSubject 
     ? subjects.find(s => s.id === selectedSubject)?.name || 'Unknown Subject'
     : '';
-
-  // Add a special icon for the "Any" subject
-  const getSubjectIcon = (subject: Subject) => {
-    if (subject.id === 'any') {
-      return (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 100-12 6 6 0 000 12z" clipRule="evenodd" />
-          <path d="M10 6a1 1 0 011 1v2h2a1 1 0 110 2h-2v2a1 1 0 11-2 0v-2H7a1 1 0 110-2h2V7a1 1 0 011-1z" />
-        </svg>
-      );
-    }
-    
-    // Return other icons based on subject.icon
-    // ... existing icon logic
-  };
 
   if (isLoading) {
     return (

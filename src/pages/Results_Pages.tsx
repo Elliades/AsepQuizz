@@ -46,10 +46,12 @@ export default function Results_Pages() {
     console.error("Results_Pages: Answer count doesn't match question count!", answers.length, questions.length);
   }
 
-  const formatTime = (seconds: number): string => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+  // Format time spent mm:ss no decimal
+  //example 125 seconds = 2:05
+  const formatTime = (timeInSeconds: number) => {
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = Math.round(timeInSeconds % 60); // Round seconds to avoid decimals
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`; // Format as MM:SS
   };
 
   const scorePercentage = Math.round((score / total) * 100);
@@ -128,6 +130,9 @@ export default function Results_Pages() {
     answers.find(a => a.questionId === q.id)?.isCorrect === false
   );
 
+  // Formatted time spent mm:ss no decimal
+  const formattedTime = formatTime(timeSpent);
+
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-8 text-center">Quiz Results</h1>
@@ -165,34 +170,7 @@ export default function Results_Pages() {
         </div>
       </div>
 
-      {/* Performance Analysis */}
-      <div className="card mb-8">
-        <h2 className="text-xl font-semibold mb-4">Performance Analysis</h2>
-        <div className="space-y-4">
-          <div className="flex items-center gap-4">
-            <div className="w-32 text-sm text-gray-400">Speed</div>
-            <div className="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-blue-500 transition-all duration-300"
-                style={{ 
-                  width: `${Math.min(100, (30 / averageTimePerQuestion) * 100)}%` 
-                }}
-              />
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="w-32 text-sm text-gray-400">Accuracy</div>
-            <div className="flex-1 h-4 bg-gray-700 rounded-full overflow-hidden">
-              <div 
-                className={`h-full transition-all duration-300 ${
-                  getScoreColor(scorePercentage).replace('text-', 'bg-')
-                }`}
-                style={{ width: `${scorePercentage}%` }}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Topic Performance Overview */}
       <div className="card mb-8">

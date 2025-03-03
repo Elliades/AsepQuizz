@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Question } from '../types';
+import { Question, UserAnswer } from '../types';
 
 /**
  * Interface for tracking quiz navigation state
@@ -25,7 +25,7 @@ interface QuizNavigationState {
  * @param onComplete Callback to execute when the quiz is completed
  * @returns Navigation state and control functions
  */
-export function useQuizNavigation(questions: Question[], onComplete?: (data: any) => void) {
+export function useQuizNavigation(questions: Question[], onComplete?: (answers: UserAnswer[]) => void) {
   // Navigation state
   const [state, setState] = useState<QuizNavigationState>({
     currentIndex: 0,
@@ -94,7 +94,7 @@ export function useQuizNavigation(questions: Question[], onComplete?: (data: any
   }, [clearAutoAdvanceTimer]);
   
   // Mark a question as submitted
-  const markQuestionSubmitted = useCallback((questionId: string, autoAdvance = true) => {
+  const markQuestionSubmitted = useCallback((questionId: string, updatedAnswers: UserAnswer[], autoAdvance = true) => {
     // First, clear any existing timer
     clearAutoAdvanceTimer();
     
@@ -141,7 +141,8 @@ export function useQuizNavigation(questions: Question[], onComplete?: (data: any
         // Last question completion
         autoAdvanceTimerRef.current = window.setTimeout(() => {
           autoAdvanceTimerRef.current = null;
-          onComplete?.({});
+          console.log("Calling onComplete from useQuizNavigation");
+          onComplete?.(updatedAnswers);
         }, 2000);
       }
       

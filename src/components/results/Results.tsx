@@ -25,6 +25,15 @@ if (!data?.answers?.length) {
   const totalTime = data.timeSpent || data.answers.reduce((total: number, answer: UserAnswer) => {
     return total + (answer.timeSpent || 0);
   }, 0);
+
+  // Convert total time from seconds to MM:SS format
+  const formatTime = (timeInSeconds: number) => {
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = timeInSeconds % 60;
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  };
+
+  const formattedTotalTime = formatTime(totalTime);
   const averageTime = totalTime / totalQuestions;
 
   return (
@@ -34,7 +43,7 @@ if (!data?.answers?.length) {
         <p>Score: {score.toFixed(2)}%</p>
         <p>Correct Answers: {correctAnswers} out of {totalQuestions}</p>
         <p>Average Time per Question: {averageTime.toFixed(2)} seconds</p>
-        <p>Total Time: {totalTime} seconds</p>
+        <p>Total Time: {formattedTotalTime} seconds</p>
       </div>
       {onRetry && (
         <button onClick={onRetry} className="retry-button">

@@ -31,10 +31,21 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const quizContainerRef = useRef<HTMLDivElement>(null);
   
-  // Use the centralized navigation hook
-  const navigation = useQuizNavigation(questions, (data) => {
-    // This will be called when the quiz is completed
-    completeQuiz();
+  // Modify the useQuizNavigation hook to accept the new onComplete
+  const navigation = useQuizNavigation(questions, (updatedAnswers: UserAnswer[]) => {
+      const endTime = Date.now();
+      const timeSpent = (endTime - startTime) / 1000;
+      const finalScore = updatedAnswers.filter(a => a.isCorrect).length; // Calculate score here
+
+      const result: QuizResult = {
+          score: finalScore,
+          totalQuestions: questions.length,
+          userAnswers: updatedAnswers, // Use the passed-in answers
+          startTime: new Date(startTime),
+          endTime: new Date(endTime),
+          timeSpent
+      };
+      onComplete(result); // Call the onComplete prop with the complete result
   });
 
   // Reset the start time when the component mounts
@@ -110,12 +121,11 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
   };
 
   const handleSubmit = (selectedAnswers: string[]) => {
+    if (navigation.isCurrentQuestionSubmitted) return;
+
     const isCorrect = checkIfCorrect(currentQuestion, selectedAnswers);
-    
-    // Update score immediately when answer is correct
-    if (isCorrect) {
-      setScore(prevScore => prevScore + 1);
-    }
+    const newScore = isCorrect ? score + 1 : score; // Calculate new score
+    setScore(newScore); // Update the score immediately
 
     // Create new user answer
     const newAnswer: UserAnswer = {
@@ -125,33 +135,17 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
       timeSpent: (Date.now() - startTime) / 1000,
     };
 
-    // Add to user answers
-    setUserAnswers(prev => [...prev, newAnswer]);
+    // Construct the *new* userAnswers array
+    const updatedAnswers = [...userAnswers, newAnswer];
+    setUserAnswers(updatedAnswers); // Update local state
 
-    // Mark question as submitted using our navigation hook
-    navigation.markQuestionSubmitted(currentQuestion.id, true);
+    // Pass the *updated* answers to markQuestionSubmitted
+    navigation.markQuestionSubmitted(currentQuestion.id, updatedAnswers, true);
     
     // Show explanation
     setShowExplanation(true);
   };
   
-  const completeQuiz = () => {
-    const endTime = Date.now();
-    const timeSpent = (endTime - startTime) / 1000;
-    
-    const result: QuizResult = {
-      score,
-      totalQuestions: questions.length,
-      userAnswers,
-      startTime: new Date(startTime),
-      endTime: new Date(endTime),
-      timeSpent
-    };
-    
-    setIsComplete(true);
-    onComplete(result);
-  };
-
   if (isComplete) {
     return (
       <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
