@@ -1,0 +1,48 @@
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - asep-network
+
+  # Uncomment when backend is ready
+  # backend:
+  #   build:
+  #     context: .
+  #     dockerfile: docker/backend/Dockerfile
+  #   environment:
+  #     - NODE_ENV=production
+  #     - PORT=3000
+  #   restart: unless-stopped
+  #   networks:
+  #     - asep-network
+  #   # depends_on:
+  #   #   - database
+  
+  # Uncomment when database is ready
+  # database:
+  #   image: postgres:14-alpine
+  #   environment:
+  #     - POSTGRES_USER=${DB_USER}
+  #     - POSTGRES_PASSWORD=${DB_PASSWORD}
+  #     - POSTGRES_DB=${DB_NAME}
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  #   restart: unless-stopped
+  #   networks:
+  #     - asep-network
+
+networks:
+  asep-network:
+    driver: bridge
+
+# Uncomment when database is ready
+# volumes:
+#   pgdata: 

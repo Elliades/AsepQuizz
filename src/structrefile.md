@@ -27,9 +27,25 @@
  │   ├── App.tsx          # Main app entry point
  │   ├── main.tsx         # React DOM entry point
  ├── public/              # Static assets
- ├── backend/             # Express.js API (if included in the same repo)
+ ├── backend/             # Express.js API (planned)
  ├── package.json         # Project dependencies
  ├── tsconfig.json        # TypeScript configuration
  ├── vite.config.ts       # Vite configuration
  ├── tailwind.config.js   # TailwindCSS config
  ├── .eslintrc.json       # Linter configuration
+ ├── docker/              # Docker configuration files
+ │   ├── frontend/        # Frontend Docker configuration
+ │   ├── backend/         # Backend Docker configuration (for future)
+ │   ├── database/        # Database Docker configuration (for future)
+ │   └── nginx/           # Nginx configuration for production
+ ├── docker-compose.yml   # Docker Compose configuration
+ ├── docker-compose.prod.yml # Production Docker Compose configuration
+ ├── .env.example         # Example environment variables
+ ├── scripts/             # Deployment and maintenance scripts
+ │   ├── deploy.sh        # Deployment script
+ │   ├── update.sh        # Update script
+ │   └── backup.sh        # Backup script
+ └── docs/                # Deployment and maintenance documentation
+     ├── deployment.md    # Deployment instructions
+     ├── updates.md       # Update instructions
+     └── database.md      # Future database integration guide

@@ -97,6 +97,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Answer locking feature to prevent changing answers after submission
 - Visual indicators for locked answers (reduced opacity, disabled hover effects)
 - Tracking of submitted questions using a Set of question IDs
+- Deployment scripts for Windows (export.bat) and Linux/Unix (export.sh)
+- Docker configuration for production deployment
+- Automated backup and restore scripts
+- Comprehensive deployment documentation
 
 ### Changed
 - Updated Quiz_Page component to handle random question selection
@@ -107,6 +111,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated SimpleChoiceQuestionComponent and MultipleChoiceQuestionComponent to support answer locking
 - Enhanced Quiz and QuickQuiz components to track submitted questions
 - Improved visual feedback for submitted questions
+- Updated Docker build process to handle TypeScript compilation
+- Modified tsconfig for Docker builds
+- Updated package.json with Docker-specific build script
 
 ### Fixed
 - Type safety issues with difficulty levels
@@ -114,6 +121,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Quiz_Page subject ID matching
 - Undefined property access in topic statistics
 - Time calculation in Results_Pages component
+- TypeScript declaration files generation issues in Docker builds
+- Export script PowerShell compatibility issues
 
 ### Technical
 - Added loadQuizzesWithTimeout function
