@@ -92,7 +92,7 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({
                                 : !answer.isCorrect && isSubmitted
                                     ? 'bg-red-500/20 border-red-500'
                                     : 'bg-primary/20 border-primary'
-                            : isSubmitted && answer.isCorrect
+                            : isSubmitted && answer.isCorrect && showExplanation
                                 ? 'bg-green-500/20 border-green-500 opacity-80'
                                 : 'bg-gray-800 hover:bg-gray-700 border-gray-700'
                         }
@@ -106,7 +106,7 @@ const SimpleChoiceQuestionComponent: React.FC<SimpleChoiceQuestionProps> = ({
                     transition={{ duration: 0.2, delay: index * 0.05 }}
                 >
                     {answer.text}
-                    {isSubmitted && (answer.isCorrect || selectedAnswer === answer.id) && (
+                    {isSubmitted && showExplanation && (answer.isCorrect || selectedAnswer === answer.id) && (
                         <p className="mt-2 text-sm text-gray-400">{answer.explanation}</p>
                     )}
                 </motion.div>

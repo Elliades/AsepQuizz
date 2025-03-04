@@ -6,6 +6,7 @@ import sourcesUtils from './sourcesUtilsBrowser';
 import topicUtils from './topicUtilsBrowser';
 import quizTopicMapper from './quizTopicMapper';
 import subjectMapper from './subjectMapper';
+import { ensureQuestionSource } from './sourceUtils';
 
 // Dynamic imports for quiz files
 const quizModules = import.meta.glob('../data/quizzes/**/*.json', { eager: true });
@@ -74,13 +75,18 @@ const loadQuizzes = (): Record<string, QuizSeries[]> => {
         };
       });
 
-      quizzesBySubject[quiz.subjectId].push({ ...quiz, questions: uniqueQuestions });
+      // Process questions
+      const processedQuestions = uniqueQuestions.map(q => 
+        ensureQuestionSource(q)
+      );
+
+      quizzesBySubject[quiz.subjectId].push({ ...quiz, questions: processedQuestions });
       console.log(`Added quiz to subject ${quiz.subjectId}`);
       
       // If this quiz subject maps to an index subject, also add it there
       const standardizedSubjectId = subjectMapper.getStandardizedSubjectId(quiz.subjectId);
       if (standardizedSubjectId !== quiz.subjectId) {
-        quizzesBySubject[standardizedSubjectId].push({ ...quiz, questions: uniqueQuestions });
+        quizzesBySubject[standardizedSubjectId].push({ ...quiz, questions: processedQuestions });
         console.log(`Also added quiz to standardized subject ${standardizedSubjectId}`);
       }
     } catch (error) {

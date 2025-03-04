@@ -30,22 +30,23 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
   const [startTime, setStartTime] = useState<number>(Date.now());
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const quizContainerRef = useRef<HTMLDivElement>(null);
+  const explanationTimerRef = useRef<NodeJS.Timeout | null>(null);
   
   // Modify the useQuizNavigation hook to accept the new onComplete
   const navigation = useQuizNavigation(questions, (updatedAnswers: UserAnswer[]) => {
       const endTime = Date.now();
       const timeSpent = (endTime - startTime) / 1000;
-      const finalScore = updatedAnswers.filter(a => a.isCorrect).length; // Calculate score here
+      const finalScore = updatedAnswers.filter(a => a.isCorrect).length;
 
       const result: QuizResult = {
           score: finalScore,
           totalQuestions: questions.length,
-          userAnswers: updatedAnswers, // Use the passed-in answers
+          userAnswers: updatedAnswers,
           startTime: new Date(startTime),
           endTime: new Date(endTime),
           timeSpent
       };
-      onComplete(result); // Call the onComplete prop with the complete result
+      onComplete(result);
   });
 
   // Reset the start time when the component mounts
@@ -53,6 +54,18 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     const now = Date.now();
     setStartTime(now);
   }, []);
+  
+  // Clear explanation when changing questions
+  useEffect(() => {
+    // Immediately hide explanation when changing questions
+    setShowExplanation(false);
+    
+    // Clear any pending explanation timers
+    if (explanationTimerRef.current) {
+      clearTimeout(explanationTimerRef.current);
+      explanationTimerRef.current = null;
+    }
+  }, [navigation.currentIndex]);
 
   // Safety check for quiz data
   if (!questions || questions.length === 0) {
@@ -124,8 +137,8 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
     if (navigation.isCurrentQuestionSubmitted) return;
 
     const isCorrect = checkIfCorrect(currentQuestion, selectedAnswers);
-    const newScore = isCorrect ? score + 1 : score; // Calculate new score
-    setScore(newScore); // Update the score immediately
+    const newScore = isCorrect ? score + 1 : score;
+    setScore(newScore);
 
     // Create new user answer
     const newAnswer: UserAnswer = {
@@ -135,15 +148,24 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
       timeSpent: (Date.now() - startTime) / 1000,
     };
 
-    // Construct the *new* userAnswers array
     const updatedAnswers = [...userAnswers, newAnswer];
-    setUserAnswers(updatedAnswers); // Update local state
+    setUserAnswers(updatedAnswers);
 
-    // Pass the *updated* answers to markQuestionSubmitted
     navigation.markQuestionSubmitted(currentQuestion.id, updatedAnswers, true);
     
     // Show explanation
     setShowExplanation(true);
+    
+    // Clear any existing timer
+    if (explanationTimerRef.current) {
+      clearTimeout(explanationTimerRef.current);
+    }
+    
+    // Hide explanation after a delay (3 seconds)
+    explanationTimerRef.current = setTimeout(() => {
+      setShowExplanation(false);
+      explanationTimerRef.current = null;
+    }, 3000);
   };
   
   if (isComplete) {
@@ -188,7 +210,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
             question={currentQuestion}
             selectedAnswer={answers[currentQuestion.id] as string | null}
             onAnswerSelect={(answerId) => handleSimpleChoiceAnswer(currentQuestion.id, answerId)}
-            showExplanation={showExplanation || navigation.isCurrentQuestionSubmitted}
+            showExplanation={showExplanation}
             isSubmitted={navigation.isCurrentQuestionSubmitted}
           />
         ) : (
@@ -196,7 +218,7 @@ const QuickQuiz: React.FC<QuickQuizProps> = ({ questions, onComplete, renderResu
             question={currentQuestion as MultipleChoiceQuestion}
             selectedAnswers={(answers[currentQuestion.id] as string[]) || []}
             onAnswerSelect={(answerIds) => handleMultipleChoiceAnswer(currentQuestion.id, answerIds)}
-            showExplanation={showExplanation || navigation.isCurrentQuestionSubmitted}
+            showExplanation={showExplanation}
             isSubmitted={navigation.isCurrentQuestionSubmitted}
           />
         )}

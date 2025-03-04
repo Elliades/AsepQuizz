@@ -30,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Quiz_Page subject ID matching
 - Undefined property access in topic statistics
 - Time calculation in Results_Pages component
+- Explanation is now well hidden until the user clicks on the question
 
 ### Technical
 - Added loadQuizzesWithTimeout function

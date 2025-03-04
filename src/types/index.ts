@@ -42,6 +42,7 @@ export interface BaseQuestion {
   important?: boolean;
   source?: string;
   sourceQuestion?: string;
+  chapter?: string;
   comments: Comment[];
   tags: QuestionTag[];
   notations: Notation[];
